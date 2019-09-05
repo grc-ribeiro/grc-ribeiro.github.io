@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
+	 <title>Bruno Ribeiro | Cal Poly | Winter 2019 | GRC 338: Web Develop and Content Management </title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="assignments.html">Assignments</a></h5>
+
+<h1>Final website: CSS restrictions  </h1>
+
+<ol>
+<li><p>You should keep your CSS to under 300 lines. (400 at the very most, but 300 should be more than enough.)</p></li>
+<li><p>Don’t cheat. Keep writing your CSS as we have been: <br />
+<code>element-or-class {</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>one line for declaring the element or class</em> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>property: value;</code> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>property: value;</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>keep one property per line</em> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>property: value;</code> <br />
+&nbsp;&nbsp;&nbsp;<code>}</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>closing bracket in its own line</em> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>skip one line before the next element or class</em>  </p></li>
+</ol>
+
+<h2>Tips for keeping your CSS economical  </h2>
+
+<ol>
+<li><p>Reuse your classes as much as possible. Fewer classes help with consistency anyway.</p></li>
+<li><p>Only declare what you need to. (You don’t need to declare white background or black font.)</p></li>
+<li><p>Give properties to all elements, using the body: <br />
+<code>body {</code> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>color: rgb(40, 40, 40);</code> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>font-family: serif;</code> <br />
+&nbsp;&nbsp;&nbsp;<code>}</code>  </p></li>
+<li><p>Group elements that share same properties. If you have many element, with commas, you will be declaring the values for all of them: <br />
+<code>h1, h2, h3, h4 {</code> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>color: rgb(180, 0, 0);</code> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>font-family: sans-serif;</code> <br />
+&nbsp;&nbsp;&nbsp;<code>}</code> </p></li>
+</ol>
+
+
+</body>
+</html>
