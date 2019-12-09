@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+	 <title>Bruno Ribeiro | Cal Poly | Autumn 2019 | GRC 322: Advanced Typography</title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 322</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>GREP cheat sheet  </h1>
+
+<p>To search for a letter, you want to use <code>\w</code>. It&rsquo;s a wild card for any uppercase letter, any lowercase letter, and the underscore (<code>_</code>).</p>
+
+<p>To search for a number, you want to use <code>\d</code>. It&rsquo;s a wild card for any digit, from 0 to 9.</p>
+
+<p>For spaces, you may just use a space.</p>
+
+<p>If you want to search for <strong>one or more</strong> repetition, you want the <code>+</code>, sign. For example, <code>\d+</code> will search for any sequence of consecutive numbers.</p>
+
+<p>If you want to search for <strong>zero or more</strong> repetition, you want the <code>*</code>, sign. For example, <code>\d*</code> will search for any sequence of consecutive numbers or no numbers at all.</p>
+
+<p>Some symbols&mdash;such as <code>.</code>, <code>&#8209;</code>, and <code>?</code>&mdash;have special meanings on the GREP syntax, to search for them, then, you need to <em>backslash</em> them first. For example if you search for <code>.</code>, you will find any character at all, but if you search for <code>\.</code>, you will find a period.</p>
+
+<p>When you use the square brackets (<code>[</code> and <code>]</code> ), you can search for any character in the bracket. For example, <code>[bcf]at</code> matches the words <code>bat</code> , <code>cat</code> , and <code>fat</code> , but not <code>hat</code> or <code>rat</code>.</p>
+
+<p>The search with bracket can be combined with repetition. For example, <code>[\w\d]+</code> will search for any sequence of letters and numbers.</p>
+
+<p>To use a captured group, you need to capture the group with parenthesis and use them later with the dollar sign (<code>$1</code> for the first captured group, <code>$2</code> for the second, etc.)</p>
+
+</body>
+</html>
