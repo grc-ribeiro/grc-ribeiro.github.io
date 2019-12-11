@@ -37,7 +37,7 @@ font-style: normal;
 	color: #333;  
 }
 
-h4, h5{  
+h4, h5, h6{  
 	font-family: aktiv-grotesk, Helvetica, Calibri, sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -131,6 +131,12 @@ h6 {
   color:#333;  
   max-width:48em;  
 }
+
+
+h6.lastupdate {
+		  color:#555;  
+		  margin-top: 3em;  
+	}
 
 p {  
   margin-bottom:0.4em;  
