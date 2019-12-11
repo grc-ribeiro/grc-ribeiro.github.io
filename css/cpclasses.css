@@ -209,11 +209,12 @@ del code, strike code{
 }
 
 code {  
-  background-color: #fafffa;  
-  color: #555;  
-  font-size: 1.25em;  
-  padding: 0.05em;  
+  background-color: #eee;  
+  color: #585;  
+  font-size: 1.3em;  
+  padding: 0 0.3em;  
   max-width: 24em;  
+  font-weight: bold;
 }
 
 pre {  
