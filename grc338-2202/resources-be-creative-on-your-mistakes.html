@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
 	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
 
-	 <title>Bruno Ribeiro | Cal Poly | Winter 2020 | GRC 338: Web Develop and Content Management</title>
+	 <title>Bruno Ribeiro | Cal Poly | Winter 2020 | GRC 338: Web Development and Content Management</title>
 </head>
 
 
@@ -46,9 +46,25 @@
 <li><p>Avoid line breaks (<code>&lt;br /&gt;</code>). Use lists or new paragraphs and style them properly. (That&rsquo;s not to say that any use of line break is a mistake. The tag exists for a reason, and it&rsquo;s helpful for addresses or business hours, for example.)</p></li>
 </ol>
 
+<h2>Style  </h2>
+
+<ol>
+<li><p>Don&rsquo;t include styling on your HTML document.</p></li>
+<li><p>One CSS file should hold all the formatting for your website. Don&rsquo;t use a different CSS file for each HTML file.</p></li>
+<li><p>Declare all colors as RGB values, either using <code>rgb(x, x, x)</code> or <code>#xxxxxx</code>.</p></li>
+<li><p>Paragraphs (<code>p</code>) must be at least <code>1em</code>. (Ideally exactly <code>1em</code>. Or in other words, leave its size alone, respecting the users&rsquo; preferences.)</p></li>
+<li><p>If two pieces of information have the same hierarchy but should look different, use <code>classes</code>. (Don&lsquo;t make <code>h3</code> and <code>h4</code> have the same visual hierarchy but with different colors.)</p></li>
+<li><p>Don&rsquo;t use <code>&lt;i&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;b&gt;</code>, or <code>&lt;strong&gt;</code> on a whole element or paragraph. Also, make sure you&rsquo;re using them for the right semantic reasons. Use the <code>&lt;span&gt;</code> tag if it makes more sense.</p></li>
+<li><p>Don&rsquo;t use all caps on your HTML file. Use the <code>text&#8209;transform</code> property on CSS instead.</p></li>
+<li><p>Don&rsquo;t use <code>px</code> for anything but borders. For <em>everything else</em> use only <code>%</code> and <code>em</code>, as appropriate. </p></li>
+<li><p>Don&rsquo;t use <code>pt</code> either. Use only <code>em</code> for <code>font&#8209;size</code>.</p></li>
+<li><p>Avoid negative margins (or negative paddings). Use <a href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer&rsquo;s Reset CSS tool</a> if you don&rsquo;t want to deal with default margins messing with your document&rsquo;s style.</p></li>
+<li><p>Use margins and paddings to clear area around content only. (If you use margins bigger than <code>3em</code> or <code>5em</code>, it&rsquo;ll probably break the layout. </p></li>
+</ol>
+
 <h4>Always check your work on multiple devices, browsers, and&nbsp;window&nbsp;sizes.</h4>
 
-<h6 class="lastupdate">Last update on 4 January 2020, at 4:08 PM.</h6>
+<h6 class="lastupdate">Last update on 29 January 2020, at 1:52 PM.</h6>
 
 </body>
 </html>
