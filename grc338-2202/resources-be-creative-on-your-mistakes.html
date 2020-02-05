@@ -59,11 +59,35 @@
 <li><p>Don&rsquo;t use <code>pt</code> either. Use only <code>em</code> for <code>font&#8209;size</code>.</p></li>
 <li><p>Avoid negative margins (or negative paddings). Use <a href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer&rsquo;s Reset CSS tool</a> if you don&rsquo;t want to deal with default margins messing with your document&rsquo;s style.</p></li>
 <li><p>Use margins and paddings to clear area around content only. (If you use margins bigger than <code>3em</code> or <code>5em</code>, it&rsquo;ll probably break the layout. </p></li>
+<li><p>Use <code>%</code> for <code>width</code> and use <code>em</code> for <code>max&#8209;width</code> and <code>min&#8209;width</code>. (In some cases, you may want to use  <code>em</code> for <code>width</code> as well.)</p></li>
+<li><p>The <code>float</code> property should be used for sharing a line only. The element either goes to the left or to the right. (You should almost always use left, though.) There&rsquo;s no <del><code>float: center</code></del>! If it makes it easier for you, use <code>display: inline&#8209;block;</code> instead.</p></li>
+</ol>
+
+<h2>Images  </h2>
+
+<ol>
+<li><p>Every image on your HTML document must have the <code>alt</code> attribute.</p></li>
+<li><p>Use the <code>alt</code> attribute on the image to be as descriptive as possible. Remember, that&rsquo;s what users will read if they can&rsquo;t see the image.</p></li>
+<li><p>Include a period in the end of all <code>alt</code> attribute text. It causes screen readers to pause slightly, making for a better reading experience. <a href="https://twitter.com/kerri9494/status/1074696313848123392">➤</a></p></li>
+<li><p>You don&rsquo;t need to include &ldquo;picture of&rdquo;, &ldquo;image of&rdquo;, or &ldquo;photo of&rdquo; in the <code>alt</code> attribute of the <code>img</code> tag. (&ldquo;Hamburger on a plate.&rdquo; rather than <del>&ldquo;Photo of a hamburger on a plate.&rdquo;</del>)</p></li>
+<li><p>All file names should be lowercase and contain no spaces.</p></li>
+<li><p>Keep all the images in your server.</p></li>
+<li><p>It&rsquo;s good practice to keep the images in another folder. (Optional)</p></li>
+<li><p>Do not save photos as GIFs. Photos and rich illustrations should be JPEGs (or&nbsp;PNGs if transparency is needed).</p></li>
+<li><p>Don&rsquo;t use the <code>width</code> and <code>height</code> attributes on the <code>img</code> tags. (Style them in the CSS, instead.)</p></li>
+</ol>
+
+<h2>Troubleshooting  </h2>
+
+<ol>
+<li><p>If nothing on CSS seems to be affecting your page, make sure you have all the right curly brackets (<code>}</code>) in place.</p></li>
+<li><p>Another common problem is forget to include colons and semicolons on each property of the CSS. (<code>property: value;</code>)</p></li>
+<li><p>If it still doesn&rsquo;t work, make sure you&rsquo;re working on the right files. (Change some word on <code>h1</code> to check if the HTML file is right, or give the <code>body</code> a background color to check it the CSS file is correct.)</p></li>
 </ol>
 
 <h4>Always check your work on multiple devices, browsers, and&nbsp;window&nbsp;sizes.</h4>
 
-<h6 class="lastupdate">Last update on 29 January 2020, at 1:54 PM.</h6>
+<h6 class="lastupdate">Last update on 4 February 2020, at 4:04 PM.</h6>
 
 </body>
 </html>
