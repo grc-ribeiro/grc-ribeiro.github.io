@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
+	 <title>Bruno Ribeiro | Cal Poly | Winter 2019 | GRC 338: Web Develop and Content Management </title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>Redirect file  </h1>
+
+<h3>Here’s how you can make a URL redirect to another.</h3>
+
+<p>The simplest way to redirect to another URL is using the HTML <code>&lt;meta&gt;</code> tag with the <code>http-equiv</code> parameter set to <code>"refresh"</code>.</p>
+
+<p>Open a new HTML file and save it as <code>index.html</code>.</p>
+
+<p>Paste the following code into it:</p>
+
+<pre><code>    &lt;!doctype html&gt;
+
+    &lt;html&gt;  
+    &lt;head&gt;  
+    &lt;title&gt;Untitled&lt;/title&gt;  
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"&gt;  
+    &lt;meta http-equiv="refresh" content="0;url=https://calpoly.edu/"&gt;  
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+    &lt;/body&gt;  
+    &lt;/html&gt;
+</code></pre>
+
+<p>Give this page a proper title.</p>
+
+<p>Replace the URL <code>https://calpoly.edu/</code>with your <strong>destination</strong> URL.</p>
+
+<p>Place the file <code>index.html</code> into the folder of the original URL.</p>
+
+<p>For this assignment, you want to replace the Cal Poly URL with your Squarespace website URL. Then, you want to place your new <code>index.html</code> file in your <code>/grc338/final</code> folder.</p>
+
+<h3>Note</h3>
+
+<p><em>There are some disadvantages to this method and it’s discouraged to use, but for our assignment, it will work just fine. You may want to look into <a href="https://css-tricks.com/redirect-web-page/">other options</a> in the future, though.</em></p>
+
+
+</body>
+</html>
