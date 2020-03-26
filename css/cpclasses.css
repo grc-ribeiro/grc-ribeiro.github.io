@@ -151,12 +151,10 @@ p.resume {
 
 li h2 {  
 	font-size: 1em;  
-/* 
-	font-family: Georgia, serif;  
- */
-	font-weight: bold;  
+	font-weight: normal;  
+	text-transform: uppercase;
 	color: #333;  
-	margin: 0em 0 0 0;  
+	margin: 2.5em 0 1em 0;  
 	line-height: 1em;  
 }
 
@@ -168,7 +166,7 @@ li h2 a {
 }
 
 h2.schedule {  
-	margin-bottom: 0;  
+	margin-bottom: 1em;  
 }
 
 li h4 {  
@@ -179,8 +177,8 @@ li h4 {
 }
 
 li p{  
-	margin: 0;  
-	/* line-height: 1.4em;  */ 
+	margin: 0 0 1em 0;   
+	line-height: 1.4em;  
 }
 
 
