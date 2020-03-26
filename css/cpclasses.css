@@ -150,13 +150,16 @@ p.resume {
 }
 
 li h2 {  
-	font-size: 1em;  
+	font-size: 0.8em;  
 	font-weight: normal;  
 	text-transform: uppercase;
 	color: #333;  
-	margin: 2.5em 0 1em 0;  
-	line-height: 1em;  
+	margin: 2em 0 1em 0;  
+	line-height: 1.0em;  
 	float: left;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+	padding: 0.2em;
 }
 
 li h2 a {  
@@ -167,7 +170,7 @@ li h2 a {
 }
 
 h2.schedule {  
-	margin-bottom: 1em;  
+	margin-bottom: 0;  
 }
 
 li h4 {  
