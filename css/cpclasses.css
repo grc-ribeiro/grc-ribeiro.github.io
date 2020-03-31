@@ -256,6 +256,13 @@ ol li {
 }
 
 
+span.notes {
+	font-size: 0.75em;
+	text-transform: uppercase;
+	color: #888;
+	letter-spacing: 0.05em;
+	}
+
 ul.examples li {width: 30%; display: inline-block; margin-right: 1em; margin-bottom: 2em; font-size: 0.8em; }
 
 ul.examples li p {font-family: Helvetica, sans-serif; line-height: 1.4em;}
