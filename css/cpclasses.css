@@ -219,12 +219,12 @@ del code, strike code{
 }
 
 code {  
-  background-color: #eee;  
+  /* background-color: #eee; */  
   color: #585;  
   font-size: 1.3em;  
   padding: 0 0.3em;  
   max-width: 24em;  
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 pre {  
@@ -261,6 +261,7 @@ span.notes {
 	text-transform: uppercase;
 	color: #888;
 	letter-spacing: 0.05em;
+	padding-left: 0.5em;
 	}
 
 ul.examples li {width: 30%; display: inline-block; margin-right: 1em; margin-bottom: 2em; font-size: 0.8em; }
