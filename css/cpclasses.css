@@ -149,7 +149,14 @@ p.resume {
   margin: 0;  
 }
 
-li h2 {  
+li h2 {  /*Design principles rubric explanation on the assignment pages*/
+	font-size: 1em;  
+	color: #333;  
+	margin: 2em 0 0em 0;  
+	line-height: 1.0em;  
+}
+
+ul.schedule li h2 {  /*each date on the schedule page*/
 	font-size: 0.8em;  
 	font-weight: normal;  
 	text-transform: uppercase;
