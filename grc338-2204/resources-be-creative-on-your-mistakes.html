@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+	 <title>Bruno Ribeiro | Cal Poly | Spring 2020 | GRC 338: Web Development and Content Management</title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>Be creative on your mistakes  </h1>
+
+<h4>Here&rsquo;s how you can avoid the ones everybody else makes.</h4>
+
+<h2>Basics  </h2>
+
+<ol>
+<li><p>All your content should be in the <code>&lt;body&gt;</code> of your document.</p></li>
+<li><p>Close all the tags you opened. (Don&rsquo;t forget to close <code>&lt;body&gt;</code> and <code>&lt;html&gt;</code>.)</p></li>
+<li><p>All the pages need to have a <code>&lt;title&gt;</code> in the <code>&lt;head&gt;</code>.</p></li>
+<li><p>All quotes in the code (not in the content) need to be straight quotes (<code>"</code>not <code>&amp;ldquo;</code>). It&nbsp;won&rsquo;t work otherwise. (If you copy your code from another program, it&rsquo;ll likely come with &ldquo;smart quote&rdquo; rather than the straight quotes. And it will break your code.)</p></li>
+<li><p>In the content, however, use proper apostrophes, quotes, and dashes.</p></li>
+<li><p>Your homepage file needs to be named <code>index.html</code> or you will get a 403 error.</p></li>
+<li><p>Don&rsquo;t use images or PDFs for content.  </p></li>
+</ol>
+
+<h2>Type hierarchy  </h2>
+
+<ol>
+<li><p>Pieces of text with the same hierarchy should have the same tag. (<code>p</code>, <code>h1</code>, <code>h2</code>, etc.) You may, for example, use many <code>&lt;h2&gt;</code> tags throughout your page.</p></li>
+<li><p>It never makes sense to have a <code>&lt;p&gt;</code> tag inside a heading tag (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc).</p></li>
+<li><p>List items need to live inside lists.</p></li>
+<li><p>Only list items can be nested inside a list. (Nested inside the list item, though, you may have other elements, such as headings and paragraphs.)</p></li>
+<li><p>There&rsquo;s no <del><code>p2</code></del>.</p></li>
+<li><p>There&rsquo;s no <del><code>h7</code></del>.</p></li>
+<li><p>Avoid line breaks (<code>&lt;br /&gt;</code>). Use lists or new paragraphs and style them properly. (That&rsquo;s not to say that any use of line break is a mistake. The tag exists for a reason, and it&rsquo;s helpful for addresses or business hours, for example.)</p></li>
+</ol>
+
+<h2>Style  </h2>
+
+<ol>
+<li><p>Don&rsquo;t include styling on your HTML document.</p></li>
+<li><p>One CSS file should hold all the formatting for your website. Don&rsquo;t use a different CSS file for each HTML file.</p></li>
+<li><p>Declare all colors as RGB values, either using <code>rgb(x, x, x)</code> or <code>#xxxxxx</code>.</p></li>
+<li><p>Paragraphs (<code>p</code>) must be at least <code>1em</code>. (Ideally exactly <code>1em</code>. Or in other words, leave its size alone, respecting the users&rsquo; preferences.)</p></li>
+<li><p>If two pieces of information have the same hierarchy but should look different, use <code>classes</code>. (Don&lsquo;t make <code>h3</code> and <code>h4</code> have the same visual hierarchy but with different colors.)</p></li>
+<li><p>Don&rsquo;t use <code>&lt;i&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;b&gt;</code>, or <code>&lt;strong&gt;</code> on a whole element or paragraph. Also, make sure you&rsquo;re using them for the right semantic reasons. Use the <code>&lt;span&gt;</code> tag if it makes more sense.</p></li>
+<li><p>Don&rsquo;t use all caps on your HTML file. Use the <code>text-transform</code> property on CSS instead.</p></li>
+<li><p>Don&rsquo;t use <code>px</code> for anything but borders. For <em>everything else</em> use only <code>%</code> and <code>em</code>, as appropriate. </p></li>
+<li><p>Don&rsquo;t use <code>pt</code> either. Use only <code>em</code> for <code>font-size</code>.</p></li>
+<li><p>Avoid negative margins (or negative paddings). Use <a href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer&rsquo;s Reset CSS tool</a> if you don&rsquo;t want to deal with default margins messing with your document&rsquo;s style.</p></li>
+<li><p>Use margins and paddings to clear area around content only. (If you use margins bigger than <code>3em</code> or <code>5em</code>, it&rsquo;ll probably break the layout. </p></li>
+<li><p>Use <code>%</code> for <code>width</code> and use <code>em</code> for <code>max-width</code> and <code>min-width</code>. (In some cases, such as a logo, you may want to use  <code>em</code> for <code>width</code> as well, but you usually don&rsquo;t want it.)</p></li>
+<li><p>The <code>float</code> property should be used for sharing a line only. The element either goes to the left or to the right. (You should almost always use left, though.) There&rsquo;s no <del><code>float: center</code></del>! If it makes it easier for you, use <code>display: inline-block;</code> instead.</p></li>
+</ol>
+
+<h2>Classes  </h2>
+
+<ol>
+<li><p>Be as economical as possible with your classes. In other words, use as many classes as you <em>need</em>, but no more than that.</p></li>
+<li><p>Use semantic names for the classes. (i.e. &ldquo;highlight&rdquo; rather than &ldquo;yellowbg&rdquo;; &ldquo;additionalinfo&rdquo; rather than &ldquo;rightcolumn&rdquo;.</p></li>
+<li><p>&ldquo;Container&rdquo; is the div around the content of your page. The other divs should be named semantically.</p></li>
+<li><p>All class names should be lowercase and have no spaces. Also, they should not start with numbers and should be short (up to 12 or 15 characters). </p></li>
+</ol>
+
+<h2>Images  </h2>
+
+<ol>
+<li><p>Every image on your HTML document must have the <code>alt</code> attribute.</p></li>
+<li><p>Use the <code>alt</code> attribute on the image to be as descriptive as possible. Remember, that&rsquo;s what users will read if they can&rsquo;t see the image.</p></li>
+<li><p>Include a period in the end of all <code>alt</code> attribute text. It causes screen readers to pause slightly, making for a better reading experience. <a href="https://twitter.com/kerri9494/status/1074696313848123392">➤</a></p></li>
+<li><p>You don&rsquo;t need to include &ldquo;picture of&rdquo;, &ldquo;image of&rdquo;, or &ldquo;photo of&rdquo; in the <code>alt</code> attribute of the <code>img</code> tag. (&ldquo;Hamburger on a plate.&rdquo; rather than <del>&ldquo;Photo of a hamburger on a plate.&rdquo;</del>)</p></li>
+<li><p>All file names should be lowercase and contain no spaces.</p></li>
+<li><p>Keep all the images in your server.</p></li>
+<li><p>It&rsquo;s good practice to keep the images in another folder. (Optional)</p></li>
+<li><p>Do not save photos as GIFs. Photos and rich illustrations should be JPEGs (or&nbsp;PNGs if transparency is needed).</p></li>
+<li><p>Don&rsquo;t use the <code>width</code> and <code>height</code> attributes on the <code>img</code> tags. (Style them in the CSS, instead.)</p></li>
+</ol>
+
+<h2>Links  </h2>
+
+<ol>
+<li><p>Links within your website should be only the name of the file (e.g. <code>index.html</code>, <code>contact.html</code>, etc.), and not a big link to a file on your computer.</p></li>
+<li><p>Links within your website (internal links) don&rsquo;t need full URL either.</p></li>
+<li><p>External links need full URL (<code>http://www.example.com</code> or <code>https://www.example.com</code>).</p></li>
+</ol>
+
+<h2>Troubleshooting  </h2>
+
+<ol>
+<li><p>If nothing on CSS seems to be affecting your page, make sure you have all the right curly brackets (<code>}</code>) in place.</p></li>
+<li><p>Another common problem is forget to include colons and semicolons on each property of the CSS. (<code>property: value;</code>)</p></li>
+<li><p>If it still doesn&rsquo;t work, make sure you&rsquo;re working on the right files. (Change some word on <code>h1</code> to check if the HTML file is right, or give the <code>body</code> a background color to check it the CSS file is correct.)</p></li>
+</ol>
+
+<h4>Always check your work on multiple devices, browsers, and&nbsp;window&nbsp;sizes.</h4>
+
+<h6 class="lastupdate">Last update on 6 April 2020, at 6:38 AM.</h6>
+
+</body>
+</html>
