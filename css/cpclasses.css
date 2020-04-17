@@ -256,6 +256,9 @@ ul li {
   padding:0em 0 0 0;  
 }
 
+blockquote ul {
+	padding-left: 1em;
+	}
 
 blockquote ul li {
 	list-style-type: disc;
