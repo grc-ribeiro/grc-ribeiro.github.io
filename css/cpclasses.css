@@ -274,6 +274,11 @@ ol li {
   margin-top: 1em;
 }
 
+code.wrongcode {
+	color: #800;
+	text-decoration: line-through;
+}
+
 
 span.notes {
 	font-size: 0.75em;
