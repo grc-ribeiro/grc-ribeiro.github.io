@@ -242,10 +242,14 @@ pre  {
   padding-left: 1.5em;  
   margin-left:0;  
   margin-bottom: 3rem;
+/* 
   max-width: 33em;  
+ */
   font-size: 0.9em;  
   border-left: #ada solid 8px;  
+/* 
   background: #dfd;
+ */
   clear: both;  
 }
 
