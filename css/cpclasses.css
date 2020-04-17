@@ -222,6 +222,12 @@ blockquote {
   clear: both;  
 }
 
+blockquote blockquote code {  
+    color: #800;  
+    background: #f88;
+}
+
+
 del code, strike code{  
 	color: #aaa;  
 }
@@ -274,10 +280,6 @@ ol li {
   margin-top: 1em;
 }
 
-code.wrongcode {
-	color: #800;
-	text-decoration: line-through;
-}
 
 
 span.notes {
