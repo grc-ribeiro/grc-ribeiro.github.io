@@ -216,16 +216,13 @@ hr {
 blockquote {  
   padding-left: 1.5em;  
   margin-left:0;  
+  margin-bottom: 2rem;
   max-width: 33em;  
   font-size: 0.9em;  
   border-left: #eee solid 8px;  
   clear: both;  
 }
 
-blockquote blockquote code {  
-    color: #800;  
-    background: #f88;
-}
 
 
 del code, strike code{  
@@ -241,9 +238,30 @@ code {
   /* font-weight: bold; */
 }
 
-pre {  
-	width: 100%;  
+pre  {  
+  padding-left: 1.5em;  
+  margin-left:0;  
+  margin-bottom: 3rem;
+  max-width: 33em;  
+  font-size: 0.9em;  
+  border-left: #ada solid 8px;  
+  background: #dfd;
+  clear: both;  
 }
+
+blockquote pre {  
+    color: #800;  
+    border-left: #faa solid 8px;
+    background: #fcc;
+    width: 100%;
+ 	font-size: 0.9em;  
+ 	padding-right: 1.5em;
+}
+
+blockquote pre code {  
+    color: #800;  
+}
+
 
 ul {  
   padding: 0em;  
