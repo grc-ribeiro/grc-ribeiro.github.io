@@ -45,7 +45,7 @@
 
 <p><strong>A common mistake</strong> is not&nbsp;to use the&nbsp;proper markup for styling reasons.&ldquo;I&nbsp;didn&rsquo;t want indentation&rdquo; or &ldquo;I&nbsp;didn&rsquo;t like the&nbsp;bullet points&rdquo; are&nbsp;not valid reasons not&nbsp;to use lists or list items. You&nbsp;style the&nbsp;document in&nbsp;the CSS&nbsp;later and make all the modifications you need. (The <code>ul</code> element has a  padding value by default; you need to give it a  <code>padding-left: 0;</code> on CSS. And you can style the <code>list-style-type</code> with a <a href="https://www.w3schools.com/cssref/pr_list-style-type.asp">myriad of different markers</a>.)</p>
 
-<h2>Headings  </h2>
+<h2>List headings  </h2>
 
 <p>If you want to break your list in different sections, you may want to use headings, as in:</p>
 
@@ -86,9 +86,35 @@
 
 <p>Immediately after the&nbsp;<code>&lt;ul&gt;</code> or&nbsp;<code>&lt;ol&gt;</code> tag, you&nbsp;want to&nbsp;see a&nbsp;<code>&lt;li&gt;</code> tag. And&nbsp;immediately after the&nbsp;<code>&lt;/li&gt;</code> tag, you&nbsp;want to&nbsp;see either a&nbsp;new list item (<code>&lt;li&gt;</code>) or&nbsp;the end&nbsp;of the&nbsp;list (<code>&lt;/ul&gt;</code> or&nbsp;<code>&lt;/ol&gt;</code>). Again, <strong>only list items can&nbsp;be nested inside a&nbsp;list</strong>. I&nbsp;can&rsquo;t seem to&nbsp;emphasize it&nbsp;enough.</p>
 
+<h2>List items headings  </h2>
+
+<p>Sometimes, your list items are not as simple. If there are different hierarchies within a list item, make sure that all the elements that belong in the list item are nested in the <code>&lt;li&gt;</code>.</p>
+
+<p>Let&rsquo;s say you have a list of the GrC professors with office in the hallway close to the DRT lab:</p>
+
+<blockquote>
+  <ul>
+<li><h3>Lorraine Donegan</h3>
+
+<p>Professor <br />
+  26-215  </p>
+
+<ul>
+<li><h3>Ken Macro</h3>
+
+<p>Professor <br />
+26-216  </p></li>
+<li><h3>Bruno Ribeiro</h3>
+
+<p>Associate Professor <br />
+26-214</p></li>
+</ul></li>
+</ul>
+</blockquote>
+
 <p><a href="resources-be-creative-on-your-mistakes.html">Back to the list of mistakes to avoid</a></p>
 
-<h6 class="lastupdate">Last update on 17 April 2020, at 6:33 AM.</h6>
+<h6 class="lastupdate">Last update on 17 April 2020, at 6:40 AM.</h6>
 
 </body>
 </html>
