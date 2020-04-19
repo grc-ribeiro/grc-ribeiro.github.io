@@ -242,18 +242,14 @@ pre  {
   padding-left: 1.5em;  
   margin-left:0;  
   margin-bottom: 3rem;
-/* 
-  max-width: 33em;  
- */
-  font-size: 0.9em;  
-  border-left: #ada solid 8px;  
-/* 
-  background: #dfd;
- */
+/* max-width: 33em;  */
+  font-size: 0.9em;   
+  border-left: #ada solid 8px; 
+ /*  background: #dfd; */
   clear: both;  
 }
 
-blockquote pre {  
+pre.wrongcode {  
     color: #800;  
     border-left: #faa solid 8px;
     background: #fcc;
@@ -262,7 +258,7 @@ blockquote pre {
  	padding-right: 1.5em;
 }
 
-blockquote pre code {  
+pre.wrongcode code {  
     color: #800;  
 }
 
