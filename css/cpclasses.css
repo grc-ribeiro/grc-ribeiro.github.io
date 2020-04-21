@@ -317,16 +317,23 @@ del { color: #aaa;}
 table {  
 	 border-top: 1px solid #ddd;  
 	 font-family: sans-serif;  
-	margin: 1em 0;  
+	margin: 2em 0 1em;  
 	font-size: 1em;  
+	width: 100%;
 }
 
 th, td {  
     border-bottom: 1px solid #ddd;  
-    padding-right: 0.8em;  
+    padding: 0.5em 0.8em 0.5em 0;  
 }
 
+table code {
+	font-size: 1.2em;
+}
 
+thead {
+	text-align: left;
+}
 
 #content {  
   margin-top:0;  
