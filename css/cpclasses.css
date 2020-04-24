@@ -6,7 +6,7 @@ body {
 	outline: 2px;  
 	border-top: #383 solid 1px;  
 	margin: 3em auto;  
-	padding-bottom: 6em;
+	padding-bottom: 1em;
 	line-height: 1.6em;  
 	}
 
@@ -231,7 +231,7 @@ del code, strike code{
 
 code {  
   /* background-color: #eee; */  
-  color: #585;  
+  color: #383;  
   font-size: 1.3em;  
   padding: 0 0.2em;  
   max-width: 24em;  
@@ -267,7 +267,7 @@ pre.wrongcode {
 }
 
 pre.wrongcode code {  
-    color: #800;  
+    color: #a55;  
 }
 
 
