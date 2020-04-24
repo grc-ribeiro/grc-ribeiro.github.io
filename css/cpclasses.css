@@ -219,23 +219,29 @@ blockquote {
   margin-bottom: 2rem;
   max-width: 33em;  
   font-size: 0.9em;  
-  border-left: #eee solid 8px;  
+  border-left: #ccc solid 4px;  
   clear: both;  
 }
 
 
-
-del code, strike code{  
-	color: #aaa;  
-}
-
 code {  
   /* background-color: #eee; */  
   color: #383;  
-  font-size: 1.3em;  
-  padding: 0 0.2em;  
+  font-size: 1.0em;  
+  padding: 0 0.1em;  
   max-width: 24em;  
-  /* font-weight: bold; */
+  font-family: input-mono, monospace;
+font-weight: 300;
+font-style: normal;
+  letter-spacing: 0.05em;
+
+}
+
+del code, strike code{  
+	color: #aaa;  
+    color: #a55;  
+    font-weight: 100;
+	font-style: italic;
 }
 
 pre  {  
@@ -245,7 +251,7 @@ pre  {
   width: 90%;
 	/* max-width: 36em;  */
   font-size: 0.9em;   
-  border-left: #ada solid 8px; 
+  border-left: #ada solid 4px; 
  /*  background: #dfd; */
   clear: both;  
 }
@@ -260,7 +266,7 @@ pre { /*break the lines*/
 
 pre.wrongcode {  
     color: #800;  
-    border-left: #faa solid 8px;
+    border-left: #faa solid 4px;
     background: #fcc;
  	font-size: 0.9em;  
  	padding-right: 1.5em;
@@ -268,6 +274,8 @@ pre.wrongcode {
 
 pre.wrongcode code {  
     color: #a55;  
+    font-weight: 100;
+	font-style: italic;
 }
 
 h1 code, h2 code, h3 code {
