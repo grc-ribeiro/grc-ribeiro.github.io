@@ -241,7 +241,7 @@ code {
 pre  {  
   padding-left: 1.5em;  
   margin-left:0;  
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   width: 90%;
 	/* max-width: 36em;  */
   font-size: 0.9em;   
@@ -268,6 +268,13 @@ pre.wrongcode {
 
 pre.wrongcode code {  
     color: #a55;  
+}
+
+h1 code, h2 code, h3 code {
+	font-family: aktiv-grotesk, Helvetica, Calibri, sans-serif;
+	color: #333;  
+	font-size: 1em;
+	padding: 0;
 }
 
 
