@@ -11,37 +11,35 @@ body {
 	}
 
 p, h2, h3, h4, h5, li{  
-  max-width:36em;  
+	max-width:36em;  
 }
 
 p, li, ol {  
 	font-family: aktiv-grotesk, Helvetica, Calibri, sans-serif;
-font-weight: 400;
-font-style: normal;
-/* 
-font-family: Helvetica, Calibri, sans-serif;  
- */
-	}
+	font-weight: 400;
+	font-style: normal;
+	/* font-family: Helvetica, Calibri, sans-serif;*/
+}
 
 
 p strong, li strong {  
 	font-size: 0.95em  
 }
 
-h1, h2, h3{  
+h1, h2, h3 {  
 	/* font-family: 'Helvetica', Calibri, sans-serif;   */
 	font-family: aktiv-grotesk, sans-serif;
-font-weight: 700;
-font-style: normal;
-clear: both;
+	font-weight: 700;
+	font-style: normal;
+	clear: both;
 	color: #333;  
 }
 
-h4, h5, h6{  
+h4, h5, h6 {  
 	font-family: aktiv-grotesk, Helvetica, Calibri, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-clear: both;
+	clear: both;
 
 /* 
 	font-family: 'Helvetica', Calibri, sans-serif;  
@@ -75,12 +73,12 @@ p a, li a, h5 a {
  
 
 h1 a, h2 a{  
-  font-weight: normal;  
-  color: #333;  
+	font-weight: normal;  
+	color: #333;  
 }
 
 h3 a, h4 a {  
-  font-weight: normal;  
+	font-weight: normal;  
 }
 
 h3 strong a {  
@@ -89,36 +87,36 @@ h3 strong a {
 }
 
 h1 {  
-  max-width:20em;  
-  margin-bottom:1em;  
-  letter-spacing: normal;  
-  font-size: 1.6em;  
-  margin-top: 1.5em;  
-  line-height: 1.3em;
+	max-width:20em;  
+	margin-bottom:1em;  
+	letter-spacing: normal;  
+	font-size: 1.6em;  
+	margin-top: 1.5em;  
+	line-height: 1.3em;
 }
 
 h2 {  
-  font-size: 1.3em;  
-  margin-top: 2em;  
-  text-transform: none;.  
-  letter-spacing: 0.05em;  
+	font-size: 1.3em;  
+	margin-top: 2em;  
+	text-transform: none;.  
+	letter-spacing: 0.05em;  
 }
 
 h3 {  
-  font-size: 1.1em;  
+	font-size: 1.1em;  
 /* font-weight:normal; */  
-  margin: 2em 0 0 0;  
+	margin: 2em 0 0 0;  
 }
 
 h4 {  
-  font-size: 1.1em;  
-  font-weight:normal;  
-  margin: 2em 0 0 0;  
+	font-size: 1.1em;  
+	font-weight:normal;  
+	margin: 2em 0 0 0;  
 }  
 h5 {  
-  font-size: 1em;  
-  margin: 1em 0 0 0;  
-  font-weight:normal;  
+	font-size: 1em;  
+	margin: 1em 0 0 0;  
+	font-weight:normal;  
 }
 
 h5.classheader {  
@@ -127,11 +125,11 @@ h5.classheader {
 
 
 h6 {  
-  font-size: 0.75em;  
-  line-height:2em;  
-  margin-top: 1em;  
-  color:#333;  
-  max-width:48em;  
+	font-size: 0.75em;  
+	line-height:2em;  
+	margin-top: 1em;  
+	color:#333;  
+	max-width:48em;  
 }
 
 
@@ -141,13 +139,13 @@ h6.lastupdate {
 	}
 
 p {  
-  margin-bottom:0.4em;  
+	margin-bottom:0.4em;  
 }
 
 p.resume {  
-  font-size: 1em;  
-  line-height:1.5em;  
-  margin: 0;  
+	font-size: 1em;  
+	line-height:1.5em;  
+	margin: 0;  
 }
 
 li h2 {  /*Design principles rubric explanation on the assignment pages*/
@@ -184,8 +182,8 @@ h2.schedule {
 li h4 {  
 	margin: 0;  
 	color: rgb(100, 100, 100);  
-  	font-size: 1em;  
-  	background: rgb(220, 220, 220);  
+		font-size: 1em;  
+		background: rgb(220, 220, 220);  
 }
 
 li p{  
@@ -204,77 +202,76 @@ li p{
 }
 
 hr {  
-  	width: 100%;  
-  	max-width: 36em;  
-  	margin-left: 0;  
-  	margin-right: 0;  
-  	margin-top: 4em;  
-  	margin-bottom: 1em;  
-  	border: 1px solid #ccc;  
+		width: 100%;  
+		max-width: 36em;  
+		margin-left: 0;  
+		margin-right: 0;  
+		margin-top: 4em;  
+	margin-bottom: 1em;  
+	border: 1px solid #ccc;  
 }
 
 blockquote {  
-  padding-left: 1.5em;  
-  margin-left:0;  
-  margin-bottom: 2rem;
-  max-width: 33em;  
-  font-size: 0.9em;  
-  border-left: #ccc solid 4px;  
-  clear: both;  
+	padding-left: 1.5em;  
+	margin-left:0;  
+	margin-bottom: 2rem;
+	max-width: 33em;  
+	font-size: 0.9em;  
+	border-left: #ccc solid 4px;  
+	clear: both;  
 }
 
 
 code {  
-  /* background-color: #eee; */  
-  color: #383;  
-  font-size: 1.0em;  
-  padding: 0 0.1em;  
-  max-width: 24em;  
-  font-family: input-mono, monospace;
-font-weight: 300;
-font-style: normal;
-  letter-spacing: 0.05em;
-
+	/* background-color: #eee; */  
+	color: #383;  
+	font-size: 1.0em;  
+	padding: 0 0.1em;  
+	max-width: 24em;  
+	font-family: input-mono, monospace;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 0.05em;
 }
 
 del code, strike code{  
 	color: #aaa;  
-    color: #a55;  
-    font-weight: 100;
+	color: #a55;  
+	font-weight: 100;
 	font-style: italic;
 }
 
 pre  {  
-  padding-left: 1.5em;  
-  margin-left:0;  
-  margin-bottom: 2rem;
-  width: 90%;
+	padding-left: 1.5em;  
+	margin-left:0;  
+	margin-bottom: 2rem;
+	width: 90%;
 	/* max-width: 36em;  */
-  font-size: 0.9em;   
-  border-left: #ada solid 4px; 
- /*  background: #dfd; */
-  clear: both;  
+	font-size: 0.9em;   
+	border-left: #ada solid 4px; 
+	/*background: #dfd; */
+	clear: both;  
 }
 
 pre { /*break the lines*/
-    white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 pre.wrongcode {  
-    color: #800;  
-    border-left: #faa solid 4px;
-    background: #fcc;
+	color: #800;  
+	border-left: #faa solid 4px;
+	background: #fcc;
  	font-size: 0.9em;  
  	padding-right: 1.5em;
 }
 
 pre.wrongcode code {  
-    color: #a55;  
-    font-weight: 100;
+	color: #a55;  
+	font-weight: 100;
 	font-style: italic;
 }
 
@@ -287,20 +284,20 @@ h1 code, h2 code, h3 code {
 
 
 ul {  
-  padding: 0em;  
-  margin: 0;  
+	padding: 0em;  
+	margin: 0;  
 }
 
 ol {  
-  padding: 0em;  
-  margin: 0;  
+	padding: 0em;  
+	margin: 0;  
 }
 
 
 ul li {  
-  list-style-type: none;  
-  margin-top: 1em;
-  padding:0em 0 0 0;  
+	list-style-type: none;  
+	margin-top: 1em;
+	padding:0em 0 0 0;  
 }
 
 blockquote ul {
@@ -317,8 +314,8 @@ blockquote ul li p{
 }
 
 ol li {  
-  padding:0em 0 0 0;  
-  margin-top: 1em;
+	padding:0em 0 0 0;  
+	margin-top: 1em;
 }
 
 
@@ -346,8 +343,8 @@ table {
 }
 
 th, td {  
-    border-bottom: 1px solid #ddd;  
-    padding: 0.5em 0.8em 0.5em 0;  
+	border-bottom: 1px solid #ddd;  
+	padding: 0.5em 0.8em 0.5em 0;  
 }
 
 table code {
@@ -359,35 +356,35 @@ thead {
 }
 
 #content {  
-  margin-top:0;  
+	margin-top:0;  
 }
 
 
 .image-caption {  
-  line-height:0.4em;  
-  padding:0;  
+	line-height:0.4em;  
+	padding:0;  
 }
 
 .resources {  
-  margin-top: 0.4em;  
+	margin-top: 0.4em;  
 }
 
 .resources a{  
-  font-weight:normal;  
+	font-weight:normal;  
 }
 
 
 .quotes p {  
-  font-size: 1.4em;  
-  line-height: 1.7em;  
-  text-indent: -0.45em;  
-  margin-bottom: 0;  
-  margin-top: 2em;  
-  max-width: 24em;  
+	font-size: 1.4em;  
+	line-height: 1.7em;  
+	text-indent: -0.45em;  
+	margin-bottom: 0;  
+	margin-top: 2em;  
+	max-width: 24em;  
 }
 
 .quotes h5 {  
-  margin-top: 0.3em;  
+	margin-top: 0.3em;  
 }
 
 
@@ -395,110 +392,110 @@ thead {
  
 
 #sidebar {  
-  background-color:#ff0;  
-  padding-top:10em;  
-  padding-left:0;  
+	background-color:#ff0;  
+	padding-top:10em;  
+	padding-left:0;  
 }
 
 #header .wrapper {  
 	padding-bottom: 20px;  
-  	padding-left:0;  
+		padding-left:0;  
 	border-bottom:1px solid #555;  
-  margin-bottom:-20px;  
+	margin-bottom:-20px;  
 }
 
 
 
 div[data-content-field="main-content"] {  
-  margin-left:185px;  
+	margin-left:185px;  
 }
 
 
 .show-folder {  
-  padding-left:1em;  
+	padding-left:1em;  
 }
 
 .details  {  
-  display: none; /*hide tags*/  
+	display: none; /*hide tags*/  
 }
 
 
 .folder .page-collection {  
-  padding-top: 0.6em;  
-  padding-bottom: 0.6em;  
-  border-bottom:1px solid #555;  
+	padding-top: 0.6em;  
+	padding-bottom: 0.6em;  
+	border-bottom:1px solid #555;  
 }
 
 .nav-link .page-collection {  
-  padding-left: 1em;  
+	padding-left: 1em;  
 }
 
 .collectionlink-title {  
-  font-family: 'Helvetica Neue', sans-serif;  
+	font-family: 'Helvetica Neue', sans-serif;  
 }
 
 .collectionlink-title a{  
-  font-weight: normal;  
+	font-weight: normal;  
 }
 
 
 .intrinsic{  
-    float:left;  
+	float:left;  
  	width:100%;  
 }
 
 .footnotes {  
-  border-top: 1px #555 solid;  
-  margin-top: 5em;  
-  font-size: 0.8em;  
-  line-height: 1.8em;  
-  max-width:48em;  
+	border-top: 1px #555 solid;  
+	margin-top: 5em;  
+	font-size: 0.8em;  
+	line-height: 1.8em;  
+	max-width:48em;  
 }
 
 a.footnote {  
-  	vertical-align: super;  
+		vertical-align: super;  
 }
 
 .footnotes ol {  
-  padding: 1em;  
+	padding: 1em;  
 }
 
 .footnotes li {  
-  list-style-type: decimal;  
-  max-width:36em;  
+	list-style-type: decimal;  
+	max-width:36em;  
 }
 
 .pagination {  
-  /*visibility: hidden;  
-  display: none;  
-  height: 10;  
-  width: 0;*/  
+	/*visibility: hidden;  
+	display: none;  
+	height: 10;  
+	width: 0;*/  
 }
 
 .details {  
-  visibility:hidden;  
-  display:none;  
-  width:0;  
+	visibility:hidden;  
+	display:none;  
+	width:0;  
 }
 
 
 nav.pagination.clear {  
-  text-align: left;  
-  color: #000;  
-  visibility: hidden;  
-  background-color: #444;  
+	text-align: left;  
+	color: #000;  
+	visibility: hidden;  
+	background-color: #444;  
 }  
 nav.pagination.clear a{  
-  text-align: left;  
-  color: #800;  
-  visibility: visible;  
-  margin: 0px 80px 0 -45px;  
-  font-family: 'Helvetica Neue', sans-serif;  
-  background-color: #444;  
+	text-align: left;  
+	color: #800;  
+	visibility: visible;  
+	margin: 0px 80px 0 -45px;  
+	font-family: 'Helvetica Neue', sans-serif;  
+	background-color: #444;  
 }
 
 nav.pagination.clear a:hover{  
-  color: #f00;  
+	color: #f00;  
 }
 
 
@@ -539,7 +536,7 @@ text-align: left;
 .newsletter-block .newsletter-form {  
 text-align: left;  
 overflow: hidden;  
-  padding: 0;  
+	padding: 0;  
 }
 
 
@@ -568,11 +565,11 @@ text-align: left;
 
 @media only screen and (max-width: 1060px) {
 
-  
-  #header .wrapper {  
-  		padding-left:40px;  
+	
+	#header .wrapper {  
+			padding-left:40px;  
 	}  
-  	div[data-content-field="main-content"] {  
+		div[data-content-field="main-content"] {  
 	  margin-left:205px;  
 	}  
 }
@@ -580,21 +577,21 @@ text-align: left;
 /* iPad Vertical */  
 @media only screen and (min-width: 640px) and (max-width: 830px) {  
 #header {  
-  width:768px;  
+	width:768px;  
 }
 
 #header #logo{  
-  	padding-left: 40px;  
+		padding-left: 40px;  
 }  
-  
+	
 #header .primary-nav .nav {  
-  	margin: 1em 0 1em 40px;  
+		margin: 1em 0 1em 40px;  
 } 
 
 div[data-content-field="main-content"] {  
-  margin-left: 50px;  
+	margin-left: 50px;  
 }  
-  
+	
 }
 
 @media only screen and (max-width: 40em) {
