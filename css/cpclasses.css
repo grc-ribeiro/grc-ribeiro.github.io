@@ -217,7 +217,7 @@ blockquote {
 code {
 		/*background-color: #eee;*/
 		color: #383;
-		font-size: 1.0em;
+		font-size: 0.9em;
 		padding: 0 0.1em;
 		max-width: 24em;
 		font-family: input-mono, monospace;
@@ -239,7 +239,6 @@ pre  {
 		margin-bottom: 2rem;
 		width: 90%;
 		/*max-width: 36em;*/
-		font-size: 0.9em; 
 		border-left: #ada solid 4px; 
 		/*background: #dfd;*/
 		clear: both;
@@ -335,7 +334,7 @@ th, td {
 }
 
 table code {
-		font-size: 1.2em;
+		font-size: 0.9em;
 }
 
 thead {
