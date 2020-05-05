@@ -180,6 +180,10 @@ img {
 		width: 100%;
 }
 
+del { 
+		color: #a55;
+}
+
 .important {
 		/*text-transform: uppercase;
 		font-weight: bold;
@@ -217,11 +221,10 @@ code {
 		font-family: input-mono, monospace;
 		font-weight: 300;
 		font-style: normal;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.03em;
 }
 
 del code, strike code{
-		color: #aaa;
 		color: #a55;
 		font-weight: 100;
 		font-style: italic;
@@ -229,7 +232,7 @@ del code, strike code{
 
 pre  {
 		padding-left: 1.5em;
-		margin-left:0;
+		margin-left: 0;
 		margin-bottom: 2rem;
 		width: 90%;
 		/*max-width: 36em;*/
@@ -312,7 +315,6 @@ ul.examples li {width: 30%; display: inline-block; margin-right: 1em; margin-bot
 
 ul.examples li p {font-family: Helvetica, sans-serif; line-height: 1.4em;}
 
-del { color: #aaa;}
 
 table {
 		border-top: 1px solid #ddd;
