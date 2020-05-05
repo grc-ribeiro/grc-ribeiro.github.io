@@ -39,12 +39,7 @@ h4, h5, h6 {
 		font-weight: 400;
 		font-style: normal;
 		clear: both;
-		/*font-family: 'Helvetica', Calibri, sans-serif;*/
 		color: #333;
-}
-
-/*h2,*/h4, h5{
-		/*font-weight: normal;*/
 }
 
 a {
@@ -92,7 +87,6 @@ h2 {
 		font-size: 1.3em;
 		margin-top: 2em;
 		text-transform: none;
-		letter-spacing: 0.05em;
 }
 
 h3 {
