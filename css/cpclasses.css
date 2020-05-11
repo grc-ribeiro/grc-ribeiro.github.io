@@ -156,7 +156,8 @@ ul.schedule li h2 {  /*each date on the schedule page*/
 
 li h2 a {
 		/*font-family: 'Helvetica', sans-serif;*/
-		border: none;
+		/* border: none; */
+		color: #415835;
 }
 
 h2.schedule {
