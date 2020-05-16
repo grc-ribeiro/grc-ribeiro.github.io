@@ -49,14 +49,28 @@
 }
 </code></pre>
 
-<p>Also, you may have notice that we don’t use the <code>alt</code> attribute on background images. That’s because they’re decorative only, and if they’re missing, the content wouldn’t be compromised.</p>
+<p>Also, you may need to include a padding on the <code>div</code>.</p>
+
+<p>Try this:</p>
+
+<pre><code>div.heroimage {  
+    background-image: url("images/heroimage.jpg");  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    padding: 2em 1.5em;  
+}
+</code></pre>
+
+<p>The first value (in my&nbsp;example, <code>2em</code>) will be&nbsp;applied to&nbsp;both top&nbsp;and bottom, while the&nbsp;second (in my&nbsp;example, <code>1.5em</code>) will be&nbsp;applied to&nbsp;both left and&nbsp;right. </p>
+
+<p>Furthermore, you may have notice that we don’t use the <code>alt</code> attribute on background images. That’s because they’re decorative only, and if they’re missing, the content wouldn’t be compromised.</p>
 
 <hr class="invisibleline" />
 
 <p><a href="css-tips.html">Back to the list of CSS tips.</a></p>
 
 <footer>
-<h6 class="lastupdate">Last update on 15 May 2020, at 4:56 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+<h6 class="lastupdate">Last update on 16 May 2020, at 12:18 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
 </footer>
 
 </body>
