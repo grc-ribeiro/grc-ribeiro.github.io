@@ -1,0 +1,47 @@
+/* Flexbox CSS */
+
+ 
+.container {
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #ccc;
+	 align-items: flex-start; 
+	max-width: 80em;
+	margin: auto;
+}
+
+
+h1 {
+	width: 100%;
+	max-height: 3em;
+	background-color: #eee;
+	}
+
+
+section {
+	padding: 0.2em;
+	margin: 0.2em ;
+	}
+
+
+section.mainstory {	
+	flex: 1 26em;
+	background-color: #ff0;
+	}
+	
+section.stories {	
+	flex: 1 ;
+	min-width: 15em;
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	}
+ 
+ section.stories p {	
+	background-color: #8ff;
+	min-width: 15em;
+	margin: 0.2em ;
+	flex: 1 30%;
+
+ }
