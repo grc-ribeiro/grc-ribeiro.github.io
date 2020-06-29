@@ -220,6 +220,25 @@ blockquote {
 		clear: both;
 }
 
+blockquote.classjournal{
+		padding-left: 0em;
+		max-width: 36em;
+		border-left: 0;
+		font-size: 1.1em;
+		line-height: 1.6em;
+}
+
+blockquote.classjournal p{
+		font-style: italic;
+}
+
+p.classjournal {
+		padding-left: 1em;
+		margin-left:0;
+		max-width: 33em;
+		border-left: #ccc solid 4px;
+}
+
 code {
 		/*background-color: #eee;*/
 		color: #383;
