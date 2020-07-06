@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+	 <title>Bruno Ribeiro | Cal Poly | Summer 2020 | GRC 339: Web Design and Production </title>
+</head>
+
+
+<body>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>Are there any&nbsp;finals or&nbsp;midterms?</p>
+</blockquote>
+
+<p  class="classjournal">No. Please check the <a href="https://grc-ribeiro.github.io/grc339-2206/schedule.html">schedule</a></p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>Could you&nbsp;give an&nbsp;example of&nbsp;what would be&nbsp;a second-level&nbsp;descendant?</p>
+</blockquote>
+
+<p  class="classjournal">Of course.</p>
+
+<p  class="classjournal">In the HTML below, <code>header</code>, <code>article</code>, <code>aside</code>, and <code>footer</code> are first-level descendants (or first-level children) of the <code>div</code>; while <code>h1</code>, <code>nav</code>, <code>figure</code>, <code>h2</code>, all the <code>p</code>, and all the <code>section</code> are second-level descendants (or second-level children) of the <code>div</code>.</p>
+
+<pre><code>    &lt;div class="container"&gt;  
+            &lt;header&gt;  
+                    &lt;h1&gt;…&lt;/h1&gt;  
+                    &lt;nav&gt;…/&lt;nav&gt;  
+            &lt;/header&gt;  
+            &lt;article&gt;  
+                    &lt;figure&gt;…&lt;/figure&gt;  
+                    &lt;h2&gt;…&lt;/h2&gt;  
+                    &lt;p&gt;…&lt;/p&gt;  
+                    &lt;p&gt;…&lt;/p&gt;  
+            &lt;/article&gt;  
+            &lt;aside&gt;  
+                    &lt;section&gt;…&lt;/section&gt;  
+                    &lt;section&gt;…&lt;/section&gt;  
+                    &lt;section&gt;…&lt;/section&gt;  
+            &lt;/aside&gt;  
+            &lt;footer&gt;  
+                    &lt;p&gt;…&lt;/p&gt;  
+            &lt;/footer&gt;  
+    &lt;/div&gt;
+</code></pre>
+
+<p  class="classjournal">So if I make the <code>div</code> a grid-container, only <code>header</code>, <code>article</code>, <code>aside</code>, and <code>footer</code> become grid-items. The other elements will not be grid-items, because they’re second-level descendants of the grid-container <code>div</code>.</p>
+
+<p  class="classjournal">But if I apply the <code>display: grid;</code> declaration both to <code>div.container</code> and  to <code>header</code>, then <code>header</code> will be both a grid-item (of the <code>div.container</code> grid) and a grid-container. In this case, <code>h1</code> and <code>nav</code> become grid-items of the grid-container <code>header</code>, since <code>h1</code> and <code>nav</code> are first-level descendants of the grid-container <code>header</code>.</p>
+
+<p  class="classjournal">If it’s still confusing, I suggest scheduling office hours appointment. I’m happy to elaborate more if needed.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>In my&nbsp;opinion using the&nbsp;CSS grids seems much easier than using Flexbox. I&nbsp;like it&nbsp;more, it’s a&nbsp;slightly less confusing concept and&nbsp;pretty much a&nbsp;better way&nbsp;to make the&nbsp;layout of&nbsp;a webpage. Do&nbsp;web designers and&nbsp;coders usually prefer grids to&nbsp;Flexbox? Or&nbsp;are there specific instances in&nbsp;which you&nbsp;should use&nbsp;one over the&nbsp;other?</p>
+</blockquote>
+
+<p  class="classjournal">There’s a little bit of both. For some instances, some prefer one versus another.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>The value&nbsp;1/3&nbsp;to the&nbsp;grid-column&nbsp;property will take the&nbsp;first two&nbsp;columns of&nbsp;the grid, from line 1&nbsp;to line&nbsp;3.</p>
+</blockquote>
+
+<p  class="classjournal">You got it.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>When should we&nbsp;be using grids rather than a&nbsp;Flexbox and&nbsp;vice versa? Is&nbsp;it just up&nbsp;to preference? It&nbsp;seems like a&nbsp;grid is&nbsp;a little more work than a&nbsp;Flexbox because you&nbsp;have to&nbsp;manipulate it&nbsp;a bit&nbsp;more to&nbsp;make it&nbsp;responsive, but&nbsp;I’m guessing that it&nbsp;gives you&nbsp;more freedom to&nbsp;structure things exactly the&nbsp;way you&nbsp;want&nbsp;to.</p>
+</blockquote>
+
+<p  class="classjournal">You nailed it. Can I borrow your explanation in the future? CSS Grid is more work, but gives you more control.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>When we&nbsp;give the&nbsp;element the&nbsp;value&nbsp;grid&nbsp;for the&nbsp;display&nbsp;property, first-level descendants become grid&nbsp;items.</p>
+</blockquote>
+
+<p  class="classjournal">Also true.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>Can you&nbsp;clarify why&nbsp;“It depends on&nbsp;the content of&nbsp;the second row, unless we&nbsp;define the&nbsp;height of&nbsp;the grid container element” is&nbsp;the answer to&nbsp;question number 5&nbsp;(With the&nbsp;values 5em&nbsp;auto 3em&nbsp;for the&nbsp;grid-template-rows property, what’s the&nbsp;total height of&nbsp;the grid?) on&nbsp;Monday’s quiz and&nbsp;not the&nbsp;“100% - 8em” answer?</p>
+</blockquote>
+
+<p  class="classjournal">Since we didn’t define the height of the grid, it will be as tall as it needs to be to fit all of its rows. So it will be at least <code>8em</code>, because the first row will be <code>5em</code> and the third row will be <code>3em</code>. But we don’t know the height of the second row, because it’s set to <code>auto</code>, which means that it will be exactly as tall as it needs to be to fit its content.</p>
+
+<p  class="classjournal">In the end, the height of second row will wind up being the total height of the grid minus 8em. This information is not only of very little help, but also not what was asked in the question.</p>
+
+<p  class="classjournal">If it’s still confusing, I suggest scheduling office hours appointment. I’m happy to elaborate more if needed.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>And to&nbsp;be honest, the&nbsp;previous topics of&nbsp;flexboxes and&nbsp;grids both have pretty complicated syntax around them, so&nbsp;I’m getting a&nbsp;little nervous about remembering&nbsp;them.</p>
+</blockquote>
+
+<p  class="classjournal">You don’t have to remember anything. Write them down and reference them any time you need them.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I wonder, when you&nbsp;have a&nbsp;bunch of&nbsp;content and&nbsp;you want to&nbsp;plan out&nbsp;how the&nbsp;page should be&nbsp;laid out, what do&nbsp;you recommend? It&nbsp;seems like trial and&nbsp;error would be&nbsp;very inefficient, so&nbsp;do you&nbsp;map it&nbsp;out on&nbsp;paper first? Or&nbsp;what else….</p>
+</blockquote>
+
+<p  class="classjournal">Yes you do.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I am&nbsp;curious if&nbsp;you would consider opening the&nbsp;week’s second activity on&nbsp;thursdays instead of&nbsp;fridays… I&nbsp;like to&nbsp;get all&nbsp;of my&nbsp;assignments done by&nbsp;mid-friday and&nbsp;take the&nbsp;weekends off, but&nbsp;a monday due-date is&nbsp;not ideal for&nbsp;this. If&nbsp;not, I&nbsp;understand, just a&nbsp;thought :).</p>
+</blockquote>
+
+<p  class="classjournal">I’ll try. We’re done with regular HTML/CSS assignments. We’ll begin the final project now, so I may be able to open the assignments earlier.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>Will we&nbsp;be creating a&nbsp;final project at&nbsp;the end&nbsp;of this&nbsp;class?</p>
+</blockquote>
+
+<p  class="classjournal">Yes. Please check the <a href="https://grc-ribeiro.github.io/grc339-2206/schedule.html">schedule</a></p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I really appreciate the&nbsp;flow of&nbsp;this class and&nbsp;the way&nbsp;you teach it. Manageable assignments and&nbsp;due dates, the&nbsp;videos are&nbsp;short yet&nbsp;very informative and&nbsp;explains the&nbsp;concepts in&nbsp;a way&nbsp;that I&nbsp;understand well- thank you! As&nbsp;much as&nbsp;I&nbsp;miss in-person classes and&nbsp;face. to&nbsp;face connection, you&nbsp;are doing a&nbsp;great job&nbsp;with the&nbsp;online format and&nbsp;supporting/connecting with students over canvas- I&nbsp;appreciate&nbsp;you.</p>
+</blockquote>
+
+<p  class="classjournal">Thank you so much for the kind and reassuring words. I too appreciate the students’ attitude, especially in the last two quarters.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I appreciate how&nbsp;smoothly this class is&nbsp;going.</p>
+</blockquote>
+
+<p  class="classjournal">You all have to stop saying this. I have a reputation of teaching very hard classes, and you are ruining it!</p>
+
+<hr />
+
+<h3>New links on&nbsp;the class website.</h3>
+
+<footer>
+<h6 class="lastupdate">Last update on 5 July 2020, at 2:43 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+</footer>
+
+</body>
+</html>

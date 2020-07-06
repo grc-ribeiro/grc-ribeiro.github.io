@@ -10,297 +10,227 @@
 	<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
 	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
 
-	 <title>Bruno Ribeiro | Cal Poly | Spring 2020 | GRC 338: Web Development and Content Management</title>
+	 <title>Bruno Ribeiro | Cal Poly | Summer 2020 | GRC 339: Web Design and Production </title>
 </head>
 
 
 <body>
 
-<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="resources.html">Resources</a></h5>
+<h5 class="classheader"><a href="index.html">GRC 339</a>: <a href="resources.html">Resources</a></h5>
 
-<h1>Class journal, week&nbsp;2  </h1>
+<h1>Class journals week 2  </h1>
 
 <hr />
 
 <blockquote class="classjournal">
-  <p>I&nbsp;also am&nbsp;trying my&nbsp;hardest to&nbsp;create a&nbsp;routine to&nbsp;follow every day&nbsp;so that I&nbsp;stay up&nbsp;to date with my&nbsp;work even though all&nbsp;of my&nbsp;classes are&nbsp;asynchronous. Creating a&nbsp;schedule makes it&nbsp;easier to&nbsp;get work done even on&nbsp;the days I&nbsp;am feeling especially lazy or&nbsp;tired.</p>
+  <p>I really appreciate the&nbsp;flow of&nbsp;this class and&nbsp;the way&nbsp;you teach it. Manageable assignments and&nbsp;due dates, the&nbsp;videos are&nbsp;short yet&nbsp;very informative and&nbsp;explains the&nbsp;concepts in&nbsp;a way&nbsp;that I&nbsp;understand well- thank you! As&nbsp;much as&nbsp;I&nbsp;miss in-person classes and&nbsp;face. to&nbsp;face connection, you&nbsp;are doing a&nbsp;great job&nbsp;with the&nbsp;online format and&nbsp;supporting/connecting with students over canvas- I&nbsp;appreciate&nbsp;you.</p>
 </blockquote>
 
-<p  class="classjournal">Absolutely. I&nbsp;have to&nbsp;have my&nbsp;routine as&nbsp;well. If&nbsp;you only sit&nbsp;to work when you&nbsp;feel like it, you&rsquo;ll never get&nbsp;to&nbsp;it.</p>
+<p  class="classjournal">Thank you&nbsp;so much for&nbsp;the kind and&nbsp;reassuring words. I&nbsp;too appreciate the&nbsp;students’ attitude, especially in&nbsp;the last two&nbsp;quarters!</p>
 
 <hr />
 
-<blockquote>
-  <p>I&nbsp;dislike group discussion examples I&nbsp;believe. It&nbsp;is somewhat difficult to&nbsp;get everyone to&nbsp;participate simply online, although it&nbsp;is a&nbsp;nice thought. It&nbsp;seems like in&nbsp;both weeks there are&nbsp;pretty much only 1&nbsp;or 2&nbsp;people that take charge and&nbsp;do&nbsp;everything.</p>
+<blockquote class="classjournal">
+  <p>Are there any&nbsp;finals or&nbsp;midterms?</p>
 </blockquote>
 
-<p>I don&rsquo;t think it&rsquo;s perfect. But&nbsp;I couldn&rsquo;t come up&nbsp;with any&nbsp;better solution in&nbsp;the short time we&nbsp;had to&nbsp;move from in-person to&nbsp;emergencial online environment. I&nbsp;have seen, however, some rich discussion with everybody in&nbsp;the group&nbsp;participating.</p>
+<p  class="classjournal">No. Please check the <a href="https://grc-ribeiro.github.io/grc339-2206/schedule.html">schedule</a>.</p>
 
 <hr />
 
-<blockquote>
-  <p>I&rsquo;m getting more used to&nbsp;the online format, it&rsquo;s still not&nbsp;my preferred format but&nbsp;I&rsquo;ll get&nbsp;the hang of&nbsp;it more every&nbsp;week.</p>
+<blockquote class="classjournal">
+  <p>Could you&nbsp;give an&nbsp;example of&nbsp;what would be&nbsp;a second&#8209;level&nbsp;descendant?</p>
 </blockquote>
 
-<p>We&rsquo;re all&nbsp;getting used to&nbsp;it.</p>
+<p  class="classjournal">Of course.</p>
+
+<p  class="classjournal">In the HTML below, <code>header</code>, <code>article</code>, <code>aside</code>, and <code>footer</code> are first-level descendants (or first&#8209;level children) of the <code>div</code>; while <code>h1</code>, <code>nav</code>, <code>figure</code>, <code>h2</code>, all the <code>p</code>, and all the <code>section</code> are second-level descendants (or second&#8209;level children) of the <code>div</code>.</p>
+
+<pre><code>    &lt;div class="container"&gt;  
+            &lt;header&gt;  
+                    &lt;h1&gt;…&lt;/h1&gt;  
+                    &lt;nav&gt;…/&lt;nav&gt;  
+            &lt;/header&gt;  
+            &lt;article&gt;  
+                    &lt;figure&gt;…&lt;/figure&gt;  
+                    &lt;h2&gt;…&lt;/h2&gt;  
+                    &lt;p&gt;…&lt;/p&gt;  
+                    &lt;p&gt;…&lt;/p&gt;  
+            &lt;/article&gt;  
+            &lt;aside&gt;  
+                    &lt;section&gt;…&lt;/section&gt;  
+                    &lt;section&gt;…&lt;/section&gt;  
+                    &lt;section&gt;…&lt;/section&gt;  
+            &lt;/aside&gt;  
+            &lt;footer&gt;  
+                    &lt;p&gt;…&lt;/p&gt;  
+            &lt;/footer&gt;  
+    &lt;/div&gt;
+</code></pre>
+
+<p  class="classjournal">So if I make the <code>div</code> a grid&#8209;container, only <code>header</code>, <code>article</code>, <code>aside</code>, and <code>footer</code> become grid&#8209;items. The other elements will not be grid&#8209;items, because they’re second&#8209;level descendants of the grid&#8209;container&nbsp;<code>div</code>.</p>
+
+<p  class="classjournal">But if I apply the <code>display: grid;</code> declaration both to <code>div.container</code> and  to <code>header</code>, then <code>header</code> will be both a grid&#8209;item (of the <code>div.container</code> grid) and a grid&#8209;container. In this case, <code>h1</code> and <code>nav</code> become grid&#8209;items of the grid&#8209;container <code>header</code>, since <code>h1</code> and <code>nav</code> are first&#8209;level descendants of the grid&#8209;container <code>header</code>.</p>
+
+<p  class="classjournal">If it’s still confusing, I suggest scheduling office hours appointment. I’m&nbsp;happy to elaborate more if needed.</p>
 
 <hr />
 
-<blockquote>
-  <p>Now&nbsp;that it&nbsp;is the&nbsp;second week of&nbsp;classes I&nbsp;have fallen into a&nbsp;routine to&nbsp;help me&nbsp;submit assignments on&nbsp;time which has&nbsp;made my&nbsp;online classes easier to&nbsp;handle.</p>
+<blockquote class="classjournal">
+  <p>The value&nbsp;<code>1/3</code>&nbsp;to the&nbsp;<code>grid-column</code>&nbsp;property will take the&nbsp;first two&nbsp;columns of&nbsp;the grid, from line 1&nbsp;to line&nbsp;3.</p>
 </blockquote>
 
-<p>Very important. It&rsquo;d be&nbsp;easier if&nbsp;all classes had&nbsp;consistent deadlines,&nbsp;though.</p>
+<p  class="classjournal">You got it.</p>
 
 <hr />
 
-<blockquote>
-  <p>Thank you&nbsp;for having consistent dates for&nbsp;every assignment, I&nbsp;am in&nbsp;6 classes this quarter and&nbsp;this class is&nbsp;the most organized. It&nbsp;helps a&nbsp;lot and&nbsp;with planning and&nbsp;time&nbsp;management.</p>
+<blockquote class="classjournal">
+  <p>When we&nbsp;give the&nbsp;element the&nbsp;value&nbsp;<code>grid</code>&nbsp;for the&nbsp;<code>display</code>&nbsp;property, first-level descendants become grid&nbsp;items.</p>
 </blockquote>
 
-<p>I&rsquo;m usually less consistent in&nbsp;my structure, but&nbsp;I figured the&nbsp;class needed to&nbsp;be very&nbsp;structured. </p>
+<p  class="classjournal">Also true.</p>
 
 <hr />
 
-<blockquote>
-  <p>Zoom meetings for&nbsp;the design principles group assignment are&nbsp;much more efficient than the&nbsp;discussion&nbsp;board.</p>
+<blockquote class="classjournal">
+  <p>For the&nbsp;quiz question “When we&nbsp;use a&nbsp;media query defined by&nbsp;a minimum width, what goes in&nbsp;it?” why&nbsp;is the&nbsp;answer “Anything that needs to&nbsp;change in&nbsp;wider screens,” and&nbsp;not the&nbsp;narrow screens&nbsp;answer.</p>
 </blockquote>
 
-<p>It&rsquo;s fine to&nbsp;use it, but&nbsp;keep in&nbsp;mind that this is&nbsp;an asynchronous class, and&nbsp;those who&nbsp;can&rsquo;t make it&nbsp;to the&nbsp;Zoom meeting must have an&nbsp;opportunity to&nbsp;be&nbsp;heard.</p>
+<p  class="classjournal">“Minimum” is the same as “at least”. If the media query is defined by a <em>minimum width</em> of 40em, for example, it means it will only work when the window is <em>at least</em> 40em wide.</p>
 
 <hr />
 
-<blockquote>
-  <p>Another thing I&nbsp;learned was&nbsp;that it&nbsp;seems to&nbsp;take a&nbsp;little bit&nbsp;for my&nbsp;github to&nbsp;work. I&nbsp;spent upwards of&nbsp;30 minutes staring at&nbsp;and trying to&nbsp;fix my&nbsp;code because the&nbsp;when I&nbsp;copied and&nbsp;pasted my&nbsp;URL, the&nbsp;screen would just come up&nbsp;blank. I&nbsp;decided to&nbsp;take a&nbsp;break and&nbsp;come back to&nbsp;it, and&nbsp;when I&nbsp;tried again an&nbsp;hour later, everything worked perfectly. So&nbsp;I&nbsp;learned I&nbsp;might have to&nbsp;be patient&nbsp;sometimes.</p>
+<blockquote class="classjournal">
+  <p>In my&nbsp;opinion using the&nbsp;CSS grids seems much easier than using Flexbox. I&nbsp;like it&nbsp;more, it’s a&nbsp;slightly less confusing concept and&nbsp;pretty much a&nbsp;better way&nbsp;to make the&nbsp;layout of&nbsp;a webpage. Do&nbsp;web designers and&nbsp;coders usually prefer grids to&nbsp;Flexbox? Or&nbsp;are there specific instances in&nbsp;which you&nbsp;should use&nbsp;one over the&nbsp;other?</p>
 </blockquote>
 
-<p>It doesn&rsquo;t always behave like this, but&nbsp;it&nbsp;may.</p>
+<p  class="classjournal">There’s a little bit of both. For some instances, some prefer one versus another.</p>
 
 <hr />
 
-<blockquote>
-  <p>As&nbsp;the&nbsp;class gets more complex I&nbsp;am fearful of&nbsp;just memorizing formatting of&nbsp;code tags and&nbsp;their placement rather than really understanding the&nbsp;purpose of&nbsp;every&nbsp;tag.</p>
+<blockquote class="classjournal">
+  <p>When should we&nbsp;be using grids rather than a&nbsp;Flexbox and&nbsp;vice versa? Is&nbsp;it just up&nbsp;to preference? It&nbsp;seems like a&nbsp;grid is&nbsp;a little more work than a&nbsp;Flexbox because you&nbsp;have to&nbsp;manipulate it&nbsp;a bit&nbsp;more to&nbsp;make it&nbsp;responsive, but&nbsp;I’m guessing that it&nbsp;gives you&nbsp;more freedom to&nbsp;structure things exactly the&nbsp;way you&nbsp;want&nbsp;to.</p>
 </blockquote>
 
-<p>Please don&rsquo;t let&nbsp;it happen. Also, you&nbsp;don&rsquo;t need to&nbsp;memorize anything, you&nbsp;can have all&nbsp;the references you&nbsp;need at&nbsp;hand.</p>
+<p  class="classjournal">CSS Grid is more code to write, but it gives you more control.</p>
 
 <hr />
 
-<blockquote>
-  <p>Checking previews of&nbsp;my HTML often helped me&nbsp;stay on&nbsp;track and&nbsp;identify which errors I&nbsp;need to&nbsp;fix.</p>
+<blockquote class="classjournal">
+  <p>I think using grid with responsive strategies will be&nbsp;much better than flexbox in&nbsp;terms of&nbsp;making accurate and&nbsp;precise&nbsp;changes. Making grids within grids seems like a great way to get finer control over the placement of elements.</p>
 </blockquote>
 
-<p>That&rsquo;s true. Even though the&nbsp;assignment is&nbsp;evaluated on&nbsp;the HTML only, the&nbsp;preview is&nbsp;helpful.</p>
+<p  class="classjournal">Exactly, it’s easier to have control with CSS Grids. While with Flexbox, you let the content control the layout.</p>
 
 <hr />
 
-<blockquote>
-  <p>For&nbsp;the&nbsp;Restaurant menu assignment, it&nbsp;felt very rewarding when I&nbsp;saw that it&nbsp;worked. I&nbsp;used Tryit Editor to&nbsp;test out&nbsp;my code and&nbsp;find any&nbsp;errors throughout, which was&nbsp;a really helpful resource throughout the&nbsp;assignment. W3Schools was&nbsp;a helpful resource that answered a&nbsp;lot of&nbsp;the questions and&nbsp;problems I&nbsp;ran into while completing this&nbsp;assignment.</p>
+<blockquote class="classjournal">
+  <p>And to&nbsp;be honest, the&nbsp;previous topics of&nbsp;Flexbox and&nbsp;grids both have pretty complicated syntax around them, so&nbsp;I’m getting a&nbsp;little nervous about remembering&nbsp;them.</p>
 </blockquote>
 
-<p>W3Schools is&nbsp;a great resource, and&nbsp;I end&nbsp;up using it&nbsp;every time I&nbsp;sit down to&nbsp;write HTML or&nbsp;CSS.</p>
+<p  class="classjournal">You don’t have to remember anything. Write them down and reference them any time you need them.</p>
 
 <hr />
 
-<blockquote>
-  <p>I&nbsp;also learned to&nbsp;be more careful about making sure that everything is&nbsp;spelled correctly (especially within a&nbsp;URL) and&nbsp;making sure to&nbsp;copy and&nbsp;paste instead of&nbsp;type things out&nbsp;to avoid&nbsp;this.</p>
+<blockquote class="classjournal">
+  <p>I am&nbsp;curious and&nbsp;excited to&nbsp;see how&nbsp;photo/image formatting works within CSS&nbsp;flexbox or&nbsp;grid.</p>
 </blockquote>
 
-<p>Yes! Please, please, please, always copy and&nbsp;paste.</p>
+<p  class="classjournal">As I showed in the videos, there’s no mystery. I always have the <code>img{width:100%;}</code> declaration in my CSS. Then, I position whatever holds the image in my layout, using Flexbox, grids, or even floats.</p>
 
 <hr />
 
-<blockquote>
-  <p>I&rsquo;m confused about the&nbsp;name list because my&nbsp;website seems to&nbsp;be working when I&nbsp;type in&nbsp;the Url&nbsp;but I&nbsp;get the&nbsp;404 error code when I&nbsp;click on&nbsp;my name or&nbsp;anyone else&rsquo;s.</p>
+<blockquote class="classjournal">
+  <p>Can you&nbsp;clarify why&nbsp;“It depends on&nbsp;the content of&nbsp;the second row, unless we&nbsp;define the&nbsp;height of&nbsp;the grid container element” is&nbsp;the answer to&nbsp;question number 5&nbsp;(With the&nbsp;values 5em&nbsp;auto 3em&nbsp;for the&nbsp;grid-template-rows property, what’s the&nbsp;total height of&nbsp;the grid?) on&nbsp;Monday’s quiz and&nbsp;not the&nbsp;“100% - 8em” answer?</p>
 </blockquote>
 
-<p>If it&nbsp;doesn&rsquo;t work for&nbsp;you, you&nbsp;should check with me. If&nbsp;you use&nbsp;the same repository name from last week and&nbsp;the URL&nbsp;I assigned, it&nbsp;should&nbsp;work. </p>
+<p  class="classjournal">Since we didn’t define the height of the grid, it will be as tall as it needs to be to fit all of its rows. So it will be at least <code>8em</code>, because the first row will be <code>5em</code> and the third row will be <code>3em</code>. But we don’t know the height of the second row in the example, because it’s set to <code>auto</code>, which means that it will be exactly as tall as it needs to be to fit its content.</p>
+
+<p  class="classjournal">In the end, the height of second row will wind up being the total height of the grid minus 8em. This information is not only of very little help, but also not what was asked in the question.</p>
+
+<p  class="classjournal">If it’s still confusing, I suggest scheduling office hours appointment. I’m happy to elaborate more if needed.</p>
 
 <hr />
 
-<blockquote>
-  <p>I&rsquo;m still confused about the&nbsp;HTML Formatter, is&nbsp;it necessary if&nbsp;it works without&nbsp;it?</p>
+<blockquote class="classjournal">
+  <p>Putting some numbers in&nbsp;for the&nbsp;grid template to&nbsp;get you&nbsp;started and&nbsp;them adjusting them later to&nbsp;be what you&nbsp;want is&nbsp;a good&nbsp;idea.</p>
 </blockquote>
 
-<p>Yes. It&rsquo;ll work without it, but&nbsp;HTML Formatter and&nbsp;the likes will help your code be&nbsp;more organized for&nbsp;human beings to&nbsp;read&nbsp;it.</p>
+<p  class="classjournal">Yes, it is.</p>
 
 <hr />
 
-<blockquote>
-  <p>In&nbsp;HTML, does indentation matter? Like how&nbsp;much you&nbsp;indent <code>&lt;ul&gt;</code> for&nbsp;example will it&nbsp;make a&nbsp;difference?</p>
+<blockquote class="classjournal">
+  <p>Sometimes you&nbsp;should take a&nbsp;break from the&nbsp;assignment and&nbsp;come back to&nbsp;it if&nbsp;something isn’t&nbsp;clicking! Don't give up too quickly if you can't understand a topic as easily as you've learned some others. Rewatch the videos more than once or twice and try to follow along on your own code to truly make the information stick in your mind.</p>
 </blockquote>
 
-<p>It does not&nbsp;make any&nbsp;difference for&nbsp;the browser or&nbsp;on how&nbsp;it will render your code. It&nbsp;does help human beings to&nbsp;read your code,&nbsp;though.</p>
+<p  class="classjournal">Very good advice here.</p>
 
 <hr />
 
-<blockquote>
-  <p>Learned how&nbsp;to properly make a&nbsp;list in&nbsp;HTML and&nbsp;style in&nbsp;CSS.</p>
+<blockquote class="classjournal">
+  <p>Is it&nbsp;recommended to&nbsp;design with mobile in&nbsp;mind first and&nbsp;then use&nbsp;media query to&nbsp;define other screen&nbsp;sizes?</p>
 </blockquote>
 
-<p>You&rsquo;re not&nbsp;supposed to&nbsp;use any&nbsp;CSS at&nbsp;this&nbsp;point.</p>
+<p  class="classjournal">Yes, please.</p>
 
 <hr />
 
-<blockquote>
-  <p>There are&nbsp;some HTML tag&nbsp;concepts that are&nbsp;somewhat confusing for&nbsp;me and&nbsp;personally would like to&nbsp;have more specific directions/notes.</p>
+<blockquote class="classjournal">
+  <p>Just curious to&nbsp;know if&nbsp;there is&nbsp;another way&nbsp;to view what the&nbsp;grids look while editing a&nbsp;website other than using&nbsp;Firefox.</p>
 </blockquote>
 
-<p>Could <em>you</em> be&nbsp;more&nbsp;specific?</p>
+<p  class="classjournal">I’m not sure, but I don’t think so. That’s why I’ve been using Firefox in my videos.</p>
 
 <hr />
 
-<blockquote>
-  <p>The&nbsp;communication using canvas was&nbsp;easier this week, being that we&nbsp;had all&nbsp;done it&nbsp;the week before. I&nbsp;think going forward it&nbsp;will be&nbsp;easier for&nbsp;all of&nbsp;us.</p>
+<blockquote class="classjournal">
+  <p>I wonder, when you&nbsp;have a&nbsp;bunch of&nbsp;content and&nbsp;you want to&nbsp;plan out&nbsp;how the&nbsp;page should be&nbsp;laid out, what do&nbsp;you recommend? It&nbsp;seems like trial and&nbsp;error would be&nbsp;very inefficient, so&nbsp;do you&nbsp;map it&nbsp;out on&nbsp;paper first? Or&nbsp;what else….</p>
 </blockquote>
 
-<p>I hope so&nbsp;too. We&rsquo;re getting more comfortable with this transition from in-person to&nbsp;online.</p>
+<p  class="classjournal">Yes you do map it&nbsp;out on&nbsp;paper first.</p>
 
 <hr />
 
-<blockquote>
-  <p>To&nbsp;post on&nbsp;discussions earlier to&nbsp;minimize stress for&nbsp;everyone.</p>
+<blockquote class="classjournal">
+  <p>I am&nbsp;curious if&nbsp;you would consider opening the&nbsp;week’s second activity on&nbsp;thursdays instead of&nbsp;fridays… I&nbsp;like to&nbsp;get all&nbsp;of my&nbsp;assignments done by&nbsp;mid-friday and&nbsp;take the&nbsp;weekends off, but&nbsp;a monday due-date is&nbsp;not ideal for&nbsp;this. If&nbsp;not, I&nbsp;understand, just a&nbsp;thought. :&nbsp;)</p>
 </blockquote>
 
-<p>Please&nbsp;do.</p>
+<p  class="classjournal">I’ll think about it. We’re done with regular HTML/CSS assignments and we’ll begin working on the final project now, so I may be able to open the assignments earlier. In the words of <a href="https://y.yarn.co/7776ce10-7398-41d7-9003-649ce72a82aa.mp4?1594043754525">Bart Simpson</a>, I’ll try to try.</p>
 
 <hr />
 
-<blockquote>
-  <p>I&nbsp;feel like the&nbsp;menu assignment was&nbsp;straightforward, yet&nbsp;very time consuming. I&nbsp;am sure part of&nbsp;it is&nbsp;because I&nbsp;am still inexperienced with coding, but&nbsp;does it&nbsp;get significantly quicker as&nbsp;time&nbsp;passes?</p>
+<blockquote class="classjournal">
+  <p>Will we&nbsp;be creating a&nbsp;final project at&nbsp;the end&nbsp;of this&nbsp;class?</p>
 </blockquote>
 
-<p>It does. Especially if&nbsp;you use&nbsp;Find/Replace.</p>
+<p  class="classjournal">Yes. We’ll begin it this week. Please check the <a href="https://grc-ribeiro.github.io/grc339-2206/schedule.html">schedule</a>.</p>
 
 <hr />
 
-<blockquote>
-  <p>I&nbsp;thought classes would be&nbsp;easier online&mdash;I was&nbsp;wrong!! It&rsquo;s hard for&nbsp;me to&nbsp;figure it&nbsp;all out&nbsp;with being able to&nbsp;raise my&nbsp;hand and&nbsp;have my&nbsp;professor help me. Although, it&rsquo;s teaching me&nbsp;to figure things out&nbsp;on my&nbsp;own.</p>
+<blockquote class="classjournal">
+  <p>Is there a&nbsp;specific service/website you’d recommend for&nbsp;putting together a&nbsp;portfolio? Both as&nbsp;something to&nbsp;showcase when job/internship searching but&nbsp;also for&nbsp;potentially doing more freelance/commission work during the&nbsp;summer.</p>
 </blockquote>
 
-<p>Well, if&nbsp;we were in&nbsp;the lab, I&rsquo;d have you&nbsp;figure it&nbsp;out on&nbsp;your own&nbsp;too. I&rsquo;m serious. It&nbsp;drives students mad&nbsp;in the&nbsp;beginning because I&nbsp;don&rsquo;t answer their questions directly. Eventually everybody learns to&nbsp;figure things out, which is&nbsp;a very important skill. If&nbsp;it comes too&nbsp;complicated, though, send me&nbsp;an email and/or set&nbsp;an appointment for&nbsp;my office&nbsp;hours.</p>
+<p  class="classjournal">Squarespace and Wix are very good options, but having a portfolio on Behance is not a bad idea, either. You have less control, but it will be quicker.</p>
 
 <hr />
 
-<blockquote>
-  <p>One&nbsp;important thing I&nbsp;also learned was&nbsp;to keep my&nbsp;code clean with tabs and&nbsp;spaces, cluttered code really affects debugging and&nbsp;readability.</p>
+<blockquote class="classjournal">
+  <p>I appreciate how&nbsp;smoothly this class is&nbsp;going.</p>
 </blockquote>
 
-<p>And a&nbsp;clean code helps those who&nbsp;will grade&nbsp;it!</p>
+<p  class="classjournal">You all have to stop saying this. I have a reputation of teaching very hard classes, and you are ruining it!</p>
 
 <hr />
 
-<blockquote>
-  <p>The&nbsp;page explaining how&nbsp;to code different lists was&nbsp;really&nbsp;helpful.</p>
-</blockquote>
+<h3>New links on&nbsp;the class website.</h3>
 
-<p>I encourage everybody to&nbsp;take a&nbsp;careful&nbsp;look.</p>
+<p  class="classjournal">Thanks to Emily&nbsp;Alexander, Jasmine&nbsp;Chang, and&nbsp;Helen&nbsp;Wong.</p>
 
-<hr />
-
-<blockquote>
-  <p>&ldquo;Similarity of&nbsp;color results in&nbsp;strongest grouping&rdquo; SWEEEET! Could be&nbsp;self-fulfilling prophecy but&nbsp;it&rsquo;s confirmation as&nbsp;to why&nbsp;color coding works really well for&nbsp;me.</p>
-</blockquote>
-
-<p>It really&nbsp;is.</p>
-
-<hr />
-
-<blockquote>
-  <p>I&nbsp;am&nbsp;also interested to&nbsp;learn about Weakest Link, I&nbsp;am slightly confused by&nbsp;the topic. (Funny story: two&nbsp;days ago&nbsp;my grandfather found a&nbsp;bike in&nbsp;the dumpster and&nbsp;fixed it&nbsp;up for&nbsp;me so&nbsp;I&nbsp;rode it&nbsp;for five minutes and&nbsp;the chain completely broke off. As&nbsp;I&nbsp;was laying on&nbsp;the ground I&nbsp;noticed the&nbsp;cause of&nbsp;this was&nbsp;due to&nbsp;one weak link that flew off. Once we&nbsp;fixed it, the&nbsp;bike was&nbsp;good as&nbsp;new because you&rsquo;re only as&nbsp;strong as&nbsp;your weakest&nbsp;link.).</p>
-</blockquote>
-
-<p>We won&rsquo;t cover the&nbsp;weakest link principle in&nbsp;this class, but&nbsp;it shows how&nbsp;important it&nbsp;is to&nbsp;pay attention to&nbsp;every aspect of&nbsp;the&nbsp;design.</p>
-
-<hr />
-
-<blockquote>
-  <p>I&nbsp;am&nbsp;creating a&nbsp;powerpoint in&nbsp;my other GRC&nbsp;class and&nbsp;I&nbsp;am excited to&nbsp;apply these elements I&nbsp;have learned so&nbsp;far to&nbsp;make it&nbsp;the best in&nbsp;the&nbsp;class.</p>
-</blockquote>
-
-<p>Yes, please to&nbsp;apply to&nbsp;everything that you&nbsp;design.</p>
-
-<hr />
-
-<blockquote>
-  <p>I&nbsp;enjoyed looking at&nbsp;the design principles examples and&nbsp;seeing how&nbsp;everyone interprets the&nbsp;design principles they were assigned to. CocaCola was&nbsp;mentioned twice for&nbsp;consistency which I&nbsp;thought showed how&nbsp;well CocaCola has&nbsp;developed their&nbsp;brand.</p>
-</blockquote>
-
-<p>And another group debated using Coca-Cola too, but&nbsp;went with another&nbsp;example.</p>
-
-<hr />
-
-<blockquote>
-  <p>I&rsquo;m having a&nbsp;little difficulty thinking of&nbsp;and finding good examples of&nbsp;the design elements when at&nbsp;home. It&nbsp;would be&nbsp;helpful if&nbsp;people shared their process of&nbsp;finding these examples or&nbsp;if there was&nbsp;a resource that we&nbsp;could use&nbsp;to do&nbsp;so.</p>
-</blockquote>
-
-<p>Anybody has&nbsp;tips to&nbsp;share?</p>
-
-<hr />
-
-<blockquote>
-  <p>Since the&nbsp;textbook page for&nbsp;proximity was&nbsp;really brief, I&nbsp;used <a href="https://254-online.com/proximity-principle-design/">this website</a> to&nbsp;help me&nbsp;understand the&nbsp;principle better. It&nbsp;helped me&nbsp;to understand that proximity can&nbsp;trigger certain feelings in&nbsp;people that could leave them feeling connected or&nbsp;a sense of&nbsp;unease when something has&nbsp;awkward&nbsp;proximity.</p>
-</blockquote>
-
-<p>It&rsquo;s always a&nbsp;good idea to&nbsp;investigate your topic further. Thanks for&nbsp;sharing the&nbsp;article!</p>
-
-<hr />
-
-<blockquote>
-  <p>This week we&nbsp;went over the&nbsp;principles of&nbsp;consistency, similarity, alignment and&nbsp;proximity. They definitely reminded me&nbsp;of the&nbsp;acronym &ldquo;CRAP&rdquo; which is&nbsp;almost identical, with the&nbsp;replacement of&nbsp;similarity with&nbsp;repetition.</p>
-</blockquote>
-
-<p>Yes, you&nbsp;may all&nbsp;remember these principles from GRC&nbsp;318.</p>
-
-<hr />
-
-<blockquote>
-  <p>Apparently I&nbsp;still don&rsquo;t know how&nbsp;to take a&nbsp;good screenshot. I&nbsp;followed the&nbsp;instructions given on&nbsp;the class website, but&nbsp;our group still got&nbsp;marked down… any&nbsp;advice on&nbsp;how I&nbsp;could take an&nbsp;improved one&nbsp;next&nbsp;time?</p>
-</blockquote>
-
-<p>Please follow the&nbsp;instructions carefully. It&rsquo;s not&nbsp;that complicated. <strong>Command+Shift+4</strong>, then hit&nbsp;the <strong>Space bar</strong>, the&nbsp;cursor will change into a&nbsp;camera. Then click on&nbsp;the browser&nbsp;window.</p>
-
-<hr />
-
-<blockquote>
-  <p>I&nbsp;would like to&nbsp;learn more about element placement in&nbsp;CSS, but&nbsp;I&rsquo;m assuming that will come later in&nbsp;the course. I&rsquo;m unsure of&nbsp;how to&nbsp;correctly use&nbsp;padding and&nbsp;margins.</p>
-</blockquote>
-
-<p>We&rsquo;ll get&nbsp;to&nbsp;it.</p>
-
-<hr />
-
-<blockquote>
-  <p>Will we&nbsp;be coding a&nbsp;website that we&nbsp;could use&nbsp;in our&nbsp;portfolios?</p>
-</blockquote>
-
-<p>Yes, you&nbsp;will.</p>
-
-<hr />
-
-<blockquote>
-  <p>Honestly, only when I&nbsp;started to&nbsp;type out&nbsp;this journal did&nbsp;I&nbsp;realize that all&nbsp;of these terms are&nbsp;for usability so&nbsp;thanks to&nbsp;the journal for&nbsp;that.</p>
-</blockquote>
-
-<p>It is&nbsp;good to&nbsp;have this point of&nbsp;reflection,&nbsp;right?</p>
-
-<hr />
-
-<blockquote>
-  <p>Helvetica and&nbsp;Times New&nbsp;Roman walk into a&nbsp;bar. &ldquo;Get out&nbsp;of here!&rdquo; shouts the&nbsp;bartender. &ldquo;We don&rsquo;t serve your&nbsp;type.&rdquo;.</p>
-
-<p>(Rachel&nbsp;Gorban)</p>
-</blockquote>
-
-<hr />
-
-<blockquote>
-  <p>Here is&nbsp;by bad&nbsp;joke of&nbsp;the week: What do&nbsp;you give a&nbsp;Lemon when it&rsquo;s sick? Lemon&nbsp;Aid.</p>
-
-<p>(Rita&nbsp;Yu)</p>
-</blockquote>
-
-<h6 class="lastupdate">Last update on 20 April 2020, at 7:18 AM.</h6>
+<footer>
+<h6 class="lastupdate">Last update on 6 July 2020, at 7:10 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+</footer>
 
 </body>
 </html>
