@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+	 <title>Bruno Ribeiro | Cal Poly | Summer 2020 | GRC 339: Web Design and Production </title>
+</head>
+
+
+<body>
+
+<p  class="classjournal">Let’s start with the tilde (<code>~</code>), which has the fancy name of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator">general sibling combinator</a>. Its general syntax is: <code>former_element ~ target_element { style properties }</code>. What it does is, it applies the properties to the <em>target_element</em>, but “only if it follows the first element (though not necessarily immediately), and both are children of the same parent element”.</p>
+
+<p  class="classjournal">In our case, the <em>former_element</em> is <code>input:nth-of-type(n):checked</code> and the <em>target_element</em> is <code>main figure:nth-of-type(n)</code>. So the properties will be applied to <code>main figure:nth-of-type(n)</code>, but only if it follows <code>input:nth-of-type(n):checked</code>. Therefore, it’ll be applied to a <code>figure</code> element if it follows an <code>input</code> element. But, in our case, it will not be applied to any <code>figure</code> element following any <code>input</code> element; specific <code>figure</code> elements following any <code>input</code> elements.</p>
+
+<p  class="classjournal">Both the <em>former_element</em> and the <em>target_element</em> of our example have the <code>:nth-of-type()</code>  pseudo-class. When we write <code>input:nth-of-type(1)</code>, it means the first of the <code>input</code> element in a specific parent element; while <code>main figure:nth-of-type(1)</code> means the first <code>figure</code> that is inside a <code>main</code> element in a specific element. Well, in our example, all of our <code>figure</code> elements are inside a <code>main</code> element and they all follow all the <code>input</code> elements. Let’s say we wrote the we wrote the following selector:</p>
+
+<pre class="wrongcode"><code>input:nth-of-type(1) ~ `main figure:nth-of-type(1),  
+input:nth-of-type(2) ~ `main figure:nth-of-type(2),  
+input:nth-of-type(3) ~ `main figure:nth-of-type(3),  
+input:nth-of-type(4) ~ `main figure:nth-of-type(4){  
+}
+</code></pre>
+<p  class="classjournal">The properties would be applied to the first, second, third, and fourth <code>main figure</code> elements, because they all follow all the <code>input</code>. It would have been a very complicated way to write <code>main figure{ }</code>, because the properties would be applied to all the <code>main figure</code> elements that we have in our specific page.</p>
+
+<p  class="classjournal">When we attach the <code>:checked</code> pseudo-class to the <code>input</code> element, we make sure that the <code>main figure:nth-of-type(1)</code> will be targeted only when <code>input:nth-of-type(1)</code> is checked. In other words, the properties will be applied to the first <code>figure</code> element only if it follows the first <code>input</code> element and the first <code>input</code> element is selected (checked). We have already established that the first <code>figure</code> follows the first <code>input</code> element, because, in our HTML, all the <code>input</code> elements come before the <code>figure</code> elements. Our <code>input:nth-of-type(n):checked  ~ main figure:nth-of-type(n)</code> works as a conditional statement then: we only apply the properties to the nth <code>figure</code> if the nth <code>input</code> is checked.</p>
+
+<p  class="classjournal">Then come the properties, or in our case, comes the property, singular, because we only have one. (But I did have two properties in the video.) Since we had applied <code>opacity: 0</code> to all <code>main figure</code>, which makes them invisible, I have to make them back to full opaque by applying the <code>opacity: 1</code> property to the first image if the first radio-button is selected or to the second image if the second radio-button is selected and so on.</p>
+
+<p  class="classjournal">For completeness, I want to remind you that the radio buttons are still in the page even if we made them invisible with the rule set <code>input {display: none;}</code>. Also, in our example page’s <code>nav</code>, the thumbnail images are not really controlling the main images in the gallery; each thumbnail is a <code>label</code> for the <code>input</code> with the matching <code>id</code>. The hidden inputs, then, are the ones controlling the opacity of the main images in the gallery.</p>
+
+<footer>
+<h6 class="lastupdate">Last update on 11 July 2020, at 10:42 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+</footer>
+
+</body>
+</html>
