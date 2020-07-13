@@ -16,7 +16,77 @@
 
 <body>
 
-<p  class="classjournal">Let’s start with the tilde (<code>~</code>), which has the fancy name of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator">general sibling combinator</a>. Its general syntax is: <code>former_element ~ target_element { style properties }</code>. What it does is, it applies the properties to the <em>target_element</em>, but “only if it follows the first element (though not necessarily immediately), and both are children of the same parent element”.</p>
+<hr />
+
+<blockquote class="classjournal">
+  <p>GRC 339 moves at&nbsp;a much faster pace than 338&nbsp;by a&nbsp;lot, so&nbsp;I’m glad I&nbsp;learned early on&nbsp;in this class to&nbsp;do assignments as&nbsp;early as&nbsp;possible.</p>
+</blockquote>
+
+<p  class="classjournal">Well, it is an accelerated ten-week class in five weeks.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I think I&nbsp;would have enjoyed taking this course over the&nbsp;normal 10&nbsp;weeks and&nbsp;seeing what else I&nbsp;can learn since I&nbsp;am a&nbsp;UX/UI&nbsp;concentration.</p>
+</blockquote>
+
+<p  class="classjournal">The content would be the same, though.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>So far, Flexbox > CSS&nbsp;Grid for&nbsp;my&nbsp;brain.</p>
+</blockquote>
+
+<p  class="classjournal">I find CSS Grid much easier to implement, but I tend to be more proud of a well&#8209;implemented Flexbox.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>Could you&nbsp;give more clarification on&nbsp;what position: absolute and&nbsp;position: relative&nbsp;do? I’m still struggling a&nbsp;little on&nbsp;those&nbsp;concepts.</p>
+</blockquote>
+
+<p  class="classjournal">HTML elements have a <code>static</code> position by default; they render in the order they appear in the document flow. When you apply <code>position: relative</code> to the element, you can apply properties such as <code>left</code> and <code>top</code> to make them repositioned in relation with their normal position in the flow. And when you apply <code>position: absolute</code>, the elements are positioned in relation to its first ancestor element with a <code>position</code> property (different from <code>static</code>) applied to it. I believe you will understand it better with the explanations from <a href="https://www.w3schools.com/cssref/pr_class_position.asp">W3Schools</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position#Values">MDN</a>, and <a href="https://css-tricks.com/almanac/properties/p/position/">CSS Tricks</a>. But if you need more help, I’m always happy to help in my office hours.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>My friend and&nbsp;I&nbsp;were a&nbsp;bit confused about the&nbsp;<code>position: absolute;</code> declaration but&nbsp;<a href="https://medium.com/@leannezhang/difference-between-css-position-absolute-versus-relative-35f064384c6">this resource</a> really helped clear it&nbsp;up with the&nbsp;visual examples.</p>
+</blockquote>
+
+<p  class="classjournal">Thanks, Stephanie!</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>Flexbox and&nbsp;CSS grids aren’t widely&nbsp;used.</p>
+</blockquote>
+
+<p  class="classjournal">They are! Very much so. They are not <em>universally supported</em>, but more than 90% of the users’ browsers do support them. We just need to make sure the other 10% has access to the information as well.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I learned how&nbsp;powerful CSS&nbsp;could be&nbsp;even without the&nbsp;use of&nbsp;JavaScript. The&nbsp;fact that we&nbsp;built a&nbsp;working photo gallery complete with transitions was&nbsp;a pretty cool testament to&nbsp;that.</p>
+</blockquote>
+
+<p  class="classjournal">Isn’t it? I love how powerful HTML5 and CSS3 are.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I learned that when you&nbsp;have a&nbsp;function with a&nbsp;parenthesis, if&nbsp;you have a&nbsp;space before the&nbsp;parenthesis, it&nbsp;breaks the&nbsp;function, and&nbsp;that is&nbsp;why my&nbsp;photo gallery were a&nbsp;bit messed&nbsp;up.</p>
+</blockquote>
+
+<p  class="classjournal">Very true.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I’m still a&nbsp;little confused on&nbsp;what this syntax means or&nbsp;does: <code>input:nth-of-type(1):checked ~ main figure:nth-of-type(1),input:nth-of-type(2):checked ~ main figure:nth-of-type(2),input:nth-of-type(3):checked ~ main figure:nth-of-type(3),input:nth-of-type(4):checked ~ main figure:nth-of-type(4){opacity: 1;}</code></p>
+</blockquote>
+
+<p  class="classjournal">Let’s start with the tilde (<code>~</code>), which has the fancy name of [general sibling combinator][wdn-gsc]. Its general syntax is: <code>former_element ~ target_element { style properties }</code>. What it does is, it applies the properties to the <em>target_element</em>, but “only if it follows the first element (though not necessarily immediately), and both are children of the same parent element”.</p>
 
 <p  class="classjournal">In our case, the <em>former_element</em> is <code>input:nth-of-type(n):checked</code> and the <em>target_element</em> is <code>main figure:nth-of-type(n)</code>. So the properties will be applied to <code>main figure:nth-of-type(n)</code>, but only if it follows <code>input:nth-of-type(n):checked</code>. Therefore, it’ll be applied to a <code>figure</code> element if it follows an <code>input</code> element. But, in our case, it will not be applied to any <code>figure</code> element following any <code>input</code> element; specific <code>figure</code> elements following any <code>input</code> elements.</p>
 
@@ -36,8 +106,152 @@ input:nth-of-type(4) ~ `main figure:nth-of-type(4){
 
 <p  class="classjournal">For completeness, I want to remind you that the radio buttons are still in the page even if we made them invisible with the rule set <code>input {display: none;}</code>. Also, in our example page’s <code>nav</code>, the thumbnail images are not really controlling the main images in the gallery; each thumbnail is a <code>label</code> for the <code>input</code> with the matching <code>id</code>. The hidden inputs, then, are the ones controlling the opacity of the main images in the gallery.</p>
 
+<hr />
+
+<blockquote class="classjournal">
+  <p>I kinda wanted some clarification why&nbsp;we build mobile first and&nbsp;scale up&nbsp;rather than the&nbsp;other way&nbsp;around.</p>
+</blockquote>
+
+<p  class="classjournal">Let me know if you need more clarification, then.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>The photo gallery that we&nbsp;learned how&nbsp;to do&nbsp;this week was&nbsp;pretty interesting to&nbsp;learn. I’ve seen it&nbsp;done on&nbsp;many websites but&nbsp;didn’t really understand how&nbsp;to do&nbsp;it&nbsp;myself.</p>
+</blockquote>
+
+<p  class="classjournal">It’s not the only method for a photo gallery, but it’s an effective pure CSS one.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>The radio buttons in&nbsp;CSS can&nbsp;be replaced by&nbsp;images.</p>
+</blockquote>
+
+<p  class="classjournal">Not exactly. But the former can be controlled by the latter.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>Didn’t catch that the&nbsp;range for&nbsp;the opacity values is&nbsp;only 0-1 in&nbsp;the lecture video. The&nbsp;quizzes are&nbsp;so&nbsp;useful!</p>
+</blockquote>
+
+<p  class="classjournal">Yes, that’s why we have the quizzes. I try to reinforce what could be missed from the video.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>It’d be&nbsp;cool to&nbsp;see a&nbsp;tutorial on&nbsp;how we&nbsp;can code an&nbsp;entire website from scratch in&nbsp;the most efficient&nbsp;way!</p>
+</blockquote>
+
+<p  class="classjournal">I’m afraid it doesn’t exist. Each person has their own process and methods.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>What mobile browsers support flex grid and&nbsp;flex boxes? and&nbsp;which flex type (grid or&nbsp;box) is&nbsp;supported by&nbsp;more&nbsp;browsers?</p>
+</blockquote>
+
+<p  class="classjournal">Flexbox has slightly more support than CSS Grid. Please check <a href="https://caniuse.com">caniuse.com</a> for all the details.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>As I&nbsp;am working on&nbsp;the mobile first portion, I&nbsp;am constantly going on&nbsp;my phone to&nbsp;explore other news websites and&nbsp;blogs (to figure out&nbsp;what I&nbsp;like/dislike) which has&nbsp;been very&nbsp;helpful.</p>
+</blockquote>
+
+<p  class="classjournal">That’s perfect.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I didn’t know what <code>&lt;input type="radio"&gt;</code> was&nbsp;before, so&nbsp;I&nbsp;did a&nbsp;quick search to&nbsp;find out&nbsp;what the&nbsp;value “radio” meant.</p>
+</blockquote>
+
+<p  class="classjournal">I figured most of you wouldn’t know what a radio input is, but some things are good to be left for you to find out on your own, since it’s very straightforward.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>Not being able to&nbsp;see the&nbsp;grids like you&nbsp;showed in&nbsp;last week’s video in&nbsp;Firefox is&nbsp;pretty hard. I’m having a&nbsp;rough time visualizing everything I&nbsp;need to&nbsp;in order to&nbsp;smoothly get&nbsp;the assignments&nbsp;done.</p>
+</blockquote>
+
+<p  class="classjournal">Please use Firefox.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I thought about working in&nbsp;a group, but&nbsp;decided from past experience I&nbsp;usually work better&nbsp;alone.</p>
+</blockquote>
+
+<p  class="classjournal">And that’s why I made it optional.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I was&nbsp;shocked to&nbsp;see that this latest assignment allows for&nbsp;collaboration with other students because this is&nbsp;the first time groups were allowed. Which makes me&nbsp;wish I&nbsp;collaborated with another student but&nbsp;online coordination is&nbsp;not the&nbsp;most ideal for&nbsp;group&nbsp;projects.</p>
+</blockquote>
+
+<p  class="classjournal">Again, that’s why it’s optional.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I am&nbsp;excited about the&nbsp;prompt for&nbsp;the final website. It&nbsp;is especially cool how&nbsp;much flexibility you&nbsp;are giving us&nbsp;so that the&nbsp;website can&nbsp;focus on&nbsp;things that I&nbsp;care about. I&nbsp;look forward to&nbsp;using this website as&nbsp;a prominent portfolio piece. : )</p>
+</blockquote>
+
+<p  class="classjournal">And I look forward to seeing your best work.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I am&nbsp;not sure if&nbsp;you mentioned this, but&nbsp;what is&nbsp;the benefit of&nbsp;doing image transitions through transparency as&nbsp;opposed to&nbsp;movement&nbsp;again?</p>
+</blockquote>
+
+<p  class="classjournal">No real benefit. I just like it better.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I found myself to&nbsp;be applying many skills I&nbsp;have learned in&nbsp;this class to&nbsp;a JavaScript class that I’m also currently&nbsp;taking.</p>
+</blockquote>
+
+<p  class="classjournal">That can lead to a lot fun stuff!</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>Is it&nbsp;worth it&nbsp;to learn&nbsp;jQuery?</p>
+</blockquote>
+
+<p  class="classjournal">Depending what you’ll do of course. For most of us, it’s not essencial, but it’s helpful.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>As much as&nbsp;it’s kind of&nbsp;nice to&nbsp;be done with the&nbsp;tutorials, I&nbsp;am gonna miss them. Any&nbsp;chance you&nbsp;could still post some tips n&nbsp;tricks in&nbsp;their place so&nbsp;we can&nbsp;keep adding to&nbsp;our skills? For&nbsp;instance, I’d be&nbsp;excited to&nbsp;learn about how&nbsp;to make menus stay on&nbsp;the screen as&nbsp;you scroll. (But perhaps this requires javascript?).</p>
+</blockquote>
+
+<p  class="classjournal">I may post more videos, but for tips and tricks, you can search for some nice videos on LinkedIn Learning.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I know this isn’t a&nbsp;class that focuses on&nbsp;logo design as&nbsp;much, but&nbsp;I&nbsp;still appreciate that we&nbsp;have the&nbsp;flexibility to&nbsp;create a&nbsp;design as&nbsp;simple or&nbsp;complex as&nbsp;we&nbsp;want.</p>
+</blockquote>
+
+<p  class="classjournal">Yes, as simple or complex as you want, but keep it simple.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+  <p>I really like this class a&nbsp;lot. Thanks for&nbsp;making it&nbsp;fun : )</p>
+</blockquote>
+
+<p  class="classjournal">Thanks!</p>
+
 <footer>
-<h6 class="lastupdate">Last update on 11 July 2020, at 10:42 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+<h6 class="lastupdate">Last update on 13 July 2020, at 4:09 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
 </footer>
 
 </body>
