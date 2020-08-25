@@ -1,0 +1,173 @@
+/*CSS Document*/
+
+
+body {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #151743;
+    margin: 0;
+    background: #fafafa;
+}
+
+header {
+    background: #FBAF32;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 2em 2em 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    clear: both;
+    max-width: 36em;
+    margin: 14em auto 2em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em 0;
+}
+
+img {
+    width: 100%;
+}
+
+img.committee {
+    width: 10em;
+    margin-top: 2em;
+}
+
+h1 {
+    flex: 5 0 5em;
+    float: left;
+    margin: 0 1em 0 0;
+    box-sizing: border-box;
+}
+
+h1 img {
+    width: 5em;
+}
+
+h3 {
+    margin: 0;
+}
+
+header nav {
+    flex: 1 1 auto;
+    text-align: right;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainnav ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.mainnav ul li {
+    text-transform: uppercase;
+    text-align: left;
+    list-style-type: none;
+    line-height: 2em;
+    margin-right: 1em;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.mainnav ul li a{
+    color: #fafafa;
+    text-decoration: none;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #15174300;
+    transition: border 0.5s;
+}
+
+.mainnav ul li a:hover{
+    border-bottom: 2px solid #151743;
+}
+
+.allcaps {
+	text-transform: uppercase;
+}
+
+
+main p {
+    flex: 0 1 36rem;
+    margin: 0 auto 1em;
+}
+
+main h2 {
+    flex: 0 1 36rem;
+    margin: 2em auto 1em;
+}
+
+
+main button {
+    flex: 0 1 auto;
+    margin: 0 1em 1em 0;
+    text-align: left;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    background: none;
+    padding: 0;
+}
+
+main button a {
+    padding: 1em;
+    line-height: 3em;
+    background: #FBAF32dd;
+    color: #fafafa;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+main button.mode2015 a {
+    background: #04A0A0;
+}
+
+main button.mode2017 a {
+    background: #F15B4F;
+}
+
+main button.mode2019 a {
+    background: #151743;
+}
+
+main button a:hover {
+    background: #FBAF32;
+}
+    
+footer {
+    padding: 1em;
+    background-color: #151743
+}
+
+h6 {
+    color: #fafafa;
+    margin: 0;
+    
+}
+
+@media only screen and (min-width: 44em) {
+
+    header nav {
+        text-align: right;
+    }
+
+    main {margin-top: 8em}
+    
+    .mainnav ul li {
+    display: inline;
+    }
+    
+}
+ 

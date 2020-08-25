@@ -1,0 +1,139 @@
+/*CSS Document*/
+
+/*
+Yellow: #FBAF32
+Blue: #151743
+Red: #F15B4F
+Green: #04A0A0
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, div,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+p {margin: 0;}
+
+
+/*Fonts added:
+
+Fonts added:
+Myriad Pro Bold
+
+font-family: myriad-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Myriad Pro Bold Italic
+
+font-family: myriad-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Myriad Pro Italic
+
+font-family: myriad-pro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Myriad Pro Regular
+
+font-family: myriad-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+ITC Franklin Gothic LT Pro Book Compressed
+
+font-family: franklin-gothic-compressed, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+ITC Franklin Gothic LT Pro Book Compressed Italic
+
+font-family: franklin-gothic-compressed, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+ITC Franklin Gothic LT Pro Demi Compressed
+
+font-family: franklin-gothic-compressed, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+ITC Franklin Gothic LT Pro Demi Compressed Italic
+
+font-family: franklin-gothic-compressed, sans-serif;
+font-weight: 600;
+font-style: italic;
+
+ITCFranklinGothic LT Pro CnBk
+
+font-family: franklin-gothic-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+ITCFranklinGothic LT Pro CnBkIt
+
+font-family: franklin-gothic-condensed, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+ITCFranklinGothic LT Pro CnDm
+
+font-family: franklin-gothic-condensed, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+ITCFranklinGothic LT Pro CnDmIt
+
+font-family: franklin-gothic-condensed, sans-serif;
+font-weight: 600;
+font-style: italic;
+
+ITC Franklin Gothic LT Pro Book Extra Compressed
+
+font-family: franklin-gothic-extra-compre, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+ITC Franklin Gothic LT Pro Demi Extra Compressed
+
+font-family: franklin-gothic-extra-compre, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+ 

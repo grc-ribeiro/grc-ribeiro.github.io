@@ -1,0 +1,285 @@
+/*CSS Document*/
+
+
+body {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #151743;
+    margin: 0;
+    padding: 0;
+    background: #04A0A0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background: #04A0A0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 2em 2em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+main {
+    clear: both;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fafafa;
+    padding: 2em 1em 0;
+    box-sizing: border-box;
+}
+
+article {
+    width: 100%;
+    max-width: 36em;
+    margin: 2em auto 2em;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+img.committee {
+    width: 10em;
+    margin-top: 2em;
+}
+
+h1 {
+    flex: 0 0 5em;
+    float: left;
+    margin: 0 1em 1em 0;
+    box-sizing: border-box;
+    background-image: url(mode-21-logo-vt.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1 img {
+    width: 5em;
+    opacity: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+header nav {
+    flex: 4 1 10em;
+    margin: 0;
+/*    background: red;*/
+}
+
+.mainnav ul {
+    margin-top: 0;
+/*    background: yellow;*/
+    padding-left: 2em;
+}
+
+.mainnav ul li {
+    text-transform: uppercase;
+    text-align: left;
+    list-style-type: none;
+    display: inline-block;
+    line-height: 3em;
+    margin-right: 4em;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    width: 8em;
+    font-style: normal;
+/*    background: #00f*/
+}
+
+.mainnav ul li a{
+    color: #fafafa;
+    text-decoration: none;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #FBAF3200;
+    transition: border 0.5s;
+}
+
+.mainnav ul li.active a{
+    color: #151743;
+}
+
+.mainnav ul li a:hover{
+    border-bottom: 2px solid #FBAF32;
+}
+
+.allcaps {
+	text-transform: uppercase;
+}
+
+
+main p {
+    flex: 0 1 36rem;
+    margin: 0 auto 1em;
+}
+
+main h2 {
+    flex: 0 1 36rem;
+    margin: 2em auto 1em;
+}
+
+
+main button {
+    flex: 0 1 auto;
+    margin: 0 1em 1em 0;
+    text-align: left;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    background: none;
+    padding: 0;
+}
+
+main button a {
+    padding: 1em;
+    line-height: 3em;
+    background: #FBAF32dd;
+    color: #fafafa;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+main button.mode2015 a {
+    background: #04A0A0;
+}
+
+main button.mode2017 a {
+    background: #F15B4F;
+}
+
+main button.mode2019 a {
+    background: #151743;
+}
+
+main button a:hover {
+    background: #FBAF32;
+}
+
+article h2{
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: calc(70% + 3em);
+}
+
+article.schedule h2{
+    background-image:url(images/schedule.jpg);   
+}
+
+article.index h2{
+    padding-top: 0;
+}
+
+
+article.cfp h2{
+    background-image:url(images/cfp.jpg);   
+}
+
+article.keynotes h2{
+    background-image:url(images/keynotes.jpg);   
+}
+
+article.mode-fest h2{
+    background-image:url(images/mode-fest.jpg);   
+}
+
+
+article.committee h2{
+    padding-top: 0;
+}
+
+
+article.sponsors h2{
+    padding-top: 0;
+}
+
+article.committee ul {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+article.committee ul li {
+    list-style-type: none;
+    margin: 0 2em 2em 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex: 1 0 10em;
+}
+
+article.committee ul li h3 {
+        padding-top: calc(1em + 100%);
+
+}
+
+article.committee ul li:nth-of-type(1) {background-image:url(images/morrow.png);}
+
+article.committee ul li:nth-of-type(2) {background-image:url(images/murnieks.jpeg);}
+
+article.committee ul li:nth-of-type(3) {background-image:url(images/ribeiro.png);}
+
+article.committee ul li:nth-of-type(4) {background-image:url(images/rinnert.jpg);}
+
+article.committee ul li:nth-of-type(5) {background-image:url(images/shaw.jpg);}
+
+article.committee ul li:nth-of-type(6) {background-image:url(images/stone.jpg);}
+
+    
+footer {
+    padding: 1em;
+    background-color: #151743
+}
+
+h6 {
+    color: #fafafa;
+    margin: 0;
+    
+}
+
+/*
+@media only screen and (min-width: 40em) {
+
+.mainnav ul  {    
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .mainnav ul li {  
+        flex: 1 1 8em;
+    }
+}
+*/
+
+@media only screen and (min-width: 50em) {
+    h1 {
+    background-image: url(mode-21-logo-hz.png);
+}
+
+}
+
+@media only screen and (min-width: 60em) {
+
+    header nav {
+        text-align: right;
+    }
+
+    
+    .mainnav ul li {
+        display: inline;
+        margin-left: 5%;
+        margin-right: 0;
+    }
+    
+}
