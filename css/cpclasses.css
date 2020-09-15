@@ -27,6 +27,12 @@ p strong, li strong {
 		font-style: normal;
 }
 
+p em strong {
+    font-family: aktiv-grotesk, Helvetica, Calibri,sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
 h1, h2, h3, h4 {
 		/*font-family: 'Helvetica', Calibri, sans-serif;*/
 		font-family: aktiv-grotesk, sans-serif;
