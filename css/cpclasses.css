@@ -53,16 +53,16 @@ h5, h6 {
 }
 
 a {
-		color: #415835;
+		color: #383;
 		text-decoration: none;
 }
 
 a:hover {
-		color: #383;
+		color: #3b3;
 }
 
 p a, li a, h5 a {
-		border-bottom: 1px #888 dotted;
+		border-bottom: 1px #557d76 dotted;
 }
 
 h5.classheader a {
@@ -248,7 +248,7 @@ p.classjournal {
 
 code {
 		/*background-color: #eee;*/
-		color: #383;
+		color: #557d76;
 		font-size: 0.9em;
 		padding: 0 0.1em;
 		max-width: 24em;
@@ -270,7 +270,7 @@ pre  {
 		margin-bottom: 2rem;
 		width: 90%;
 		/*max-width: 36em;*/
-		border-left: #ada solid 4px; 
+		border-left: #80bfb4 solid 4px; 
 		/*background: #dfd;*/
 		clear: both;
 }
