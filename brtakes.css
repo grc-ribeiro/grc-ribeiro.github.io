@@ -1,0 +1,549 @@
+body {
+		color: #333;
+		background: #fafafa;
+		font-size: 1em;
+		max-width: 36em;
+		outline: 2px;
+		border-top: #383 solid 1px;
+		margin: 3em auto;
+		padding-bottom: 1em;
+		line-height: 1.6em;
+}
+
+p, h2, h3, h4, h5, li{
+		max-width:36em;
+}
+
+p, li, ol {
+		font-family: aktiv-grotesk, Helvetica, Calibri, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		/*font-family: Helvetica, Calibri, sans-serif;*/
+}
+
+p strong, li strong {
+		font-size: 0.95em
+		font-weight: 500;
+		font-style: normal;
+}
+
+p em strong {
+    font-family: aktiv-grotesk, Helvetica, Calibri,sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h1, h2, h3, h4 {
+		/*font-family: 'Helvetica', Calibri, sans-serif;*/
+		font-family: aktiv-grotesk, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		clear: both;
+		color: #333;
+}
+
+
+
+h5, h6 {
+		font-family: aktiv-grotesk, Helvetica, Calibri, sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		clear: both;
+		color: #333;
+}
+
+a {
+		color: #383;
+		text-decoration: none;
+}
+
+a:hover {
+		color: #3b3;
+}
+
+p a, li a, h5 a {
+		border-bottom: 1px #557d76 dotted;
+}
+
+h5.classheader a {
+		border: none;
+}
+
+
+h1 a, h2 a{
+		font-weight: normal;
+		color: #333;
+}
+
+h3 a, h4 a {
+		font-weight: normal;
+}
+
+h3 strong a {
+		font-weight: bold;
+		border-bottom: 1px #888 dotted;
+}
+
+h1 {
+		max-width:20em;
+		margin-bottom:1em;
+		letter-spacing: normal;
+		font-size: 1.6em;
+		margin-top: 1.5em;
+		line-height: 1.3em;
+}
+
+h2 {
+		font-size: 1.3em;
+		margin-top: 2em;
+		text-transform: none;
+}
+
+h3 {
+		font-size: 1.1em;
+		/*font-weight:normal;*/
+		margin: 2em 0 0 0;
+}
+
+h4 {
+		font-size: 1.1em;
+		margin: 2em 0 0 0;
+}
+
+h5 {
+		font-size: 1em;
+		margin: 1em 0 0 0;
+		font-weight:normal;
+}
+
+h5.classheader {
+		margin-bottom: 4em;
+}
+
+h6 {
+		font-size: 0.75em;
+		line-height:2em;
+		margin-top: 1em;
+		color:#333;
+		max-width:48em;
+}
+
+h6.lastupdate {
+		  color:#666;
+		  margin-top: 4rem;
+}
+
+p {
+		margin-bottom:0.4em;
+}
+
+p.resume {
+		font-size: 1em;
+		line-height:1.5em;
+		margin: 0;
+}
+
+li h2 {  /*Design principles rubric explanation on the assignment pages*/
+		font-size: 1em;
+		color: #333;
+		margin: 2em 0 0em 0;
+		line-height: 1.4em;
+}
+
+ul.schedule li h2 {  /*each date on the schedule page*/
+		font-size: 0.8em;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #333;
+		margin: 2em 0 1em 0;
+		line-height: 1.0em;
+		float: left;
+		border-top: 2px solid #333;
+		border-bottom: 2px solid #333;
+		padding: 0.2em;
+}
+
+li h2 a {
+		/*font-family: 'Helvetica', sans-serif;*/
+		/* border: none; */
+		color: #415835;
+		font-weight: 500;
+}
+
+h2.schedule {
+		margin-bottom: 0;
+}
+
+li h4 {
+		margin: 0;
+		color: rgb(100, 100, 100);
+		font-size: 1em;
+		background: rgb(220, 220, 220);
+}
+
+li p{
+		margin: 0 0 1em 0; 
+		line-height: 1.6em;
+		clear: both;
+}
+
+img {
+		width: 100%;
+}
+
+del { 
+		color: #a55;
+}
+
+.important {
+		/*text-transform: uppercase;
+		font-weight: bold;
+		font-style: italic;
+		letter-spacing: 0.2em;*/
+		background: rgb(255, 255, 0);
+}
+
+hr {
+		width: 100%;
+		max-width: 36em;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 4em;
+		margin-bottom: 1em;
+		border: 1px solid #ccc;
+}
+
+hr.invisibleline {
+		border: 0;
+}
+
+blockquote {
+		padding-left: 1.5em;
+		margin-left:0;
+		margin-bottom: 2rem;
+		max-width: 33em;
+		font-size: 0.9em;
+		border-left: #ccc solid 4px;
+		clear: both;
+}
+
+blockquote.classjournal{
+		padding-left: 0em;
+		max-width: 36em;
+		border-left: 0;
+		font-size: 1.1em;
+		line-height: 1.6em;
+}
+
+blockquote.classjournal p{
+		font-style: italic;
+}
+
+p.classjournal {
+		padding-left: 1em;
+		margin-left:0;
+		max-width: 33em;
+		border-left: #ccc solid 4px;
+}
+
+code {
+		/*background-color: #eee;*/
+		color: #557d76;
+		font-size: 0.9em;
+		padding: 0 0.1em;
+		max-width: 24em;
+		font-family: input-mono, monospace;
+		font-weight: 300;
+		font-style: normal;
+		letter-spacing: 0.03em;
+}
+
+del code, strike code{
+		color: #a55;
+		font-weight: 100;
+		font-style: italic;
+}
+
+pre  {
+		padding-left: 1.5em;
+		margin-left: 0;
+		margin-bottom: 2rem;
+		width: 90%;
+		/*max-width: 36em;*/
+		border-left: #80bfb4 solid 4px; 
+		/*background: #dfd;*/
+		clear: both;
+}
+
+pre { /*break the lines*/
+		white-space: pre-wrap;       /*Since CSS 2.1*/
+		white-space: -moz-pre-wrap;  /*Mozilla, since 1999*/
+		white-space: -pre-wrap;      /*Opera 4-6*/
+		white-space: -o-pre-wrap;    /*Opera 7*/
+		word-wrap: break-word;       /*Internet Explorer 5.5+*/
+}
+
+pre.wrongcode {
+		color: #800;
+		border-left: #faa solid 4px;
+		background: #fcc;
+		font-size: 0.9em;
+		padding-right: 1.5em;
+}
+
+pre.wrongcode code {
+		color: #a55;
+		font-weight: 100;
+		font-style: italic;
+}
+
+h1 code, h2 code, h3 code {
+		font-family: aktiv-grotesk, Helvetica, Calibri, sans-serif;
+		color: #333;
+		font-size: 1em;
+		padding: 0;
+}
+
+ul {
+		padding: 0em;
+		margin: 0;
+}
+
+ol {
+		padding: 0em;
+		margin: 0;
+}
+
+ul li {
+		list-style-type: none;
+		margin-top: 1em;
+		padding:0em 0 0 0;
+}
+
+blockquote ul {
+		padding-left: 1em;
+}
+
+blockquote ul li {
+		list-style-type: disc;
+		margin-top: 0;
+} 
+blockquote ul li p{
+		margin: 0;
+}
+
+ol li {
+		padding:0em 0 0 0;
+		margin-top: 1em;
+}
+
+span.notes {
+		font-size: 0.75em;
+		text-transform: uppercase;
+		color: #888;
+		letter-spacing: 0.05em;
+		padding-left: 0.5em;
+}
+
+ul.examples li {width: 30%; display: inline-block; margin-right: 1em; margin-bottom: 2em; font-size: 0.8em; }
+
+ul.examples li p {font-family: Helvetica, sans-serif; line-height: 1.4em;}
+
+
+table {
+		border-top: 1px solid #ddd;
+		font-family: sans-serif;
+		margin: 2em 0 1em;
+		font-size: 1em;
+		width: 100%;
+}
+
+th, td {
+		border-bottom: 1px solid #ddd;
+		padding: 0.5em 0.8em 0.5em 0;
+}
+
+table code {
+		font-size: 0.9em;
+}
+
+thead {
+		text-align: left;
+}
+
+#content {
+		margin-top:0;
+}
+
+.image-caption {
+		line-height:0.4em;
+		padding:0;
+}
+
+.resources {
+		margin-top: 0.4em;
+}
+
+.resources a{
+		font-weight:normal;
+}
+
+.quotes p {
+		font-size: 1.4em;
+		line-height: 1.7em;
+		text-indent: -0.45em;
+		margin-bottom: 0;
+		margin-top: 2em;
+		max-width: 24em;
+}
+
+.quotes h5 {
+		margin-top: 0.3em;
+}
+
+.musthave { font-size: 0.8em; background-color: #f00; color: #fff; line-height:0.8em; text-transform:uppercase;}
+
+
+#sidebar {
+		background-color:#ff0;
+		padding-top:10em;
+		padding-left:0;
+}
+
+#header .wrapper {
+		padding-bottom: 20px;
+		padding-left:0;
+		border-bottom:1px solid #555;
+		margin-bottom:-20px;
+}
+
+div[data-content-field="main-content"] {
+		margin-left:185px;
+}
+
+.show-folder {
+		padding-left:1em;
+}
+
+.details  {
+		display: none; /*hide tags*/
+}
+
+.folder .page-collection {
+		padding-top: 0.6em;
+		padding-bottom: 0.6em;
+		border-bottom:1px solid #555;
+}
+
+.nav-link .page-collection {
+		padding-left: 1em;
+}
+
+.collectionlink-title {
+		font-family: 'Helvetica Neue', sans-serif;
+}
+
+.collectionlink-title a{
+		font-weight: normal;
+}
+
+.intrinsic{
+		float:left;
+		width:100%;
+}
+
+.footnotes {
+		border-top: 1px #555 solid;
+		margin-top: 5em;
+		font-size: 0.8em;
+		line-height: 1.8em;
+		max-width:48em;
+}
+
+a.footnote {
+		vertical-align: super;
+}
+
+.footnotes ol {
+		padding: 1em;
+}
+
+.footnotes li {
+		list-style-type: decimal;
+		max-width:36em;
+}
+
+@media only screen and (max-width: 40em) {
+
+body {
+		margin: 3em 2em;
+}
+}
+
+
+/*
+
+
+Aktiv Grotesk Regular
+-------------------------------------
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Aktiv Grotesk Italic
+-------------------------------------
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Aktiv Grotesk Bold
+-------------------------------------
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Aktiv Grotesk Bold Italic
+-------------------------------------
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Aktiv Grotesk Light
+-------------------------------------
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Aktiv Grotesk Light Italic
+-------------------------------------
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+Aktiv Grotesk Medium
+-------------------------------------
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Aktiv Grotesk Medium Italic
+-------------------------------------
+font-family: aktiv-grotesk, sans-serif;
+font-weight: 500;
+font-style: italic;
+
+Aktiv Grotesk Thin
+-------------------------------------
+font-family: aktiv-grotesk-thin, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+Aktiv Grotesk Thin Italic
+-------------------------------------
+font-family: aktiv-grotesk-thin, sans-serif;
+font-weight: 200;
+font-style: italic;
+
+*/
+
+
