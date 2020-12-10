@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" type="text/css" href="../brtakes.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+	 <title>Bruno Ribeiro | HTML and CSS</title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>Don’t use&nbsp;all&nbsp;caps on&nbsp;your HTML file  </h1>
+
+<p>When you write your HTML, you should use proper capitalization. You write your content in sentence case, which means lowercase, except for the first letter of a sentence or proper names.</p>
+
+<p>If you want to use all caps in a heading, for example, rather than write it in the HTML, use the ‘text-transform’ property in the CSS.</p>
+
+<p>Don’t do this:</p>
+
+<pre class="wrongcode"><code>&lt;h2&gt;ABOUT&lt;/h2&gt;
+</code></pre>
+<p>Do this instead:</p>
+
+<pre><code>&lt;h2&gt;About&lt;/h2&gt;
+</code></pre>
+
+<p>And style it on the CSS:</p>
+
+<pre><code>h2 {  
+    text-transform: uppercase;  
+}
+</code></pre>
+
+<p>In the first (wrong) example, some screen readers will read “A&#8209;B&#8209;O&#8209;U&#8209;T” rather than the word “about”.</p>
+
+<p>And also, you will make your life easier if you use the <code>text-transform</code> property because it’s easy to reverse in case you change your mind.</p>
+
+<footer>
+<h6 class="lastupdate">Last update on 24 April 2020, at 10:54 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+</footer>
+
+</body>
+</html>

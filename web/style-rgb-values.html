@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" type="text/css" href="../brtakes.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+	 <title>Bruno Ribeiro | HTML and CSS</title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>RGB values  </h1>
+
+<p>In CSS, colors can be defined by their names or by using one of the several methods to display a specific value. I’ll be insisting on the use of specific values.</p>
+
+<p><strong>A common mistake</strong> is&nbsp;to lazily type the&nbsp;name of&nbsp;the color rather than thinking about what color is&nbsp;a better fit&nbsp;on&nbsp;your&nbsp;design.</p>
+
+<p><strong>Other mistakes</strong> include leaving a space between <code>rgb</code> and the first parenthesis on <code>rgb(x, x, x)</code> or&nbsp;forgetting the pound sign on <code>#xxxxxx</code>.</p>
+
+<h2>Why not use names  </h2>
+
+<p>When you give the <code>color</code> property the value <code>PaleVioletRed</code>, you get the same result as if you typed <code>#db7093</code> or <code>rgb(219, 112, 147)</code>. In CSS3, names of colors are valid, and they are usually easier to remember—if you know what <em>AntiqueWhite</em>, <em>Bisque</em>, and <em>BlanchedAlmond</em> are, that is.</p>
+
+<p>There are some drawbacks, though.</p>
+
+<p>First, using the&nbsp;names give you&nbsp;a limited 140&#8209;color palette, which may&nbsp;sound like a&nbsp;lot, but&nbsp;is not&nbsp;that many compared to&nbsp;the 16&nbsp;million possible colors on&nbsp;the RGB&nbsp;spectrum. You&nbsp;probably won’t use&nbsp;more than a&nbsp;handful of&nbsp;colors at&nbsp;one page or&nbsp;website, but&nbsp;you don’t want to&nbsp;limit&nbsp;yourself.</p>
+
+<p>Even if&nbsp;you know that the&nbsp;color you&nbsp;chose has&nbsp;a name, you&nbsp;want to&nbsp;use its&nbsp;value, so&nbsp;you never allow yourself to&nbsp;be lazy. And&nbsp;because you&nbsp;want to&nbsp;keep your CSS&nbsp;consistent, if you&nbsp;declared a&nbsp;color name for&nbsp;a color in&nbsp;your design, you’d be more likely to&nbsp;choose another color that has&nbsp;a name, limiting your&nbsp;palette.</p>
+
+<p>So I want you to choose your color and your color palette carefully. </p>
+
+<p>Another problem—that won’t affect this class directly but&nbsp;may affect your work in&nbsp;the future—is the&nbsp;use of&nbsp;Javascript to&nbsp;create colors based on&nbsp;calculations, such as&nbsp;data visualizations, for&nbsp;example. As&nbsp;you can&nbsp;imagine, it’s much easier for&nbsp;a script language to&nbsp;make calculations with values than&nbsp;names.</p>
+
+<p>Do yourself a favor and always choose a value.</p>
+
+<h2>How to display color values  </h2>
+
+<h3>RGB colors</h3>
+
+<p>From <a href="https://www.w3schools.com/colors/colors_rgb.asp">W3Schools</a>:</p>
+
+<blockquote>
+  <p>RGB color values are supported in all browsers.</p>
+
+<p>An RGB color value is specified with: <code>rgb(red, green, blue)</code>.</p>
+
+<p>Each parameter (red, green, and&nbsp;blue) defines the&nbsp;intensity of&nbsp;the color as&nbsp;an integer between 0&nbsp;and 255.</p>
+
+<p>For example, <code>rgb(0, 0, 255)</code> is&nbsp;rendered as&nbsp;blue, because the&nbsp;blue parameter is&nbsp;set to&nbsp;its highest value (255) and&nbsp;the others are&nbsp;set to&nbsp;0.</p>
+</blockquote>
+
+<pre><code>div {  
+    background-color: rgb(0, 191, 255);  
+    color: rgb(255, 255, 255);  
+}
+</code></pre>
+
+<h3>Hexadecimal colors</h3>
+
+<p>From <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">W3Schools</a>:</p>
+
+<blockquote>
+  <p>Hexadecimal color values are also supported in all browsers.</p>
+
+<p>A hexadecimal color is specified with: <code>#RRGGBB</code>.</p>
+
+<p>RR (red), GG (green) and BB (blue) are hexadecimal integers between 00 and FF specifying the intensity of the color.</p>
+
+<p>For example, <code>#0000FF</code> is displayed as blue, because the blue component is set to its highest value (FF) and the others are set to 00.</p>
+</blockquote>
+
+<pre><code>    div {  
+        background-color: #00bfff;  
+        color: #ffffff;  
+    }
+</code></pre>
+
+<p>Working in hexadecimal certainly is less intuitive to figure out the colors, but there is a logical, mathematical reason for what looks like random numbers and letters. If you like math and like knowing more about the reasons behind technical decisions, this post in the <a href="https://www.pluralsight.com/blog/tutorials/understanding-hexadecimal-colors-simple">Pluralsight blog</a> is a start:</p>
+
+<blockquote>
+  <p>Why&nbsp;do we&nbsp;use letters instead of&nbsp;numbers? Since decimal numbers can&nbsp;only run&nbsp;from 0–9, there needed to&nbsp;be another way&nbsp;to represent larger numbers. Letters replace the&nbsp;higher numbers. These are&nbsp;what the&nbsp;hexadecimal letters stand for: A=10, B=11, C=12, D=13, E=14, F=15. So&nbsp;the way&nbsp;that we&nbsp;get a&nbsp;hexadecimal number is&nbsp;to multiply the&nbsp;first number by&nbsp;16 and&nbsp;the second number by&nbsp;one and&nbsp;add them&nbsp;together.</p>
+</blockquote>
+
+<p>The easiest, though, is&nbsp;to pick your colors in&nbsp;a tool like Photoshop or&nbsp;<a href="https://www.w3schools.com/colors/colors_picker.asp">W3School color picker</a> and&nbsp;copy and&nbsp;paste into your CSS&nbsp;file.</p>
+
+<p>When using hexadecimal colors, it’s a&nbsp;personal preference whether you&nbsp;want to&nbsp;use uppercase or&nbsp;lowercase. I&nbsp;prefer lowercase, because they’re easier to&nbsp;type and&nbsp;easier to&nbsp;read. You&nbsp;can choose for&nbsp;yourself, but&nbsp;you should try&nbsp;to keep them&nbsp;consistent.</p>
+
+<h3>HSL colors</h3>
+
+<p>The front-end developer <a href="https://www.sarasoueidan.com/blog/hex-rgb-to-hsl/">Sara Soueidan</a> makes a&nbsp;very compelling case to&nbsp;use HSL&nbsp;rather than HEX&nbsp;or RGB, because it’s more intuitive to&nbsp;tweak your color,  and&nbsp;it can&nbsp;be more systematic to&nbsp;build a&nbsp;color&nbsp;palette.</p>
+
+<p>HSL stands for&nbsp;Hue, Saturation, and&nbsp;Lightness. Hue&nbsp;is the&nbsp;angle of&nbsp;that color on&nbsp;the color wheel; Saturation controls how&nbsp;vivid or&nbsp;dull a&nbsp;color is; and&nbsp;Lightness control if&nbsp;you want to&nbsp;make it&nbsp;darker or&nbsp;lighter.</p>
+
+<p>I’ve never used it&nbsp;very much and&nbsp;I don’t necessarily think it’s very intuitive. But&nbsp;you may&nbsp;want to&nbsp;give it&nbsp;a try. I&nbsp;still think it’s easier to&nbsp;choose a&nbsp;color in&nbsp;some tool and&nbsp;it’ll give me&nbsp;the values that I&nbsp;need.</p>
+
+<h2>What about black and white?  </h2>
+
+<p>You may&nbsp;be tempted to&nbsp;substitute <code>black</code> and&nbsp;<code>white</code> for&nbsp;<code>#000000</code> and&nbsp;<code>#ffffff</code>, because they’re exceptions. In&nbsp;theory, it&nbsp;could make sense. But&nbsp;you still don’t want to&nbsp;do it&nbsp;for two&nbsp;different&nbsp;reasons.</p>
+
+<p>First, for&nbsp;consistency, you want to set all colors in the same system, using <code>rgb(x, x, x)</code>, <code>#xxxxxx</code>, or <code>hsl(x, x%, x%)</code>.</p>
+
+<p>Furthermore, you&nbsp;don’t really want to&nbsp;use pure black and pure&nbsp;white; try&nbsp;replacing them with very dark or&nbsp;very light gray (<code>#222222</code> and&nbsp;<code>#eeeeee</code> for&nbsp;example). I&nbsp;promise you&nbsp;it’ll look&nbsp;better.</p>
+
+<p>&nbsp;</p>
+
+<footer>
+<h6 class="lastupdate">Last update on 29 April 2020, at 11:17 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+</footer>
+
+</body>
+</html>

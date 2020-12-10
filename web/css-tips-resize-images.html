@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" type="text/css" href="../brtakes.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+	 <title>Bruno Ribeiro | HTML and CSS</title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>How to&nbsp;resize image using CSS  </h1>
+
+<p>If you try to give the <code>img</code> element a specific width, it will mess up with all the images in your page. You don’t want that.</p>
+
+<p>There are several ways to handle this issue, but this is how <em>I</em>&nbsp;handle it.</p>
+
+<p>I <em>always</em> have my images taking 100% of its containing element:</p>
+
+<pre><code>img {  
+    width: 100%;  
+}
+</code></pre>
+
+<p>Then, I give each containing element a specific width in <code>em</code> or <code>%</code>, depending on how the layout is.</p>
+
+<p>For example, I have my logo inside h1 in the HTML files:</p>
+
+<pre><code>&lt;h1&gt;&lt;a href="index.html"&gt;&lt;img src="logo.png" alt="Bruno’s Restaurant’s logo."&gt;&lt;/a&gt;&lt;/h1&gt;
+</code></pre>
+
+<p>Then, I style my <code>h1</code> on my CSS:        </p>
+
+<pre><code>h1 {  
+    width: 3em;  
+    float: left;  
+}
+</code></pre>
+
+<p>Or I have a big image on my page:</p>
+
+<pre><code>&lt;div class="mainimage"&gt;  
+    &lt;img src="storefront.jpg" alt="Main entrance of Bruno’s Restaurant."&gt;  
+&lt;/div&gt;
+</code></pre>
+
+<p>Then, I style my <code>div</code> on my CSS:       </p>
+
+<pre><code>div.mainimage {  
+    width: 80%;  
+    margin: auto;  
+}
+</code></pre>
+
+<p>I don’t need to style my <code>img</code> element any further.</p>
+
+<hr class="invisibleline" />
+
+<p><a href="css-tips.html">Back to the list of CSS tips.</a></p>
+
+<footer>
+<h6 class="lastupdate">Last update on 15 May 2020, at 4:57 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+</footer>
+
+</body>
+</html>

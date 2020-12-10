@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" type="text/css" href="../brtakes.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+	 <title>Bruno Ribeiro | HTML and CSS</title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>Formatting elements  </h1>
+
+<p>The <a href="https://www.w3schools.com/html/html_formatting.asp">formatting tags</a> should be used when for <strong>semantic reasons</strong> you want to <em>emphasize</em> a word or phrase. If you want to use italic or bold for style, you should style them in the CSS.</p>
+
+<p><strong>A common mistake</strong> is to use a formatting tag on the the whole paragraph.</p>
+
+<p>Don’t do this:</p>
+
+<pre class="wrongcode"><code>&lt;p&gt;&lt;i&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ornare purus. Sed quis sagittis orci, dictum dignissim arcu. Fusce euismod augue vitae leo varius placerat. Morbi pharetra accumsan placerat. Fusce in blandit quam, a sagittis leo. Praesent viverra id tellus vitae vulputate. Maecenas elementum placerat erat, ut eleifend tortor faucibus id.&lt;/i&gt;&lt;/p&gt;
+</code></pre>
+<p>Use classes instead:</p>
+
+<pre><code>&lt;p class="description"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ornare purus. Sed quis sagittis orci, dictum dignissim arcu. Fusce euismod augue vitae leo varius placerat. Morbi pharetra accumsan placerat. Fusce in blandit quam, a sagittis leo. Praesent viverra id tellus vitae vulputate. Maecenas elementum placerat erat, ut eleifend tortor faucibus id.&lt;/p&gt;
+</code></pre>
+
+<p>And style them in the CSS:</p>
+
+<pre><code>p.description {  
+    font-style: italic;  
+}
+</code></pre>
+
+<p><strong>An even worse mistake</strong> is to use the tags <code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code> on a heading. Headings are rendered as bold by default.</p>
+
+<p>Don’t do this:</p>
+
+<pre class="wrongcode"><code>&lt;h1&gt;&lt;b&gt;Heading of the document&lt;/b&gt;&lt;/h1&gt;
+</code></pre>
+<p>All you need is this:</p>
+
+<pre><code>&lt;h1&gt;Heading of the document&lt;/h1&gt;
+</code></pre>
+
+<h2>The <code>&lt;span&gt;</code> tag  </h2>
+
+<p>From <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">MDN web docs</a>:</p>
+
+<blockquote>
+  <p>The&nbsp;HTML <code>&lt;span&gt;</code> element is&nbsp;a generic inline container for&nbsp;phrasing content, which does not&nbsp;inherently represent anything. It&nbsp;can be&nbsp;used to&nbsp;group elements for&nbsp;styling purposes (using the&nbsp;<code>class</code> or&nbsp;<code>id</code>&nbsp;attributes).</p>
+</blockquote>
+
+<p>Let’s take a look at their example:</p>
+
+<blockquote>
+  <p>Add the <span  style="color:#f00">basil</span>, <span  style="color:#f00">pine nuts</span> and <span  style="color:#f00">garlic</span> to a blender and blend into a paste.</p>
+
+<p>Gradually add the <span  style="color:#f00">olive oil</span> while running the blender slowly.</p>
+</blockquote>
+
+<p>Here’s the HTML:</p>
+
+<pre><code>&lt;p&gt;Add the &lt;span class="ingredient"&gt;basil&lt;/span&gt;, &lt;span class="ingredient"&gt;pine nuts&lt;/span&gt; and &lt;span class="ingredient"&gt;garlic&lt;/span&gt; to a blender and blend into a paste.&lt;/p&gt;
+
+&lt;p&gt;Gradually add the &lt;span class="ingredient"&gt;olive oil&lt;/span&gt; while running the blender slowly.&lt;/p&gt;
+</code></pre>
+
+<p>&nbsp; <br />
+And then, the CSS:</p>
+
+<pre><code>span.ingredient {  
+    color: #f00;  
+}
+</code></pre>
+
+<p>Use the <code>&lt;span&gt;</code> tag only inside another element, never on its own, and only as <strong>part of another element</strong>, not on the other element’s whole.</p>
+
+<p>&nbsp; </p>
+
+<footer>
+<h6 class="lastupdate">Last update on 24 April 2020, at 7:27 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+</footer>
+
+</body>
+</html>

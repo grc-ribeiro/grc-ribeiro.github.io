@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" type="text/css" href="../brtakes.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+	 <title>Bruno Ribeiro | HTML and CSS</title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>Margins and&nbsp;paddings  </h1>
+
+<p>The difference between margins and paddings boiles down to: paddings are inside the element, while margins are outside the element. Therefore, paddings will be inside the element’s borders and will take the background color of the element, while margins will be outside the element’s borders and will take the background color of the containing element.</p>
+
+<p>There’s a <a href="https://visualcomposer.com/blog/padding-vs-margin-explained/">helpful explanation on Visual Composer</a> in case you need it.</p>
+
+<p>Most importantly, though, is that you should use them to set the absolute position of elements. Paddings should be used only to create space inside the element, while margins should be used only to separate elements from one another or from the edge of the page.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>A common mistake</strong> is to use margins to try to center an element in the window. It will <strong>never</strong> work, because the window will have different sizes, depending on who is using, where they’re using, when they’re using, etc.</p>
+
+<p>If you want to center elements, give this property to its containing element:</p>
+
+<pre><code>text-align: center;
+</code></pre>
+
+<p>It’s as simple as that. Although, centering type on&nbsp;the web&nbsp;is a&nbsp;hard way&nbsp;to make your layout look&nbsp;worse.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>A common mistake</strong> is&nbsp;to use&nbsp;margins to&nbsp;shift elements to&nbsp;the right-hand side of&nbsp;the window. Would it&nbsp;work on&nbsp;a different window&nbsp;size?</p>
+
+<p>And if you want to align to the right, give this property to its containing element:</p>
+
+<pre><code>text-align: right;
+</code></pre>
+
+<p>&nbsp; </p>
+
+<footer>
+<h6 class="lastupdate">Last update on 29 April 2020, at 11:05 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+</footer>
+
+</body>
+</html>

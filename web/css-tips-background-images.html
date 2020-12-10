@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" type="text/css" href="../brtakes.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+	 <title>Bruno Ribeiro | HTML and CSS</title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>Background images  </h1>
+
+<p>Sometimes you want to set type on the top of your images.</p>
+
+<p>You want to put your type on a <code>div</code>:</p>
+
+<pre><code>&lt;div class="heroimage"&gt;  
+    &lt;h2&gt;Welcome to Bruno’s Restaurant!&lt;/h2&gt;  
+&lt;/div&gt;
+</code></pre>
+
+<p>You’ve noticed that I have no image on my <code>div</code>. On my CSS, I&nbsp;can make the image its background, though:</p>
+
+<pre><code>div.heroimage {  
+    background-image: url("heroimage.jpg");  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+}
+</code></pre>
+
+<p>Where <code>heroimage.jpg</code> is the image you want to use. Don’t forget to include the image file on the same folder of your HTML file.</p>
+
+<p>If you prefer to have your image files on a <em>images</em> folder, just change your CSS to:</p>
+
+<pre><code>div.heroimage {  
+    background-image: url("images/heroimage.jpg");  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+}
+</code></pre>
+
+<p>Also, you may need to include a padding on the <code>div</code>.</p>
+
+<p>Try this:</p>
+
+<pre><code>div.heroimage {  
+    background-image: url("images/heroimage.jpg");  
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    padding: 2em 1.5em;  
+}
+</code></pre>
+
+<p>The first value (in my&nbsp;example, <code>2em</code>) will be&nbsp;applied to&nbsp;both top&nbsp;and bottom, while the&nbsp;second (in my&nbsp;example, <code>1.5em</code>) will be&nbsp;applied to&nbsp;both left and&nbsp;right. </p>
+
+<p>Furthermore, you may have notice that we don’t use the <code>alt</code> attribute on background images. That’s because they’re decorative only, and if they’re missing, the content wouldn’t be compromised.</p>
+
+<hr class="invisibleline" />
+
+<p><a href="css-tips.html">Back to the list of CSS tips.</a></p>
+
+<footer>
+<h6 class="lastupdate">Last update on 16 May 2020, at 12:24 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+</footer>
+
+</body>
+</html>
