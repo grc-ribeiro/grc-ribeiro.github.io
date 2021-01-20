@@ -57,6 +57,8 @@ a {
 		text-decoration: none;
 }
 
+
+
 a:hover {
 		color: #3b3;
 }
@@ -64,6 +66,8 @@ a:hover {
 p a, li a, h5 a {
 		border-bottom: 1px #557d76 dotted;
 }
+
+
 
 h5.classheader a {
 		border: none;
