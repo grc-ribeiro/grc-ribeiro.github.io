@@ -7,7 +7,7 @@
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="Expires" content="0" />
 
-	<link rel="stylesheet" type="text/css" href="../brtakes.css">
+	<link rel="stylesheet" type="text/css" href="../css/resources.css">
 	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
 
 	 <title>Bruno Ribeiro | HTML and CSS</title>
@@ -18,18 +18,13 @@
 
 <h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="resources.html">Resources</a></h5>
 
-<h1>How to&nbsp;make the&nbsp;content go&nbsp;all&nbsp;the&nbsp;way&nbsp;to&nbsp;the&nbsp;edge of&nbsp;the&nbsp;page  </h1>
+<h1>How to&nbsp;avoid&nbsp;floating elements messing up&nbsp;with the&nbsp;whole&nbsp;layout  </h1>
 
-<p>Sometimes you notice that your images or the background color don’t go all the way to the edge of the page.</p>
+<p>When you have elements that float but don’t take the whole width, other elements will try to sneak in, even if they don’t have the <code>float</code> property applied to them.</p>
 
-<p>There’s a simple fix:</p>
+<p>Applying the <code>float: none;</code> property should fix it, but it doesn’t (sad&nbsp;face).</p>
 
-<pre><code>body {  
-    margin: 0;  
-}
-</code></pre>
-
-<p>But I’ve encouraged you to use <a href="https://meyerweb.com/eric/tools/css/reset/">Eric Meyer’s Reset CSS tool</a> if you don’t want to deal with default margins messing with your document’s&nbsp;style.</p>
+<p>You&nbsp;need to give it a <code>clear: both;</code> property to&nbsp;the elements that you&nbsp;don’t want floating.</p>
 
 <hr class="invisibleline" />
 
