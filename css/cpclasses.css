@@ -22,8 +22,8 @@ p, li, ol {
 }
 
 p strong, li strong {
-		font-size: 0.95em
-		font-weight: 500;
+		font-size: 0.95em;
+		font-weight: 700;
 		font-style: normal;
 }
 
@@ -139,6 +139,22 @@ h6.lastupdate {
 
 p {
 		margin-bottom:0.4em;
+}
+
+ul {
+		padding: 0em;
+		margin: 0;
+}
+
+ol {
+		padding: 0em;
+		margin: 0;
+}
+
+ul li {
+		list-style-type: none;
+		margin-top: 1em;
+		padding:0em 0 0 0;
 }
 
 p.resume {
@@ -308,21 +324,6 @@ h1 code, h2 code, h3 code {
 		padding: 0;
 }
 
-ul {
-		padding: 0em;
-		margin: 0;
-}
-
-ol {
-		padding: 0em;
-		margin: 0;
-}
-
-ul li {
-		list-style-type: none;
-		margin-top: 1em;
-		padding:0em 0 0 0;
-}
 
 blockquote ul {
 		padding-left: 1em;
@@ -353,6 +354,77 @@ ul.examples li {width: 30%; display: inline-block; margin-right: 1em; margin-bot
 
 ul.examples li p {font-family: Helvetica, sans-serif; line-height: 1.4em;}
 
+
+
+section.rubric {
+	/* border: 2px solid #888; */
+  box-sizing: border-box;
+	margin: 0 0 2em;
+}
+
+section.rubric ul{
+	margin: 0;
+	padding: 0;
+}
+section.rubric ul li {
+		display: grid;
+		grid-template-columns: auto 12rem;
+		grid-template-rows: auto auto;
+		margin: 0 0 0.3rem;
+		padding: 0 0 1em;
+		border-bottom: 2px #222  solid;
+}
+
+section.rubric ul li h2 {
+		margin: 0;
+		grid-column: 1/2; 
+		padding: 0.5em 0;
+		border-top: 2px #222 solid;
+		border-bottom: 1px #222 solid;
+}
+
+
+
+section.rubric ul li h2 a{
+}
+
+
+section.rubric ul li h4 {
+		margin: 0;
+		padding: 0.5em 0;
+		background: none;
+		border-top: 2px #222 solid;
+		border-bottom: 1px #222 solid;
+}
+
+
+section.rubric ul li p {
+		padding: 0.6rem 0.8rem 0 0;
+}
+
+section.rubric ul li ul {
+		padding: 0;
+		margin: 0;
+}
+ 
+
+section.rubric ul li ul li {
+		display: block;
+		width: 100%;
+		text-transform: uppercase;
+		font-size: 0.6rem;
+		margin-bottom: 2px;
+		padding: 0.5rem 0.2rem 0.2rem 0;
+		line-height: 1em;
+		box-sizing: border-box;
+		letter-spacing: 0.06em;
+		border-bottom: 1px #222 dotted;
+}
+
+section.rubric ul li ul li strong{
+	min-width: 4em;
+	display: inline-block;
+}
 
 table {
 		border-top: 1px solid #ddd;
