@@ -79,6 +79,9 @@ h1 a, h2 a{
 		color: #333;
 }
 
+
+
+
 h3 a, h4 a {
 		font-weight: normal;
 }
@@ -155,6 +158,11 @@ ul li {
 		list-style-type: none;
 		margin-top: 1em;
 		padding:0em 0 0 0;
+}
+
+nav ul li {
+		font-size: 1.1em;
+		margin: 2em 0 0 0;
 }
 
 p.resume {
@@ -399,7 +407,7 @@ section.rubric ul li h4 {
 
 
 section.rubric ul li p {
-		padding: 0.6rem 0.8rem 0 0;
+		padding: 0.6rem 1.2rem 0 0;
 }
 
 section.rubric ul li ul {
@@ -424,6 +432,11 @@ section.rubric ul li ul li {
 section.rubric ul li ul li strong{
 	min-width: 4em;
 	display: inline-block;
+}
+
+
+section.dp-schedule ul li {
+	margin-top: 0;
 }
 
 table {
