@@ -53,11 +53,13 @@
 
 <ol>
 <li><p>Don’t include styling on your HTML document.&nbsp;<a href="../references/no-styling-in-html.html">➤</a></p></li>
+<li><p>One CSS file should hold all the formatting for your website. Don’t use a different CSS file for each HTML file.</p></li>
 <li><p>Try not to make different styles for each page either. Your goal is to make them as consistent as possible.</p></li>
 <li><p>Declare all&nbsp;colors as&nbsp;color values, using <code>rgb(x, x, x)</code> or&nbsp;<code>#xxxxxx</code>, or&nbsp;<code>hsl(x, x%, x%)</code>. Don’t use&nbsp;the color names.&nbsp;<a href="../references/color-values.html">➤</a></p></li>
 <li><p>Paragraphs (<code>p</code>) must be at least <code>1em</code>. (Ideally exactly <code>1em</code>. Or in other words, leave its size alone, respecting the users’ preferences.)&nbsp;<a href="../references/paragraph-font-size.html">➤</a></p></li>
 <li><p>If two pieces of information have the same hierarchy but should look different, use <code>classes</code>. (Don‘t make <code>h3</code> and <code>h4</code> have the same visual hierarchy but with different colors.) </p></li>
 <li><p>Don’t use <code>&lt;i&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;b&gt;</code>, or <code>&lt;strong&gt;</code> on a whole element or paragraph. Also, make sure you’re using them for the right semantic reasons. Use the <code>&lt;span&gt;</code> tag if it makes more sense. <a href="../references/style-formatting-elements.html">➤</a></p></li>
+<li><p>Don’t use all caps on your HTML file. Use the <code>text-transform</code> property on CSS instead.  <a href="../references/html-all-caps.html">➤</a></p></li>
 <li><p>Don’t use <code>px</code> for anything but borders. For <em>everything else</em> use only <code>%</code> and <code>em</code>, as appropriate. </p></li>
 <li><p>Don’t use <code>pt</code> either. Use only <code>em</code> for <code>font-size</code>. </p></li>
 <li><p>Don’t use negative margins (or negative paddings). Use <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">Eric Meyer’s Reset CSS tool</a> if you don’t want to deal with default margins messing with your document’s&nbsp;style.</p></li>
@@ -74,6 +76,20 @@
 <li><p>All class names should be lowercase and have no spaces. Also, they should not start with numbers and should be short (up to 12 or 15 characters). </p></li>
 </ol>
 
+<h2>Images  </h2>
+
+<ol>
+<li><p>Every image on your HTML document must have the <code>alt</code> attribute.</p></li>
+<li><p>Use the <code>alt</code> attribute on the image to be as descriptive as possible. Remember, that’s what users will read if they can’t see the image.</p></li>
+<li><p>Include a period in the end of all <code>alt</code> attribute text. It causes screen readers to pause slightly, making for a better reading experience.&nbsp;<a href="https://twitter.com/kerri9494/status/1074696313848123392" target="_blank">➤</a></p></li>
+<li><p>You don’t need to include “picture of”, “image of”, or “photo of” in the <code>alt</code> attribute of the <code>img</code> tag. (<strong>“Hamburger on a plate.”</strong> rather than <del>“Photo of a hamburger on a plate.”</del>)</p></li>
+<li><p>All file names should be lowercase and contain no spaces.</p></li>
+<li><p>Keep all the images in your server. (Don’t link to an external image on another website, download it and upload it to your website instead.)</p></li>
+<li><p>It’s good practice to keep the images in another folder. (Optional)</p></li>
+<li><p>Do not save photos as GIFs. Photos and rich illustrations should be JPEGs (or&nbsp;PNGs if transparency is needed).</p></li>
+<li><p>Don’t use the <code>width</code> and <code>height</code> attributes on the <code>img</code> tags. (Style them in the CSS, instead.)</p></li>
+</ol>
+
 <h2>Troubleshooting  </h2>
 
 <ol>
@@ -85,7 +101,7 @@
 <h4>Always check your work on multiple devices, browsers, and&nbsp;window&nbsp;sizes.</h4>
 
 <footer>
-<h6 class="lastupdate">Last update on 16 April 2021, at 3:53 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+<h6 class="lastupdate">Last update on 21 April 2021, at 8:05 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
 </footer>
 
 </body>
