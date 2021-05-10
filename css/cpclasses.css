@@ -639,8 +639,9 @@ section.rubric ul li ul li strong{
 @media screen and (prefers-color-scheme: dark) {
 
 html, body {
-		background: #181a1b;
-		color: #ccc;
+	/* background: #181a1b; */
+	background: #363636;
+	color: #ccc;
 }
 
 strong, b {
