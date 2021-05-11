@@ -662,18 +662,20 @@ section.rubric {
 }
 
 section.rubric ul li {
-		border-bottom: 3px #fafafa  solid;
+	border-bottom: 3px #fafafa  solid;
 }
 
 section.rubric ul li h2 {
-		border-top: 3px #fafafa solid;
+	border-top: 3px #fafafa solid;
 }
 
 section.rubric ul li h4 {
-		border-top: 3px #fafafa solid;
+	border-top: 3px #fafafa solid;
 }
 
-
+code {
+	color: #31ebcc9c
+}
 
 
 	
