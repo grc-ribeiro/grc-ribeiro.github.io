@@ -659,9 +659,10 @@ li h2 {  /*Design principles rubric explanation on the assignment pages*/
 		color: #fafafa;
 }
 
-a {
+a, li h2 a {
 	color: #3b3;
 }
+
 
 section.rubric {
 	border-top: 3px #fafafa  solid;
