@@ -664,6 +664,13 @@ a, li h2 a {
 }
 
 
+ul.schedule li h2 {  /*each date on the schedule page*/
+		color: #ccc;
+		border-top: 2px solid #ccc;
+		border-bottom: 2px solid #ccc;
+}
+
+
 section.rubric {
 	border-top: 3px #fafafa  solid;
 	border-bottom: 3px #fafafa  solid;
