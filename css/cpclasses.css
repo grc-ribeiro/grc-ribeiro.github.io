@@ -215,6 +215,14 @@ img {
 		width: 100%;
 }
 
+img.screenshot-desktop {
+	margin-left: -3.5%
+}
+
+
+img.screenshot-mobile {
+	margin-left: -9%
+}
 
 ol li p img{
 	margin-left: -2em;
