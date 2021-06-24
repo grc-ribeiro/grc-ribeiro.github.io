@@ -4,6 +4,7 @@ body {
 	font-family: sans-serif;
 	background: #eee;
 	color: 111;
+	line-height: 1.4em;
 }
 
 img {
@@ -24,10 +25,10 @@ h2 {
 }
 
 
-nav ul {
+ul {
 	padding: 0;
 }
 
-nav ul li {
+ul li {
 	list-style-type: none;
 }
