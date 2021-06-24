@@ -1,0 +1,48 @@
+/*CSS Document*/
+
+body {
+	font-family: serif;
+	background: #eee;
+	color: 111;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	color: #111;
+}
+
+div.container {
+	max-width: 36em;
+	margin: auto;
+}
+
+h2 {
+	margin-top: 2em;
+}
+
+
+nav, section {
+	background: #fafafa;
+	padding: 0.3em;
+	font-family: sans-serif;
+}
+
+section h1 {
+	font-size: 1.4em;
+}
+
+section h2 {
+	font-size: 1em;
+}
+
+
+nav ul {
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+}
