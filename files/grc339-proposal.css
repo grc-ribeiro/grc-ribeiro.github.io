@@ -3,7 +3,7 @@
 body {
 	font-family: sans-serif;
 	background: #eee;
-	color: 111;
+	color: #111;
 	line-height: 1.4em;
 }
 
@@ -12,7 +12,7 @@ img {
 }
 
 a {
-	color: #111;
+	color: #113;
 }
 
 div.container {
