@@ -142,6 +142,14 @@ h6.lastupdate {
 		  margin-top: 4rem;
 }
 
+h6.disclaimer {
+		  color:#666;
+		  font-weight: normal;
+		  font-style: italic;
+		  margin-top: 1rem;
+}
+
+
 p {
 		margin-bottom:0.4em;
 }
