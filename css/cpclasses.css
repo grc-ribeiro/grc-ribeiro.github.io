@@ -224,12 +224,18 @@ li p{
 		clear: both;
 }
 
+figure {
+	margin: 0;
+}
+
 img {
 		width: 100%;
 }
 
+
 img.screenshot-desktop {
-	margin-left: -3.5%
+		margin-left: -3.5%;
+		width: 103.5%;
 }
 
 
@@ -245,7 +251,7 @@ del {
 		color: #a55;
 }
 
-.important {
+mark, .important {
 		/*text-transform: uppercase;
 		font-weight: bold;
 		font-style: italic;
@@ -667,6 +673,7 @@ section.rubric ul li ul li strong{
 	display: inline-block;
 }
 
+
 }
 
 
@@ -681,8 +688,18 @@ html, body {
 
 
 strong, b {
-		color: #fafafa;
+		color: #fdddbd;		
 }
+
+
+/* 
+strong, b {
+		color: #363636;		
+		background: #ccc;
+}
+
+ */
+
 
 h1, h2, h3, h4, h5, h6 {
 		color: #fafafa;
@@ -719,6 +736,10 @@ section.rubric ul li h2 {
 
 section.rubric ul li h4 {
 	border-top: 3px #fafafa solid;
+}
+
+section.rubric strong{
+		color: #fafafa;
 }
 
 code {
