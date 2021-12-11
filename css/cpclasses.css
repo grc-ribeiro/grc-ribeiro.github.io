@@ -149,6 +149,25 @@ h6.disclaimer {
 		  margin-top: 1rem;
 }
 
+p.lastupdate, p.disclaimer {
+		font-size: 0.75em;
+		line-height:2em;
+		margin-top: 1em;
+		color:#666;
+		max-width:48em;
+}
+
+p.lastupdate {
+		  margin-top: 4rem;
+}
+
+p.disclaimer {
+		  font-weight: normal;
+		  font-style: italic;
+		  margin-top: 1rem;
+}
+
+
 
 p {
 		margin-bottom:0.4em;
