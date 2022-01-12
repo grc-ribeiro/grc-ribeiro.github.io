@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>  
+       	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
+		<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+		<title>Bruno Ribeiro | Cal Poly | Winter 2022 | GRC 339: Web Design and Production | Resources |  Instructions for student assistant comments   </title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 339</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>Instructions for student assistant comments  </h1>
+
+<p><a href="#Week-2">Week 2</a></p>
+
+<p>Comments on Friday/Monday for both labs.</p>
+
+<p>Reminder: use gender neutral language when leaving comments! (i.e. they/them/their)</p>
+
+<hr id="Week-2" />
+
+<h2>Week 2
+  </h2>
+
+<p><a href="assignments-flexbox-basic-layout.html">Flexbox basic layout</a></p>
+
+<p><a href="links-flexbox-basic-layout.html">Student submissions</a></p>
+
+<p><a href="https://grc-ribeiro.github.io/grc338-2218/resources-be-creative-on-your-mistakes.html" target="_blank">List of mistakes to avoid (from GRC&nbsp;338)</a></p>
+
+<p>Estimated time: 🤷  (please let me know)</p>
+
+<h3>What to look for: CSS</h3>
+
+<p>Main mistake from last summer: Layout gets cut in small screens. (Usually because the value for <code>flex-basis</code> in the <code>main</code> element (line <code>24</code>) is bigger than <code>20em</code>.</p>
+
+<p>Also: Main is not twice as wide as aside. Meaning that the values for <code>flex-grow</code> and/or <code>flex-basis</code> in the <code>main</code> element (line <code>24</code>) are not twice as big as the values for <code>flex-grow</code> and/or <code>flex-basis</code> in the <code>aside</code> element (line <code>29</code>).</p>
+
+<p>Reminder: <code>flex</code> is short-hand for <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code> in this order.</p>
+
+<p>Examples:</p>
+
+<pre><code>    * * * * * * * * * * * * * * * * * * * * *
+
+    Alex Doe
+
+    hzscroll
+
+    twice
+
+
+    * * * * * * * * * * * * * * * * * * * * *
+
+    Sam Smith
+
+    shrink
+
+    * * * * * * * * * * * * * * * * * * * * *
+</code></pre>
+
+<p>Meaning that…</p>
+
+<p>Alex’s layout gets cut in small screens. (Horizontal scroll)</p>
+
+<p>Alex’s <code>main</code> element is not twice as wide the <code>aside</code> element.</p>
+
+<p>While Sam’s work was flawless, but they did use a value different than <code>0</code> for <code>flex-shrink</code> (which is not wrong, but I find it tricky, so I need to make a note to them).</p>
+
+<footer>
+<p class="lastupdate">Last update on 12 January 2022, at 2:49 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+
+<p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find insconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
+
+</footer>
+
+</body>
+</html>
