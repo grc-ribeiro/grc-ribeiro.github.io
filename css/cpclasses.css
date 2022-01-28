@@ -348,6 +348,7 @@ pre  {
 		border-left: #80bfb4 solid 4px; 
 		/*background: #dfd;*/
 		clear: both;
+		line-height: 1.6em;;
 }
 
 pre { /*break the lines*/
@@ -370,6 +371,11 @@ pre.wrongcode code {
 		color: #a55;
 		font-weight: 100;
 		font-style: italic;
+}
+
+pre code pre {
+	border-left: 0; 
+	margin: 0
 }
 
 h1 code, h2 code, h3 code {

@@ -29,8 +29,51 @@
 <ol>
 <li><p>Read all the instructions carefully before starting.</p></li>
 <li><p>Start by reading my comments from the last assignment. Make sure to address every issue on it.</p></li>
-<li><p>Download the <a href="../files/lasagna-recipe-grid-html.zip">new HTML file</a>.</p></li>
 <li><p>Copy your CSS and JPEG files from last week into the new folder.</p></li>
+<li><p>Place this code to the bottom of your CSS document.  </p>
+
+<pre><code>@media only screen and (min-width: 60em) {  
+
+
+<pre><code>div.container {  
+    max-width: 70em;  
+    margin: auto;  
+}  
+
+
+header {  
+    padding-top: 4em;;  
+}  
+
+
+figure {  
+    display: grid;  
+    grid-template-columns: 4fr 1fr;  
+    column-gap: 1em;  
+}  
+
+
+main {  
+    display: grid;  
+    grid-template-columns: 1fr 1fr;  
+    column-gap: 3em;  
+    padding: 2em 3em;  
+}  
+
+
+figcaption {  
+    padding-top: 2em;  
+}  
+
+
+h3 {  
+    border-top: #f80 solid 2px;  
+    padding-top: 1em;  
+}
+</code></pre>
+
+}
+</code></pre></li>
 <li><p>This is what your page should look like on the browser.  </p>
 
 <p><img src="../images/css-grid-layout-diagram.png" alt="A diagram of the web browser showing the content as required per these instructions" title="" /></p></li>
@@ -57,10 +100,9 @@
 <h2>Tips  </h2>
 
 <ol>
-<li><p><strong>To center your page on the window</strong>, give the <code>div.container</code> the properties <code>max-width: XXem;</code> and <code>margin: auto;</code>, replacing <code>XXem</code> with any value you want, probably somewhere between <code>30em</code> and <code>50em</code> for this layout.</p></li>
+<li><p><strong>To center your page on the window</strong>, give the <code>div.container</code> the properties <code>max-width: XXem;</code> and <code>margin: auto;</code>, replacing <code>XXem</code> with a proper value.</p></li>
 <li><p>Since only the <code>section</code> elements will be side-by-side, their parent, the <code>main</code> element, will be a grid container.</p></li>
 <li><p>You’ll need more than one grid container.</p></li>
-<li><p>You may use <a href="https://fonts.google.com" target="_blank">Google Fonts</a> and <a href="https://fonts.adobe.com" target="_blank">Adobe Fonts</a>, but you have to use the <a href="https://helpx.adobe.com/fonts/using/embed-codes.html" target="_blank"><code>@import</code> link</a> directly in your CSS file, because, you know, you can’t change the HTML file!</p></li>
 <li><p>Please stop centering type. Your type looks way more professional if you don’t.</p></li>
 <li><p>Do not change the HTML file for any reason.</p></li>
 <li><p>Have I asked you to <a href="resources-be-creative-on-your-mistakes.html">avoid the most common mistakes</a>?</p></li>
@@ -100,9 +142,9 @@
 <p><strong>GRC&nbsp;338-03 (Friday lab):</strong> Monday, 7 February 2022 at 11:59pm.</p>
 
 <footer>
-<h6 class="lastupdate">Last update on 11 December 2021, at 2:53 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
+<p class="lastupdate">Last update on 28 January 2022, at 9:39 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
 
-<h6 class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find insconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</h6>
+<p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find insconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
 
 </footer>
 
