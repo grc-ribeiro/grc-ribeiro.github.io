@@ -1,0 +1,68 @@
+/*CSS document*/
+
+/* Replace this whole line 3 with my version of Eric Meyer’s reset tool.*/
+
+body {
+	background-color: _______; /* Not totally white. */
+	color: _______;  /* Not totally black. */
+	line-height: 140%; 	/* A little extra leading. */
+	font-family: _______;
+}
+
+h1 {
+	background-color: _______;
+	color: _______; /* Same as body background. */
+	font-size: _______;
+	padding: ____ ____ ____; /* You want three values. */
+	font-weight: _______;
+	text-transform: _______;
+}
+
+/* You’ll need to add a span element to your HTML. */
+h1 span { 	
+	font-family: _______;
+	font-style: _______;
+	font-weight: _______;
+	text-transform: _______;
+}
+
+h2 {
+	background-color: _______;
+	color: _______;
+	font-size: _______;
+	padding: _______;
+	font-family: _______;
+	font-weight: _______;
+}
+
+h3 {
+	margin: ____ ____ ____; /*Three values again. You got the idea.*/
+	padding-top: _______;
+	font-size: _______;
+	color: _______;
+	font-weight: _______;
+	text-transform: _______;
+	letter-spacing: ____; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+	border-top: ____ ____ ____;
+}
+
+h4 {
+	font-weight: _______;
+}
+
+p.description {
+	font-style: _______;
+}
+
+p.price {
+	color: _______;
+}
+
+ul {
+	margin: ____ ____ ____;
+}
+
+li { 
+	margin: ____ ____;
+}
+
