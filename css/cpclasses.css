@@ -201,7 +201,7 @@ p.resume {
 }
 
 
-ul.schedule li h2 {  /*each date on the schedule page*/
+ul.schedule li h2, ul.schedule li h3 {  /*each date on the schedule page*/
 		font-size: 0.8em;
 		font-weight: normal;
 		text-transform: uppercase;
@@ -214,7 +214,7 @@ ul.schedule li h2 {  /*each date on the schedule page*/
 		padding: 0.2em;
 }
 
-li h2 a {
+li h2 a , li h3 a {
 		/*font-family: 'Helvetica', sans-serif;*/
 		/* border: none; */
 		color: #415835;
@@ -421,7 +421,7 @@ ul.examples li {width: 30%; display: inline-block; margin-right: 1em; margin-bot
 ul.examples li p {font-family: Helvetica, sans-serif; line-height: 1.4em;}
 
 
-li h2 {  /*Design principles rubric explanation on the assignment pages*/
+li h2, li h3 {  /*Design principles rubric explanation on the assignment pages*/
 		font-size: 1em;
 		color: #333;
 		line-height: 1.4em;
@@ -448,7 +448,7 @@ section.rubric ul li {
 		border-bottom: 3px #222  solid;
 }
 
-section.rubric ul li h2 {
+section.rubric ul li h2 , section.rubric ul li h3 {
 		margin: 0;
 		padding: 0.5rem 0.5rem 0 0;
 		border-top: 3px #222 solid;
@@ -456,7 +456,7 @@ section.rubric ul li h2 {
 
 
 
-section.rubric ul li h2 a{
+section.rubric ul li h2 a, section.rubric ul li h3 a{
 
 }
 
@@ -657,7 +657,7 @@ section.rubric ul li {
 		border-bottom: 2px #222  solid;
 }
 
-section.rubric ul li h2 {
+section.rubric ul li h2, section.rubric ul li h3 {
 		margin: 0;
 		padding: 0.5rem 0;
 		grid-column: 1/2; 
@@ -730,16 +730,16 @@ h1, h2, h3, h4, h5, h6 {
 		color: #fafafa;
 }
 
-li h2 {  /*Design principles rubric explanation on the assignment pages*/
+li h2, li h3 {  /*Design principles rubric explanation on the assignment pages*/
 		color: #fafafa;
 }
 
-a, li h2 a {
+a, li h2 a, li h3 a {
 	color: #3b3;
 }
 
 
-ul.schedule li h2 {  /*each date on the schedule page*/
+ul.schedule li h2, ul.schedule li h3 {  /*each date on the schedule page*/
 		color: #ccc;
 		border-top: 2px solid #ccc;
 		border-bottom: 2px solid #ccc;
@@ -755,7 +755,7 @@ section.rubric ul li {
 	border-bottom: 3px #fafafa  solid;
 }
 
-section.rubric ul li h2 {
+section.rubric ul li h2, section.rubric ul li h3 {
 	border-top: 3px #fafafa solid;
 }
 
