@@ -49,10 +49,46 @@
 <li><p>Avoid line breaks (<code>&lt;br /&gt;</code>). Use lists or new paragraphs and style them properly. (That’s not to say that any use of line break is a mistake. The tag exists for a reason, and it’s helpful for addresses or business hours, for example.)</p></li>
 </ol>
 
+<h2>Style  </h2>
+
+<ol>
+<li><p>Don’t include styling on your HTML document.&nbsp;<a href="../references/no-styling-in-html.html">➤</a></p></li>
+<li><p>Don’t include HTML tags in your CSS files either.</p></li>
+<li><p>One CSS file should hold all the formatting for your website. Don’t use a different CSS file for each HTML file.</p></li>
+<li><p>Try not to make different styles for each page either. Your goal is to make them as consistent as possible.</p></li>
+<li><p>Declare all&nbsp;colors as&nbsp;color values, using <code>rgb(x, x, x)</code> or&nbsp;<code>#xxxxxx</code>, or&nbsp;<code>hsl(x, x%, x%)</code>. Don’t use&nbsp;the color names.&nbsp;<a href="../references/color-values.html">➤</a></p></li>
+<li><p>Paragraphs (<code>p</code>) and list litems must be at least <code>1em</code>. (Ideally exactly <code>1em</code>. Or in other words, leave their size alone, respecting the users’ preferences.)&nbsp;<a href="../references/paragraph-font-size.html">➤</a></p></li>
+<li><p>If two pieces of information have the same hierarchy but should look different, use <code>classes</code>. (Don‘t make <code>h3</code> and <code>h4</code> have the same visual hierarchy but with different colors.) </p></li>
+<li><p>Don’t use <code>&lt;i&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;b&gt;</code>, or <code>&lt;strong&gt;</code> on a whole element or paragraph. Also, make sure you’re using them for the right semantic reasons. Use the <code>&lt;span&gt;</code> tag if it makes more sense. <a href="../references/style-formatting-elements.html">➤</a></p></li>
+<li><p>Don’t use all caps on your HTML file. Use the <code>text-transform</code> property on CSS instead.  <a href="../references/html-all-caps.html">➤</a></p></li>
+<li><p>Don’t use <code>px</code> for anything but borders. For <em>everything else</em> use only <code>%</code> and <code>rem</code>, as appropriate. </p></li>
+<li><p>Don’t use <code>pt</code> either. Use only <code>rem</code> for <code>font-size</code>. </p></li>
+<li><p>Don’t use negative margins (or negative paddings). Use <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">Eric Meyer’s Reset CSS tool</a> if you don’t want to deal with default margins messing with your document’s&nbsp;style.</p></li>
+<li><p>Use margins and paddings to clear area around content only. (If you use margins bigger than <code>3rem</code> or <code>5rem</code>, it’ll probably break the layout.) <a href="../references/margins-and-paddings.html">➤</a></p></li>
+<li><p>Use <code>%</code> for <code>width</code> and use <code>rem</code> for <code>max-width</code> and <code>min-width</code>. (In some cases, such as a logo, you may want to use  <code>rem</code> for <code>width</code> as well, but you usually don’t want it.)</p></li>
+</ol>
+
+<h2>Classes  </h2>
+
+<ol>
+<li><p>Be as economical as possible with your classes. In other words, use as many classes as you <em>need</em>, but no more than that.</p></li>
+<li><p>Use semantic names for the classes. (i.e. “highlight” rather than “yellowbg”; “additionalinfo” rather than “rightcolumn”.</p></li>
+<li><p>“Container” is the div around the content of your page. The other divs should be named semantically.</p></li>
+<li><p>All class names should be lowercase and have no spaces. Also, they should not start with numbers and should be short (up to 12 or 15 characters). </p></li>
+</ol>
+
+<h2>Troubleshooting  </h2>
+
+<ol>
+<li><p>If nothing on CSS seems to be affecting your page, make sure you have all the right curly brackets (<code>}</code>) in&nbsp;place.</p></li>
+<li><p>Another common problem is forgetting to include colons and semicolons on each property of the CSS. (<code>property: value;</code>)</p></li>
+<li><p>If it still doesn’t work, make sure you’re working on the right files. (Change some word on <code>h1</code> to check if the HTML file is right, or give the <code>body</code> a background color to check it the CSS file is correct.)</p></li>
+</ol>
+
 <h4>Always check your work on multiple devices, browsers, and&nbsp;window&nbsp;sizes.</h4>
 
 <footer>
-<p class="lastupdate">Last update on 8 September 2022, at 12:50 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+<p class="lastupdate">Last update on 5 October 2022, at 10:00 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
 
 <p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find insconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
 
