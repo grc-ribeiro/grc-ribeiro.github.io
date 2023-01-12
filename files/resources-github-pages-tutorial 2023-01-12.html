@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
-    <head>  
-       	<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta http-equiv="Expires" content="0" />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
 
-		<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
-		<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+	<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
+	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
 
-		<title>Bruno Ribeiro | Cal Poly | Winter 2023 | GRC 338: Web Development and Content Management | Resources |  GitHub Pages tutorial   </title>
+	 <title>Bruno Ribeiro | Cal Poly | GRC 338: Web Development and Content Management | GitHub Pages tutorial</title>
 </head>
 
 
@@ -22,7 +22,7 @@
 
 <h2>Creating an account on GitHub  </h2>
 
-<p>If you already have an account on GitHub, you skip to <a href="#Setting-up-GitHub-Pages">setting up GitHub Pages</a>. Otherwise, you must sign up for a GitHub account. <strong>It’s free.</strong></p>
+<p>If you already have an account on GitHub, you my skip to <a href="#Setting-up-GitHub-Pages">setting up GitHub Pages</a>. Otherwise, you must sign up for a GitHub account. <strong>It’s free.</strong></p>
 
 <ol>
 <li><p>Go to <a href="https://github.com" target="_blank">github.com</a> </p>
@@ -35,27 +35,30 @@
 <p><img src="../images/github-tutorial-2.png" alt="Github home page with a username, a email, and masked password." title="" /></p></li>
 </ol>
 
-<h2 id="Setting-up-GitHub-Pages">Setting up GitHub Pages
-  </h2>
-
-<p>If you have used GitHub Pages with this account, you need to use the same repository with the name <code>[yourusername].github.io</code>. In this case, skip to <a href="#Publishing-the-first-assignment-on-GitHub-Pages">Publishing the first assignment on GitHub Pages</a></p>
+<h2 id="Setting-up-GitHub-Pages">Setting up GitHub Pages</h2>
 
 <ol>
 <li><p>Next to <code>Repositories</code>. click on the green button that reads <code>New</code> to create a new repository.</p>
 
 <p><img src="../images/github-tutorial-3.png" alt="A green button that reads “New” next to “Repositories”." title="" /></p></li>
-<li><p>Your new repository will be named: <code>[yourusername].github.io</code>, where you replace <code>[yourusername]</code> with your actual username. (Again, your GitHub username, <strong>not your Cal&nbsp;Poly’s username</strong>.)</p>
+<li><p>Your new <strong>public</strong> repository will be named: <code>[yourusername].github.io</code>, where you replace <code>[yourusername]</code> with your actual username. (Again, your GitHub username, <strong>not your Cal&nbsp;Poly’s username</strong>.)</p>
+    
 
-<p><img src="../images/github-tutorial-4.png" alt="Owner is grc-ribeiro and a new repository is named “grc-ribeiro.hithub.com”." title="" /></p></li>
+<p><img src="../images/github-tutorial-4.png" alt="Owner is grc-ribeiro and a new repository is named “grc-ribeiro.hithub.com”." title="" /></p>
+    
+<p><strong>Note:</strong> Since it needs to be a public repository, <em>any person</em> with its address is able to see what’s in your repository. I&nbsp;don’t believe many people would look into your homework, but I&nbsp;will. So keep that in&nbsp;mind and don’t store any confidential information in your repository.</p>
+
+</li>
+    
 <li><p>Now that you have a <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-repositories" target="_blank">repository</a>, you get started by creating a new file.</p>
 
+    
 <p><img src="../images/github-tutorial-5.png" alt="Dimmed screen with only the “creating a new file” words being highlighted." title="" /></p></li>
 </ol>
 
 <hr id="Publishing-the-first-assignment-on-GitHub-Pages" />
 
-<h2>Publishing the first assignment on GitHub Pages
-  </h2>
+<h2>Publishing the first assignment on GitHub Pages</h2>
 
 <ol>
 <li><p>All our assignments will be inside the folder <code>grc338</code> in your repository. The way you create the new <code>grc338</code> folder is by typing <code>grc338</code> in the field that reads <em>Name your file…</em>. But you want to add a forward slash (<code>/</code>) right after that, so GitHub understands it’s a folder.</p>
@@ -69,16 +72,21 @@
 <p><img src="../images/github-tutorial-8.png" alt="“grc338/” “helloworld/” are bothfolders now, and “index.html” is in the box for the new file name." title="" /></p></li>
 <li><p>Then, you copy this text and paste into the file:</p>
 
-<pre><code>    &lt;!doctype html&gt;  
-    &lt;html&gt;  
-        &lt;head&gt;  
-            &lt;meta charset="UTF-8"&gt;  
-            &lt;title&gt;GRC 338: Hello World assignment&lt;/title&gt;  
-        &lt;/head&gt;   
-        &lt;body&gt;  
+<pre><code>
+&lt;!doctype html&gt;  
+&lt;html&gt;  
+    &lt;head&gt;  
+            &lt;meta charset="UTF-8" /&gt;  
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;  
+            &lt;meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /&gt;  
+            &lt;meta http-equiv="Pragma" content="no-cache" /&gt;  
+            &lt;meta http-equiv="Expires" content="0" /&gt;  
+            &lt;title&gt;GRC 338: Hello world assignment&lt;/title&gt;  
+    &lt;/head&gt;   
+    &lt;body&gt;  
         &lt;h1&gt;Hello world&lt;/h1&gt;  
-        &lt;/body&gt;  
-    &lt;/html&gt;
+    &lt;/body&gt;  
+&lt;/html&gt;
 </code></pre>
 
 <p><img src="../images/github-tutorial-9.png" alt="The code above shows on the “Edit new file” tab." title="" /></p></li>
@@ -90,16 +98,18 @@
 <p><img src="../images/github-tutorial-11.png" alt="The URL “grc-ribeiro.github.io/grc338/helloworld/” is selected." title="" /></p>
 
 <p><img src="../images/github-tutorial-12.png" alt="A webpage with the words “Hello world” shows up at grc-ribeiro.github.io/grc338/helloworld/" title="" /></p></li>
-<li><p>Don’t forget to submit it your URL to Canvas.  </p></li>
+<li><p>Don’t forget to submit your URL to Canvas.</p></li>
+<li><p>That’s it for the <em>Hello&nbsp;world</em> assignment!  </p></li>
 </ol>
 
 <hr id="Publishing-your-work-on-GitHub-Pages" />
 
-<h2>Publishing your work on GitHub Pages
-  </h2>
+<h2>Publishing your work on GitHub Pages</h2>
+
+<p><em>Instructions for week&nbsp;2 and&nbsp;beyond.</em></p>
 
 <ol>
-<li><p>First, go to the assignment instructions and copy the URL after the&nbsp;first&nbsp;slash (<code>/</code>).</p>
+<li><p>First, go to the assignment instructions and copy the URL after the&nbsp;first&nbsp;slash&nbsp;(<code>/</code>).</p>
 
 <p><img src="../images/github-tutorial-13.png" alt="Assignment instructions for the “Restaurant menu” assignment." title="" /></p>
 
@@ -135,10 +145,7 @@
 </ol>
 
 <footer>
-<p class="lastupdate">Last update on 12 January 2023, at 10:07 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
-
-<p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find insconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
-
+<h6 class="lastupdate">Last update on 13 November 2020, at 12:05 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</h6>
 </footer>
 
 </body>
