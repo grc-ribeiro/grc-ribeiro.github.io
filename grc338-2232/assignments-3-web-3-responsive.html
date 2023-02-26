@@ -20,11 +20,34 @@
 
 <h1>Final website: responsive  </h1>
 
-<p>Using the&nbsp;layout from the&nbsp;last assignment, use&nbsp;media query <strong>as necessary</strong> to&nbsp;make it&nbsp;adapt to&nbsp;different sizes. If&nbsp;you need media queries, make sure that your media queries have a&nbsp;<strong>minimum</strong> width (i.e. <code>min-width: XXem</code>).</p>
+<p>Using the&nbsp;layout from the&nbsp;last assignment, use&nbsp;media query <strong>as necessary</strong> to&nbsp;make it&nbsp;adapt to&nbsp;different sizes. On desktop, you want to make the website look as close as possible to the screenshots below:</p>
 
-<p>Keep your HTML and CSS semantically organized. It’s not a bad idea to check with me if your choices make sense.</p>
+<p><img src="../images/final-website-responsive-1.png" class="screenshot-desktop" alt="Screenshot of a generic website on a desktop-width window." title="" /></p>
 
-<p>Use final content, image, style, etc.</p>
+<p><img src="../images/final-website-responsive-2.png" class="screenshot-desktop" alt="Screenshot of a generic website on a desktop-width window." title="" /></p>
+
+<p><img src="../images/final-website-responsive-3.png" class="screenshot-desktop" alt="Screenshot of a generic website on a desktop-width window." title="" /></p>
+
+<p><img src="../images/final-website-responsive-4.png" class="screenshot-desktop" alt="Screenshot of a generic website on a desktop-width window." title="" /></p>
+
+<p><img src="../images/final-website-responsive-5.png" class="screenshot-desktop" alt="Screenshot of a generic website on a desktop-width window." title="" /></p>
+
+<p><img src="../images/final-website-responsive-6.png" class="screenshot-desktop" alt="Screenshot of a generic website on a desktop-width window." title="" /></p>
+
+<p><img src="../images/final-website-responsive-7.png" class="screenshot-desktop" alt="Screenshot of a generic website on a desktop-width window." title="" /></p>
+
+<p><img src="../images/final-website-responsive-8.png" class="screenshot-desktop" alt="Screenshot of a generic website on a desktop-width window." title="" /></p>
+
+<p><img src="../images/final-website-responsive-9.png" class="screenshot-desktop" alt="Screenshot of a generic website on a desktop-width window." title="" /></p>
+
+<p><img src="../images/final-website-responsive-10.png" class="screenshot-desktop" alt="Screenshot of a generic website on a desktop-width window." title="" /></p>
+
+<p>You will need the following line on the bottom of your CSS, then:</p>
+
+<pre><code>@media screen and (min-width: 60em) {
+
+    }
+</code></pre>
 
 <hr />
 
@@ -32,22 +55,19 @@
 
 <ol>
 <li><p>Start by reading my feedback from previous assignments, so you don’t make the same mistakes. </p></li>
-<li><p>Include on the media query only what’s absolute necessary. If you don’t have elements positioned side&#8209;by&#8209;side, you may not need media queries at all.</p></li>
-<li><p>Be very economical and <a href="../files/assignments-css-restrictions.html">keep following these CSS restrictions</a>.</p></li>
-<li><p>Review your <code>alt</code> attributes. See if the images are still what you have planned before. (It’s okay if you changed your mind about the images, just make sure the <code>alt</code> attributes are correct.) </p></li>
-</ol>
-
-<hr />
-
-<h2>Requirements  </h2>
-
-<ol>
-<li><p>Four pages with final content being adaptive to any browser in any device.</p></li>
-<li><p>Menu with a total of at least <del>twenty</del> eight items, <del>in at least three different categories</del>. (That’s the actual menu for food, drink, etc., not navigation.)</p></li>
-<li><p>Each item on the menu needs description and price.</p></li>
-<li><p>At least one image per page (besides the logo).</p></li>
+<li><p>If you haven’t yet, you’ll need to include the following rule in your CSS: <br />
+        <code>body { <br />
+                font-family: sans-serif; <br />
+                }</code></p></li>
+<li><p>You also need the following rule in your CSS: <br />
+        <code>div.container { <br />
+            position: relative; <br />
+            min-height: 100vh; <br />
+        }</code></p></li>
+<li><p>To make each link to change color when it’s the selected page, give a class <code>selected</code> to its <code>li</code> in HTML, and use <code>nav ul li.selected a { }</code> as the selector of a new rule in CSS. (This rule doesn’t need to be in the media query.)</p></li>
+<li><p>Use an <code>&lt;article&gt;</code> element in your <code>index.html</code> and <code>contact.html</code>, then style it with light blue in CSS.</p></li>
+<li><p>Include on the media query only what’s absolute necessary. (I&nbsp;only used three rules and a total of seven declarations in the media query.)</p></li>
 <li><p>When you’re done, use tools such as <a href="https://www.freeformatter.com/html-formatter.html" target="_blank">FreeFormatter</a>, <a href="https://webformatter.com/html" target="_blank">HTML&nbsp;Formatter</a>, or&nbsp;<a href="https://codebeautify.org/htmlviewer/" target="_blank">Code&nbsp;Beautify</a> to organize your HTML code.</p></li>
-<li><p><strong>Only one CSS file for all the pages.</strong> (Not <del>one for each page</del>.)</p></li>
 </ol>
 
 <hr />
@@ -56,150 +76,11 @@
 
 <p>Penalties in&nbsp;the <strong><a href="resources-be-creative-on-your-mistakes.html">list of&nbsp;easy mistakes to&nbsp;avoid</a></strong> are&nbsp;20&nbsp;points now. Three or more mistakes is an <strong>automatic zero</strong>, with no further comments. There’s no&nbsp;reason not&nbsp;to avoid all&nbsp;of them,&nbsp;though.</p>
 
-<p>Beyond your technical skills on the HTML and CSS files, you will be evaluated on your capacity to <strong>apply the design principles that we have discussed in class to your work</strong>, using the rubric below.</p>
-
-<h2>Rubric  </h2>
-
-<section class="rubric">
-
-
-<ul>
-<li><h2><a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=18" target="_blank">Aesthetic-usability effect</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=104" target="_blank">Form follows function</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=82" target="_blank">Expectation&nbsp;effect</a>  </h2>
-
-<h4>10 points</h4>
-
-<p>Were aesthetic decisions on&nbsp;the website guided by&nbsp;the appropriate language for&nbsp;the business it’s representing and&nbsp;its&nbsp;functionalities?  </p>
-
-<ul>
-<li><strong>10 pts</strong> Satisfactory  </li>
-<li><strong>8 pts</strong> Mostly satisfactory  </li>
-<li><strong>5 pts</strong> Partially satisfactory  </li>
-<li><strong>0 pts</strong> Unsatisfactory</li>
-</ul></li>
-<li><h2><a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=22" target="_blank">Alignment</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=120" target="_blank">Hierarchy</a>  </h2>
-
-<h4>10 points</h4>
-
-<p>Does the&nbsp;placement of&nbsp;elements create a&nbsp;sense of&nbsp;unity and&nbsp;cohesion, contributing to&nbsp;the design’s overall aesthetic and&nbsp;perceived stability? Does&nbsp;the&nbsp;alignment of&nbsp;elements correctly lead the&nbsp;user through the&nbsp;page? Does&nbsp;the&nbsp;visual hierarchy represent the&nbsp;content&nbsp;hierarchy? <br />
-<strong>Tip:</strong> If you have a centered heading for left&#8209;aligned text, you’ll get a <code>0</code> for this criterion.  </p>
-
-<ul>
-<li><strong>10 pts</strong> Satisfactory  </li>
-<li><strong>8 pts</strong> Mostly satisfactory  </li>
-<li><strong>5 pts</strong> Partially satisfactory  </li>
-<li><strong>0 pts</strong> Unsatisfactory  </li>
-</ul></li>
-<li><h2><a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=78" target="_blank">Entry point</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=248" target="_blank">Visibility</a>  </h2>
-
-<h4>10 points</h4>
-
-<p>Does the&nbsp;home page conveys its&nbsp;job as&nbsp;the initial point of&nbsp;the website? Does it&nbsp;promote additional interaction? Are&nbsp;the main information and&nbsp;functionalities on&nbsp;each page clearly visible to&nbsp;the&nbsp;user?  </p>
-
-<ul>
-<li><strong>10 pts</strong> Satisfactory  </li>
-<li><strong>8 pts</strong> Mostly satisfactory  </li>
-<li><strong>5 pts</strong> Partially satisfactory  </li>
-<li><strong>0 pts</strong> Unsatisfactory  </li>
-</ul></li>
-<li><h2><a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=46" target="_blank">Color</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=124" target="_blank">Highlighting</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=252" target="_blank">Von Restorff effect</a>  </h2>
-
-<h4>10 points</h4>
-
-<p>Is color being used effectively to direct users to attract attention, group elements, indicate meaning, and enhance aesthetics? <br />
-<strong>Tip:</strong> I’d suggest using tools such as&nbsp;    <a href="https://color.adobe.com/create/color-wheel/" target="_blank">Adobe&nbsp;Color</a> to achieve a harmonic color palette.  </p>
-
-<ul>
-<li><strong>10 pts</strong> Satisfactory  </li>
-<li><strong>8 pts</strong> Mostly satisfactory  </li>
-<li><strong>5 pts</strong> Partially satisfactory  </li>
-<li><strong>0 pts</strong> Unsatisfactory  </li>
-</ul></li>
-<li><h2><a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=54" target="_blank">Consistency</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=224" target="_blank">Similarity</a>  </h2>
-
-<h4>10 points</h4>
-
-<p>Are similar parts related? Are related parts similar? Are the variations consistently applied in all parts of the website?  </p>
-
-<ul>
-<li><strong>10 pts</strong> Satisfactory  </li>
-<li><strong>8 pts</strong> Mostly satisfactory  </li>
-<li><strong>5 pts</strong> Partially satisfactory  </li>
-<li><strong>0 pts</strong> Unsatisfactory</li>
-</ul></li>
-<li><h2><a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=182" target="_blank">Picture superiority effect</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=86" target="_blank">Face-ism ratio</a>  </h2>
-
-<h4>10 points</h4>
-
-<p>Are images being used to&nbsp;complement the&nbsp;information on&nbsp;the website? If&nbsp;you have images of&nbsp;people, is&nbsp;the appropriate face-ism ratio being respected in&nbsp;all&nbsp;images?  </p>
-
-<ul>
-<li><strong>10 pts</strong> Satisfactory  </li>
-<li><strong>8 pts</strong> Mostly satisfactory  </li>
-<li><strong>5 pts</strong> Partially satisfactory  </li>
-<li><strong>0 pts</strong> Unsatisfactory</li>
-</ul></li>
-<li><h2><a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=194" target="_blank">Proximity</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=126" target="_blank">Horror vacui</a>  </h2>
-
-<h4>10 points</h4>
-
-<p>Are related elements close together? Are&nbsp;close elements related? Are&nbsp;the amount of&nbsp;blank space on&nbsp;the pages appropriate for&nbsp;the business the&nbsp;website&nbsp;represents?  </p>
-
-<ul>
-<li><strong>10 pts</strong> Satisfactory  </li>
-<li><strong>8 pts</strong> Mostly satisfactory  </li>
-<li><strong>5 pts</strong> Partially satisfactory  </li>
-<li><strong>0 pts</strong> Unsatisfactory</li>
-</ul></li>
-<li><h2><a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=146" target="_blank">Legibility</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=38" target="_blank">Chunking</a>  </h2>
-
-<h4>10 points</h4>
-
-<p>Is the text legible? Does the text have appropriate size, typeface, contrast, line-length, and&nbsp;spacing? Is&nbsp;the&nbsp;information broken into appropriate chunks, so it is easier to process and remember? <br />
-<strong>Tip:</strong> If you have a centered paragraph, you’ll get a <code>0</code> for this criterion.  </p>
-
-<ul>
-<li><strong>10 pts</strong> Satisfactory  </li>
-<li><strong>8 pts</strong> Mostly satisfactory  </li>
-<li><strong>5 pts</strong> Partially satisfactory  </li>
-<li><strong>0 pts</strong> Unsatisfactory</li>
-</ul></li>
-<li><h2><a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=152" target="_blank">Mental model</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=258" target="_blank">Wayfinding</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=130" target="_blank">Iconic&nbsp;representation</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=96" target="_blank">Fitts’s&nbsp;law</a>  </h2>
-
-<h4>10 points</h4>
-
-<p>Is the&nbsp;layout consistent with users’ expectations? Can&nbsp;users easily navigate through the&nbsp;pages of&nbsp;the website? Are&nbsp;the buttons easily understandable? Do&nbsp;the links follow a&nbsp;logical order? Are&nbsp;the buttons easily selectable, even if users are using their fingers on a touch screen rather than a&nbsp;mouse?  </p>
-
-<ul>
-<li><strong>10 pts</strong> Satisfactory  </li>
-<li><strong>8 pts</strong> Mostly satisfactory  </li>
-<li><strong>5 pts</strong> Partially satisfactory  </li>
-<li><strong>0 pts</strong> Unsatisfactory</li>
-</ul></li>
-<li><h2><a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=118" target="_blank">Hick’s law</a>; <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=186" target="_blank">Progressive disclosure</a>  </h2>
-
-<h4>10 points</h4>
-
-<p>Are the possibilities of interaction limited to an appropriate number at each page? If there are too many options, are they broken into easily identifiable divisions in the page?  </p>
-
-<ul>
-<li><strong>10 pts</strong> Satisfactory  </li>
-<li><strong>8 pts</strong> Mostly satisfactory  </li>
-<li><strong>5 pts</strong> Partially satisfactory  </li>
-<li><strong>0 pts</strong> Unsatisfactory</li>
-</ul></li>
-</ul>
-
-</section>
-
-
-<p><em>Other principles, such as <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=198" target="_blank">Recognition&nbsp;over&nbsp;recall</a>, <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=80" target="_blank">Errors</a>, <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=102" target="_blank">Forgiveness</a>, and&nbsp;especially <a href="https://ebookcentral.proquest.com/lib/calpoly/reader.action?docID=3399678&amp;ppg=14" target="_blank">Accessibility</a> must be taken in&nbsp;consideration, but they are covered by other principles and/or by the HTML/CSS part of the evaluation.</em></p>
-
 <hr />
 
 <h2>Tips  </h2>
 
 <ol>
-<li><p>Try to reuse classes for consistency.</p></li>
 <li><p>Don’t rewrite all the properties for an element on its declaration in the media query. Write only what changes in bigger sizes.</p></li>
 <li><p>Make sure to use appropriate, semantic class names.</p></li>
 <li><p>Use&nbsp;proper headings for&nbsp;headings, proper paragraph tags for&nbsp;each paragraph, appropriate list and&nbsp;list items tags for&nbsp;the lists,&nbsp;etc.</p></li>
@@ -215,20 +96,18 @@
 <h2>Submission  </h2>
 
 <ol>
-<li><p><mark>You do need to submit something on Canvas this time.</mark></p></li>
 <li><p>Go to your public repository on GitHub, and open a new folder named <strong>grc338/website-responsive</strong>.&nbsp;(It’s&nbsp;a&nbsp;different URL&nbsp;from last week.)<a href="resources-github-pages-tutorial.html#Publishing-your-work-on-GitHub-Pages">➤</a></p></li>
 <li><p>Create a new <strong>index.html</strong> file and commit.&nbsp;<a href="resources-github-pages-tutorial.html#Publishing-your-work-on-GitHub-Pages">➤</a></p></li>
-<li><p>Upload all four HTML files (<code>index.html</code>, <code>about.html</code>, <code>menu.html</code> and <code>location.html</code>) to your GitHub repository.&nbsp;<a href="resources-github-pages-tutorial.html#Publishing-your-work-on-GitHub-Pages">➤</a></p></li>
+<li><p>Upload all four HTML files (<code>index.html</code>, <code>about.html</code>, <code>menu.html</code> and <code>contact.html</code>) to your GitHub repository.&nbsp;<a href="resources-github-pages-tutorial.html#Publishing-your-work-on-GitHub-Pages">➤</a></p></li>
 <li><p>Upload your CSS file.</p></li>
 <li><p>Upload all your image files too.</p></li>
 <li><p>Click on <a href="links-3-web-3-responsive.html" target="_blank">your name</a> to check if it’s working.</p></li>
-<li><p>If it’s working, <strong>submit the thumbs&#8209;up emoji on Canvas</strong>.</p></li>
 </ol>
 
 <p><strong>Check Canvas for deadlines.</strong></p>
 
 <footer>
-<p class="lastupdate">Last update on 17 November 2022, at 1:45 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+<p class="lastupdate">Last update on 26 February 2023, at 2:45 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
 
 <p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find insconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
 
