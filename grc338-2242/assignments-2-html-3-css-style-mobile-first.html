@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+    <head>  
+       	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<link rel="stylesheet" type="text/css" href="../css/cpclasses-previous-quarter.css">
+		<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+		<title>Bruno Ribeiro | Cal Poly | Fall 2023 | GRC 338: Web Development and Content Management | Assignments |  CSS style: mobile&nbsp;first   </title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 338</a>: <a href="assignments.html">Assignments</a></h5>
+
+<h1>CSS style: mobile&nbsp;first  </h1>
+
+<p>I’m providing the&nbsp;structure for&nbsp;a webpage and&nbsp;your job&nbsp;is to&nbsp;style to as close as possible to the screenshots below:</p>
+
+<p><img src="../images/lasagna-mobile-first-1.png" class="screenshot-mobile" alt="Screenshot of a lasagna recipe on a narrow broser window." title="" /></p>
+
+<p><img src="../images/lasagna-mobile-first-2.png" class="screenshot-mobile" alt="Screenshot of a lasagna recipe on a narrow broser window." title="" /></p>
+
+<p>I also included a&nbsp;placeholder image. You&nbsp;need to&nbsp;replace it&nbsp;with an&nbsp;appropriate&nbsp;image. </p>
+
+<p>For this assignment, the&nbsp;goal is&nbsp;to make it&nbsp;look good on&nbsp;<strong>smartphone only</strong>. You&nbsp;don’t need to&nbsp;worry about tablets, laptops, and&nbsp;desktops. (We will work on&nbsp;it next&nbsp;week.)</p>
+
+<p>Whatever you&nbsp;do, though, you&nbsp;may not&nbsp;edit the&nbsp;HTML file at&nbsp;all.</p>
+
+<p>Publish your pages on&nbsp;the URL: <strong><em>username</em>.github.io/grc338/css-mobile-first</strong> </p>
+
+<hr />
+
+<h2>Set&nbsp;up  </h2>
+
+<ol>
+<li><p>Download <a href="../files/lasagna-recipe-files.zip">this zip&nbsp;file</a>. </p></li>
+<li><p>Unzip the&nbsp;file. It&nbsp;contains one&nbsp;HTML file, one&nbsp;image, and&nbsp;one CSS&nbsp;file.</p></li>
+<li><p>Open the&nbsp;CSS in&nbsp;<a href="https://code.visualstudio.com/" target="_blank">VS&nbsp;Code</a> (or your text editor of&nbsp;choice).</p></li>
+</ol>
+
+<hr />
+
+<h2>Tasks  </h2>
+
+<ol>
+<li><p>Replace the&nbsp;image, <strong>without changing the&nbsp;HTML</strong> file. (Rename the other image.)</p></li>
+<li><p>Write your CSS to make it look like my screenshot.</p></li>
+<li><p><a href="resources-be-creative-on-your-mistakes.html">Check the&nbsp;list of&nbsp;mistakes to&nbsp;avoid.</a></p></li>
+<li><p>Work offline on&nbsp;your CSS&nbsp;file, until you&nbsp;found a&nbsp;solution that you’re happy with, but&nbsp;don’t change the&nbsp;HTML&nbsp;file.</p></li>
+</ol>
+
+<hr />
+
+<h2>CSS properties for&nbsp;the&nbsp;fonts in&nbsp;the&nbsp;document  </h2>
+
+<p>To use the fonts I’m using on my example, you’ll need to add the <code>font-family</code>, <code>font-weight</code>, and f<code>ont-style</code> values that are listed below:</p>
+
+<h3>Example</h3>
+
+<p>If you wanted to use Sutro Light Italic on your paragraph (you don’t), you would need:</p>
+
+<pre><code>    p {  
+        font-family: Sutro, serif;  
+        font-weight: 300;  
+        font-style: italic;  
+    }
+</code></pre>
+
+<p><strong>So don’t copy the example above</strong>, but use it as a model to apply the each typeface from the list below to where they belong in your CSS. (Yes, there’s some trial and error involved.)</p>
+
+<ul>
+<li><h3>Sutro Light Italic  </h3>
+
+<pre><code>    font-family: Sutro, serif;  
+    font-weight: 300;  
+    font-style: italic;
+</code></pre></li>
+<li><h3>Sutro Light  </h3>
+
+<pre><code>    font-family: Sutro, serif;  
+    font-weight: 300;  
+    font-style: normal;
+</code></pre></li>
+<li><h3>Sutro Bold  </h3>
+
+<pre><code>    font-family: Sutro, serif;  
+    font-weight: 700;  
+    font-style: normal;
+</code></pre></li>
+<li><h3>Sutro Bold Italic  </h3>
+
+<pre><code>    font-family: Sutro, serif;  
+    font-weight: 700;  
+    font-style: italic;
+</code></pre></li>
+<li><h3>Poppins Italic  </h3>
+
+<pre><code>    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: italic;
+</code></pre></li>
+<li><h3>Poppins Regular  </h3>
+
+<pre><code>    font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: normal;
+</code></pre></li>
+<li><h3>Poppins Bold Italic  </h3>
+
+<pre><code>    font-family: poppins, sans-serif;  
+    font-weight: 700;  
+    font-style: italic;
+</code></pre></li>
+<li><h3>Poppins Bold  </h3>
+
+<pre><code>    font-family: poppins, sans-serif;  
+    font-weight: 700;  
+    font-style: normal;
+</code></pre></li>
+</ul>
+
+<hr />
+
+<h2>Evaluation  </h2>
+
+<p>You’ll be evaluated on&nbsp;your technical skills using&nbsp;CSS.</p>
+
+<hr />
+
+<h2>Tips  </h2>
+
+<ol>
+<li><p>Remember, it’s smartphone only. Don’t worry about wider screens.</p></li>
+<li><p>You&nbsp;don’t need to&nbsp;make the&nbsp;content narrow for&nbsp;mobile. Make the&nbsp;browser window narrow&nbsp;instead.</p></li>
+<li><p><strong>Do not&nbsp;change the&nbsp;HTML file for&nbsp;any reason! Not&nbsp;one bit!!!</strong></p></li>
+<li><p>Always make sure to&nbsp;<a href="resources-be-creative-on-your-mistakes.html">avoid the&nbsp;most common mistakes</a></p></li>
+</ol>
+
+<hr />
+
+<h2>Submission  </h2>
+
+<ol>
+<li><p>You&nbsp;don’t have to&nbsp;submit anything on&nbsp;Canvas.</p></li>
+<li><p>Got&nbsp;to your public repository on&nbsp;GitHub, and&nbsp;open a&nbsp;new folder named <strong>grc338/css-mobile-first/</strong>. (Always copy and paste.)&nbsp;<a href="resources-github-pages-tutorial.html#Publishing-your-work-on-GitHub-Pages">➤</a></p></li>
+<li><p>Create a&nbsp;new <strong>index.html</strong> file and&nbsp;commit.&nbsp;<a href="resources-github-pages-tutorial.html#Publishing-your-work-on-GitHub-Pages">➤</a></p></li>
+<li><p>Upload all&nbsp;three files (<em>index.html</em>, <em>lasagnastyle.css</em>, and&nbsp;<em>lasagna.jpg</em>) to&nbsp;your GitHub repository.&nbsp;<a href="resources-github-pages-tutorial.html#Publishing-your-work-on-GitHub-Pages">➤</a></p></li>
+<li><p>Click on&nbsp;<a href="links-2-html-3-css-style-mobile-first.html" target="_blank">your name</a> to&nbsp;check if&nbsp;it’s&nbsp;working.</p></li>
+<li><p>Open the&nbsp;same link <strong>on your phone</strong> to&nbsp;check it&nbsp;again.</p></li>
+</ol>
+
+<p><strong>Check canvas for deadlines.</strong></p>
+
+<footer>
+<p class="lastupdate">Last update on 28 August 2023, at 5:20 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+
+<p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find insconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
+
+</footer>
+
+</body>
+</html>
