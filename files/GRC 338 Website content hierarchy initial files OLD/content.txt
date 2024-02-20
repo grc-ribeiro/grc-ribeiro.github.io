@@ -1,17 +1,10 @@
-You have four pages of content below. After each line of asterisks, you have the content for one page. The line of asterisk is not part of the content. This paragraph is not part of the content either, it’s just instructions. 
-
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 Every business has a nice slogan. Ours is coming soon.
 
 123 Happy Ave, San Luis Obispo, California
 
-805-756-1108
+805-756-3663
 
-© All rights reserved. The Restaurant, 2024.
-
-
-
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+© All rights reserved. The Restaurant, 2023.
 
 About us
 
@@ -25,9 +18,6 @@ Suspendisse iaculis sapien pulvinar nunc pharetra, in lobortis massa vulputate. 
 
 Aliquam quis elit ac augue ultricies eleifend. Mauris et dictum ex. Phasellus mi sapien, commodo at maximus sed, aliquam eget sem. Mauris eu justo sit amet lectus auctor porttitor. Quisque id massa porttitor dolor bibendum luctus. Donec faucibus nisl sit amet ex ultrices ultricies. Nullam aliquam sed sapien eu rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse efficitur id sem a facilisis. Sed tincidunt ante sed lacinia interdum. Ut interdum posuere tincidunt. Vivamus pharetra sapien rhoncus aliquet luctus.
 
-
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-
 Menu
 
 Category 1
@@ -36,37 +26,37 @@ Category 1
 
 Product 1
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 2
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 3
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 4
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 5
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 6
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
@@ -76,37 +66,37 @@ Category 2
 
 Product 7
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 8
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 9
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 10
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 11
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 12
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
@@ -116,37 +106,37 @@ Category 3
 
 Product 13
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 14
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 15
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 16
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 17
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 18
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
@@ -156,42 +146,39 @@ Category 4
 
 Product 19
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 20
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 21
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 22
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 23
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
 
 Product 24
 
-long-ish description of the product, maybe with ingredients or how it’s cooked
+long-ish description of the product
 
 $0.00
-
-
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 
 [Placeholder for a map image]
 
