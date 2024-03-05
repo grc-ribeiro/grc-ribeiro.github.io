@@ -63,8 +63,9 @@
         <code>div.container { <br />
             position: relative; <br />
             min-height: 100vh; <br />
-        }</code></p></li>
-<li><p>To make each link to change color when it’s the selected page, give a class <code>selected</code> to its <code>li</code> in HTML, and use <code>nav ul li.selected a { }</code> as the selector of a new rule in CSS. (This rule doesn’t need to be in the media query.)</p></li>
+        }</code> <br />
+(Although, you should have it already.)</p></li>
+<li><p>To make each link to change color when it’s the selected page, give a class <code>selected</code> to its <code>li</code> in HTML, and use <code>nav ul li.selected a { }</code> as the selector of a new rule in CSS. (This rule doesn’t need to be in the media query.) It’s <em>not</em> a hover style.</p></li>
 <li><p>Use an <code>&lt;article&gt;</code> element in your <code>about.html</code> and <code>contact.html</code>, then style it with light blue in CSS.</p></li>
 <li><p>Include on the media query only what’s absolute necessary. (I&nbsp;only used three rules and a total of seven declarations in the media query.)</p></li>
 <li><p>When you’re done, use tools such as <a href="https://www.freeformatter.com/html-formatter.html" target="_blank">FreeFormatter</a>, <a href="https://webformatter.com/html" target="_blank">HTML&nbsp;Formatter</a>, or&nbsp;<a href="https://codebeautify.org/htmlviewer/" target="_blank">Code&nbsp;Beautify</a> to organize your HTML code.</p></li>
@@ -76,11 +77,15 @@
 
 <p>Penalties in&nbsp;the <strong><a href="resources-be-creative-on-your-mistakes.html">list of&nbsp;easy mistakes to&nbsp;avoid</a></strong> are&nbsp;20&nbsp;points now. Three or more mistakes is an <strong>automatic zero</strong>, with no further comments. There’s no&nbsp;reason not&nbsp;to avoid all&nbsp;of them,&nbsp;though.</p>
 
+<p><strong>Important:</strong> The red background is not a border. It’s hidden in small screens and peeking from behind the content when the content stops growing. In other words, it must behave just like the gray background in the <a href="/assignments-2-html-4-css-style-grid-layout.html">HTML/CSS: CSS style grid layout</a>. You really want to check with me if it’s behaving correctly, because if it’s not, it’s an automatically 0 for the assignment.</p>
+
 <hr />
 
 <h2>Tips  </h2>
 
 <ol>
+<li><p>You don’t want the width of your logo in percentages. Think about it; do you want the logo to grow as the browser window grows or do you want a specific size?  (You rarely want any width in percentage.)</p></li>
+<li><p>Then, for the grid in the header, you don’t need both columns in the same size. You want the first column (with the logo) to be just big enough to hold the logo, and the second column (with the navigation menu) to take the rest of width <em>auto</em>matically.</p></li>
 <li><p>Don’t rewrite all the properties for an element on its declaration in the media query. Write only what changes in bigger sizes.</p></li>
 <li><p>Make sure to use appropriate, semantic class names.</p></li>
 <li><p>Use&nbsp;proper headings for&nbsp;headings, proper paragraph tags for&nbsp;each paragraph, appropriate list and&nbsp;list items tags for&nbsp;the lists,&nbsp;etc.</p></li>
@@ -107,7 +112,7 @@
 <p><strong>Check Canvas for deadlines.</strong></p>
 
 <footer>
-<p class="lastupdate">Last update on 15 January 2024, at 3:56 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+<p class="lastupdate">Last update on 4 March 2024, at 5:26 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
 
 <p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find insconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
 
