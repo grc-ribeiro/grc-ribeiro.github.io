@@ -12,6 +12,12 @@ body {
 		line-height: 1.6em;
 }
 
+picture {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+	}
+
 p, h2, h3, h4, h5, li{
 		max-width:36em;
 }
