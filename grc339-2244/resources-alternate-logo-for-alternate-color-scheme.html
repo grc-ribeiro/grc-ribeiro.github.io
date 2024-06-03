@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>  
+       	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<link rel="stylesheet" type="text/css" href="../css/cpclasses-current.css">
+		<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+
+		<title>Bruno Ribeiro | Cal Poly | Spring 2024 | GRC 339: Web Design and Production  | Resources |  Alternate logo for&nbsp;alternate color scheme   </title>
+</head>
+
+
+<body>
+
+<h5 class="classheader"><a href="index.html">GRC 339</a>: <a href="resources.html">Resources</a></h5>
+
+<h1>Alternate logo for&nbsp;alternate color scheme  </h1>
+
+<p>For the alternate color scheme on your website, it is required that you have an alternate logo. (Not all websites will have an alternate logo for alternate color scheme, but you need for this assignment, so you can learn how to do it.)</p>
+
+<p>As it is often the case, there are several ways this can be achieved.</p>
+
+<hr />
+
+<h2>Step 1: Creating the new logo  </h2>
+
+<p>On Illustrator, you’ll open the SVG file and make sure that your artboard is cropped close to your logo. (This was necessary either way.)</p>
+
+<p><img src="../images/cool-magazine-logo-dark-blue-illustrator.png" class="screenshot-mobile" alt="The word “Cool” written in dark blue on a sans-serif typeface on an artboard in Adobe Illustrator" title="" /></p>
+
+<p>Just change the color of the logo and save it with a new name. Leave the background transparent with no color.</p>
+
+<p><img src="../images/cool-magazine-logo-light-blue-illustrator.png" class="screenshot-mobile" alt="The word “Cool” written in light blue on a sans-serif typeface on an artboard in Adobe Illustrator" title="" /></p>
+
+<hr />
+
+<h2>Step 2: Checking your HTML  </h2>
+
+<p>Make sure you have your logo as an SVG file, inside the <code>img</code> tag inside the <code>h1</code> tag:</p>
+
+<p><code>&lt;h1&gt;&lt;a href="index.html"&gt;&lt;img src="cool-magazine-logo.svg" alt="Cool Magazine"&gt;&lt;/a&gt;&lt;/h1&gt;</code></p>
+
+<p>Again, this was already required for the previous assignments. You <em>did</em> have your logo as a link to home and inside the heading 1, right? <em>Right?</em></p>
+
+<hr />
+
+<h2>Step 3: Checking your CSS file  </h2>
+
+<p>You want to have your <code>h1</code> with a specific width in <code>em</code>:</p>
+
+<pre><code>h1 {  
+    width: 10em;  
+    }  
+</code></pre>  
+
+<p>And you want your <code>img</code> with a width of 100%:</p>
+
+<pre><code>img {  
+    width: 100%;  
+    }  
+</code></pre>
+
+<p>The declaration blocks above should be <em>outside</em> any media query.</p>
+
+<hr />
+
+<h2>Step 4: Changing your CSS file  </h2>
+
+<p>Now comes the part that you’ll change for the alternate color-scheme, therefore, it should go only <strong>inside</strong> the <code>prefers-color-scheme</code> <strong>media query</strong>.</p>
+
+<p>First you’ll make the alternate logo the background image of your heading 1:</p>
+
+<pre><code>h1 {  
+    background-image: url("cool-magazine-logo-alt.svg");  
+    background-repeat: no-repeat;  
+    background-size: contain;  
+    }  
+</code></pre>
+
+<p>Since it’s in the background, though, the original logo is going to cover it, which is not what you want. But you can hide the original logo entirely. You’ll make the <code>img</code> element inside the <code>h1</code> element completely transparent:</p>
+
+<pre><code>h1 img {  
+    opacity: 0;  
+    }  
+</code></pre>
+
+<p>Just remember to keep the above declaration blocks <strong>inside</strong> the <code>prefers-color-scheme</code> <strong>media query</strong>.</p>
+
+<footer>
+<p class="lastupdate">Last update on 27 November 2023, at 11:54 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+
+<p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find insconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
+
+</footer>
+
+</body>
+</html>
