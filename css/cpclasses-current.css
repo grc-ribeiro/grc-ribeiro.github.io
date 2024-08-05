@@ -316,7 +316,17 @@ blockquote.classjournal{
 		line-height: 1.6em;
 }
 
-blockquote.classjournal p{
+blockquote.insidejournal{
+		margin-bottom: 1rem;
+		padding-left:3em;
+		border-left: 0;
+		font-size: 1em;
+		line-height: 1.6em;
+		border-left: #eee solid 4px;
+}
+
+
+blockquote.classjournal p, blockquote.insidejournal p{
 		font-style: italic;
 }
 
@@ -775,6 +785,11 @@ section.rubric strong{
 
 code {
 	color: #31ebcc9c
+}
+
+
+blockquote.insidejournal{
+		border-left: #888 solid 4px;
 }
 
 
