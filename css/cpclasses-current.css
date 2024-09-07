@@ -217,7 +217,7 @@ ul.schedule li h2, ul.schedule li h3 {  /*each date on the schedule page*/
 		float: left;
 		border-top: 2px solid #333;
 		border-bottom: 2px solid #333;
-		padding: 0.2em;
+		padding: 0.2em 0;
 }
 
 li h2 a , li h3 a {
