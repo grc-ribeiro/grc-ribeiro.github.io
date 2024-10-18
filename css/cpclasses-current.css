@@ -326,9 +326,11 @@ blockquote.insidejournal{
 }
 
 
-blockquote.classjournal p, blockquote.insidejournal p{
+blockquote.classjournal p, blockquote.insidejournal p, blockquote.classjournal p strong {
 		font-style: italic;
 }
+
+
 
 p.classjournal {
 		padding-left: 1em;
