@@ -81,7 +81,7 @@ p a, li a, h5 a {
 
 
 
-h5.classheader a {
+nav.classheader a, nav.breadcrumb p a {
 		border: none;
 }
 
