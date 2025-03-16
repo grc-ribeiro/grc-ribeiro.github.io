@@ -235,10 +235,12 @@ h2.schedule {
 		margin-bottom: 0;
 }
 
+/* 
 h2.schedule + p{
 		font-size: 0.8em;
 		margin-top: 0;
 }
+ */
 
 li h4 {
 		margin: 0;
