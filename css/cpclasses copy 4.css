@@ -6,20 +6,10 @@ body {
 		font-size: 1em;
 		max-width: 36em;
 		outline: 2px;
-		margin: 0 2em;
-		padding-bottom: .5em;
-		line-height: 1.6em;
-}
-
-picture {
-		margin: 0;
-		padding: 0;
-		display: inline-block;
-	}
-
-h5 {
 		border-top: #383 solid 1px;
-		padding: 3em 0 0;
+		margin: 3em 2em;
+		padding-bottom: 1em;
+		line-height: 1.6em;
 }
 
 p, h2, h3, h4, h5, li{
@@ -81,7 +71,7 @@ p a, li a, h5 a {
 
 
 
-nav.classheader a, nav.breadcrumb p a {
+h5.classheader a {
 		border: none;
 }
 
@@ -181,7 +171,6 @@ p.disclaimer {
 
 p {
 		margin-bottom:0.4em;
-		text-wrap: pretty;
 }
 
 ul {
@@ -222,7 +211,7 @@ ul.schedule li h2, ul.schedule li h3 {  /*each date on the schedule page*/
 		float: left;
 		border-top: 2px solid #333;
 		border-bottom: 2px solid #333;
-		padding: 0.2em 0;
+		padding: 0.2em;
 }
 
 li h2 a , li h3 a {
@@ -236,12 +225,10 @@ h2.schedule {
 		margin-bottom: 0;
 }
 
-/* 
 h2.schedule + p{
 		font-size: 0.8em;
 		margin-top: 0;
 }
- */
 
 li h4 {
 		margin: 0;
@@ -323,21 +310,9 @@ blockquote.classjournal{
 		line-height: 1.6em;
 }
 
-blockquote.insidejournal{
-		margin-bottom: 1rem;
-		padding-left:3em;
-		border-left: 0;
-		font-size: 1em;
-		line-height: 1.6em;
-		border-left: #eee solid 4px;
-}
-
-
-blockquote.classjournal p, blockquote.insidejournal p, blockquote.classjournal p strong {
+blockquote.classjournal p{
 		font-style: italic;
 }
-
-
 
 p.classjournal {
 		padding-left: 1em;
@@ -731,10 +706,11 @@ section.rubric ul li ul li strong{
 @media screen and (prefers-color-scheme: dark) {
 
 html, body {
-	/* background: #181a1b; */
-	background: #363636;
+	background: #181a1b;	
+/* 	background: #363636; */
 	color: #bababa;
 }
+
 
 
 strong, b {
@@ -742,16 +718,15 @@ strong, b {
 }
 
 
-/* 
-strong, b {
+h1 {
 		color: #363636;		
 		background: #ccc;
 }
 
- */
 
 
-h1, h2, h3, h4, h5, h6 {
+
+h2, h3, h4, h5, h6 {
 		color: #fafafa;
 }
 
@@ -794,11 +769,6 @@ section.rubric strong{
 
 code {
 	color: #31ebcc9c
-}
-
-
-blockquote.insidejournal{
-		border-left: #888 solid 4px;
 }
 
 
