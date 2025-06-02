@@ -731,7 +731,6 @@ section.rubric ul li ul li strong{
 @media screen and (prefers-color-scheme: dark) {
 
 html, body {
-	/* background: #181a1b; */
 	background: #363636;
 	color: #bababa;
 }
@@ -741,14 +740,6 @@ strong, b {
 		color: #fafafa;		
 }
 
-
-/* 
-strong, b {
-		color: #363636;		
-		background: #ccc;
-}
-
- */
 
 
 h1, h2, h3, h4, h5, h6 {
