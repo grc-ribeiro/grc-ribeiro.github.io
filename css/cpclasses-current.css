@@ -346,6 +346,15 @@ p.classjournal {
 		border-left: #ccc solid 4px;
 }
 
+ol.classjournal {
+		padding-left: 2em;
+		margin-left:0;
+		max-width: 33em;
+		margin-top: -1em;
+		padding-top: 1em;
+		border-left: #ccc solid 4px;
+}
+
 code {
 		/*background-color: #eee;*/
 		color: #557d76;
