@@ -129,6 +129,9 @@
     <li>
         <p>When defining your font&#8209;family, never list a&nbsp;bad typeface like Arial or&nbsp;even Times&nbsp;New&nbsp;Roman. Choose the&nbsp;typeface of&nbsp;choice, and&nbsp;leave the&nbsp;fallback as&nbsp;<code>sans-serif</code> or&nbsp;<code>serif</code>. Seriously, never list Arial as&nbsp;a primary choice or&nbsp;as the&nbsp;fallback.</p>
     </li>
+    <li>
+        <p>You may think that you want to use <code>width</code> and/or <code>%</code>, but most likely you don’t. Keep the <code>width: 100%;</code> declaration for the <code>img</code> element and for everything else use <code>max-width</code> with <code>em</code> or use CSS Grids. (You don’t want to define your columns in <code>%</code> either; use <code>fr</code> instead.)</p>
+    </li>
 </ol>
 
 <h2>Classes </h2>
@@ -151,6 +154,41 @@
     </li>
 </ol>
 
+<h2>Images </h2>
+
+<ol>
+    <li>
+        <p>Every image on your HTML document must have the <code>alt</code> attribute.</p>
+    </li>
+    <li>
+        <p>Use the <code>alt</code> attribute on the image to be as descriptive as possible. Remember, that’s what users will read if they can’t see the image.</p>
+    </li>
+    <li>
+        <p>Include a period in the end of all <code>alt</code> attribute text. It causes screen readers to pause slightly, making for a better reading experience.&nbsp;<a href="https://twitter.com/kerri9494/status/1074696313848123392" target="_blank">➤</a></p>
+    </li>
+    <li>
+        <p>You don’t need to include “picture of”, “image of”, or “photo of” in the <code>alt</code> attribute of the <code>img</code> tag. (<strong>“Hamburger on a plate.”</strong> rather than <del>“Photo of a hamburger on a plate.”</del>)</p>
+    </li>
+    <li>
+        <p>All file names should be lowercase and contain no spaces.</p>
+    </li>
+    <li>
+        <p>Keep all the images in your server. (Don’t link to an external image on another website, download it and upload it to your website instead.)</p>
+    </li>
+    <li>
+        <p>It’s good practice to keep the images in another folder. (Optional)</p>
+    </li>
+    <li>
+        <p>Do not save photos as GIFs. Photos and rich illustrations should be JPEGs (or&nbsp;PNGs if transparency is needed).</p>
+    </li>
+    <li>
+        <p>Don’t use the <code>width</code> and <code>height</code> attributes on the <code>img</code> tags. (Style them in the CSS, instead.)</p>
+    </li>
+    <li>
+        <p>Only <code>img</code> and <code>figcaption</code> can be inside the <code>figure</code> element. (The <code>figcaption</code> is optional.</p>
+    </li>
+</ol>
+
 <h2>Troubleshooting </h2>
 
 <ol>
@@ -168,7 +206,7 @@
 <h4>Always check your work on multiple devices, browsers, and&nbsp;window&nbsp;sizes.</h4>
 
 <footer>
-<p class="lastupdate">Last update on 10 October 2025, at 8:47 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+<p class="lastupdate">Last update on 27 October 2025, at 7:29 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
 <p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find insconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
 
 </footer>
