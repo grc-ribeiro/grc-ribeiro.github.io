@@ -2,6 +2,16 @@
 
 @import url("cpclasses-current.css");
 
+
+	html, body {
+		background: #efe;	
+	}
+
+	h1 {
+			background: #ccc;
+	}
+
+
 @media screen and (prefers-color-scheme: dark) {
 
 	html, body {
