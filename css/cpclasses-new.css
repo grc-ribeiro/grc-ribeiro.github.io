@@ -35,14 +35,20 @@ p, li, ol {
 
 p strong, li strong {
 		font-size: 0.95em;
-		font-weight: 700;
+		font-weight: 600;
 		font-style: normal;
 		color: #222;
 	}
 
 p em strong {
 		font-family: bio-sans, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
+    font-style: italic;
+}
+
+strong em {
+		font-family: bio-sans, sans-serif;
+    font-weight: 600;
     font-style: italic;
 }
 
@@ -361,10 +367,10 @@ ol.classjournal {
 code {
 		/*background-color: #eee;*/
 		color: #557d76;
-		font-size: 0.9em;
+		font-size: 1em;
 		padding: 0 0.1em;
 		font-family: "input-serif", "input-mono", monospace;
-		font-weight: 300;
+		font-weight: 400;
 		font-style: normal;
 		letter-spacing: 0.03em;
 }
@@ -532,7 +538,7 @@ section.rubric ul li ul {
 
 section.rubric ul li ul li {
 		text-transform: uppercase;
-		font-size: 0.6rem;
+		font-size: 0.7rem;
 		margin:  0;
 		padding: 0.5rem 0.2rem 0.2rem 0;
 		line-height: 1em;
