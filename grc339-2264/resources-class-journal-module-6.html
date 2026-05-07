@@ -1,27 +1,120 @@
 <!doctype html>
 <html lang="en">
-<head>
+    <head>  
        	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-	<meta http-equiv="Pragma" content="no-cache" />
-	<meta http-equiv="Expires" content="0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
 
-	<link rel="stylesheet" type="text/css" href="../css/cpclasses.css">
-	<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
+		<link rel="stylesheet" type="text/css" href="../css/cpclasses-current.css">
+		<link rel="stylesheet" href="https://use.typekit.net/uhp5vku.css">
 
-
-  <title>Bruno Ribeiro | Cal Poly | Spring 2026 | GRC 339: Web Design and Production</title>
+		<title>Bruno Ribeiro | Cal Poly | Spring 2026 | GRC 339: Web Design and Production | Resources | Class journal, module 6</title>
 </head>
 
 
 <body>
 
-<h5 class="classheader"><a href="index.html">GRC 339</a>: <a href="resources.html">Resources</a></h5>
+<nav aria-label="Breadcrumb" class="breadcrumb">
+    <p><a href="index.html">GRC 339</a>: <a href="resources.html">Resources</a></p>
+</nav>
 
-<h1>Class journal module 6</h1>
+<h1>Class journal, module 6 </h1>
 
-<p>TBD</p>
+<hr />
+
+<blockquote class="classjournal">
+    <p>After following the&nbsp;video instructions, I&nbsp;realized that there were some unique margin issues with my&nbsp;code and&nbsp;had to&nbsp;fix those in&nbsp;the media query accordingly. Because there are&nbsp;many different ways to&nbsp;create the&nbsp;same website layout, it&nbsp;is easy to&nbsp;run into more specific issues like&nbsp;that.</p>
+</blockquote>
+
+<p class="classjournal">True.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+    <p>Looking at&nbsp;the examples, I&nbsp;wonder if&nbsp;the subscription form needs to&nbsp;be functional. I&nbsp;remember doing that in&nbsp;GRC 340, so&nbsp;I’m curious if&nbsp;there is&nbsp;a way&nbsp;to “submit” emails only using HTML and&nbsp;CSS.</p>
+</blockquote>
+
+<p class="classjournal">No. You need more than that, like Javascript or PHP.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+    <p><a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a> is&nbsp;a great resource for&nbsp;ux/design&nbsp;info.</p>
+</blockquote>
+
+<p class="classjournal">Yes, it is.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+    <p>Although pixels are&nbsp;okay to&nbsp;use for&nbsp;borders, you&nbsp;should <strong>not</strong>&nbsp;use decimals for&nbsp;pixels (e.g. <code>1.5px</code>, <code>2.5px</code>, etc.) to&nbsp;avoid the&nbsp;rendering of&nbsp;pixel&nbsp;fractions.</p>
+</blockquote>
+
+<p class="classjournal">Correct.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+    <p>Now that CSS&nbsp;is getting longer, I&nbsp;find it&nbsp;really helps to&nbsp;write what each section is&nbsp;doing in&nbsp;comments so&nbsp;that I&nbsp;remember the&nbsp;next time I&nbsp;look at&nbsp;it.</p>
+</blockquote>
+
+<p class="classjournal">Yes, good idea.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+    <p>I hadn’t seen the&nbsp;CSS property <code>object fit: cover;</code> before, but&nbsp;in this case it&nbsp;was really helpful for&nbsp;adjusting images to&nbsp;fit the&nbsp;layout.</p>
+</blockquote>
+
+<p class="classjournal">That’s a nice trick to have.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+    <p>I want to&nbsp;learn more about why&nbsp;my image didn’t squish or&nbsp;distort when the&nbsp;screen shrunk but&nbsp;rather&nbsp;cropped.</p>
+</blockquote>
+
+<p class="classjournal">That’s what the <code>object fit: cover;</code> declaration did.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+    <p>What does box-sizing: border-box; do? Why&nbsp;did adding that to&nbsp;the footer change its&nbsp;width?</p>
+</blockquote>
+
+<p class="classjournal">From <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing" target="_blank">MDN</a>: “By default in the CSS box model, the width and height you assign to an element is applied only to the element’s content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. (…) <code>content-box</code> gives you the default CSS <code>box-sizing</code> behavior. If you set an element's width to 100 pixels, then the element's content box will be 100 pixels wide, and the width of any border or padding will be added to the final rendered width, making the element wider than 100px. <code>border-box</code> tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.” We can play with <code>box-sizing</code> in the lab.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+    <p><code>border-box</code>: The&nbsp;width and&nbsp;height include content, padding, and&nbsp;border. This value is&nbsp;often preferred for&nbsp;layouts because it&nbsp;makes element sizing more predictable,” (mimo). This means everything fits inside the&nbsp;dimensions you&nbsp;specify. Good to&nbsp;know!</p>
+</blockquote>
+
+<p class="classjournal">That!</p>
+
+<hr />
+
+<blockquote class="classjournal">
+    <p>I want to&nbsp;create a&nbsp;magazine with visually appealing photos, so&nbsp;I&nbsp;have started to&nbsp;explore&nbsp;Pinterest.</p>
+</blockquote>
+
+<p class="classjournal">That’s an excellent approach. Choose a theme with nice imagery.</p>
+
+<hr />
+
+<blockquote class="classjournal">
+    <p>The digital magazines from last spring’s class are&nbsp;good for&nbsp;inspiration on&nbsp;what to&nbsp;do for&nbsp;my own&nbsp;project. I&nbsp;need to&nbsp;take some time to&nbsp;solidify my&nbsp;magazine&nbsp;topic.</p>
+</blockquote>
+
+<p class="classjournal">Everybody, please take a look at the <a href="https://grc-ribeiro.github.io/grc339-2254/links-digital-magazine.html" target="_blank">last year’s class</a> and start working on <a href="assignments-digital-magazine-proposal.html">your proposal</a>. Come prepared to the next lab, please.</p>
+
+<footer>
+<p class="lastupdate">Last update on 7 May 2026, at 1:06 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+<p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this quarter. Students who&nbsp;find inconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
+
+</footer>
 
 </body>
 </html>
