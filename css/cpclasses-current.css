@@ -54,6 +54,12 @@ h1, h2, h3, h4 {
 		color: #333;
 }
 
+h4.lab-list-heading {
+	position: sticky;
+	top: 0;
+	background: #fafafa;
+	padding-top: 1em;
+}
 
 
 h5, h6 {
@@ -490,9 +496,9 @@ section.rubric ul li h2 , section.rubric ul li h3 {
 
 
 
-section.rubric ul li h2 a, section.rubric ul li h3 a{
+/* section.rubric ul li h2 a, section.rubric ul li h3 a{
 
-}
+} */
 
 
 section.rubric ul li h4 {
@@ -754,6 +760,11 @@ strong, b {
 h1, h2, h3, h4, h5, h6 {
 		color: #fafafa;
 }
+
+h4.lab-list-heading {
+	background: #363636;
+}
+
 
 li h2, li h3 {  /*Design principles rubric explanation on the assignment pages*/
 		color: #fafafa;
