@@ -1,0 +1,22 @@
+/* 
+:root {
+	--text-font: bio-sans, sans-serif;
+	--text-regular: 400;
+	--text-bold: 600;
+	--code-font: input-serif, monospace;
+	--code-weight: 300;
+	--bg-color: #f00; 
+	--bg-gradient:	linear-gradient(to bottom, #fafafa, #fafafa, #fafafa, #fafafa00);
+	--type-color: #555; 
+	--bold-type-color: #222; 
+	--italic-type-color: #444; 
+	--link-color: #383;
+	--hover-color: #3b3;
+	--underline: 1px #557d76 dotted;
+	--code-color: #557d76;
+	--hr-border: 1px solid #ccc;
+	--journal-border: 4px solid #ccc;
+	--border-rubric: 3px #222  solid;
+	--strike: #a55;
+}
+ */
