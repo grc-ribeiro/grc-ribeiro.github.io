@@ -15,8 +15,7 @@ img {
 	--code-font: input-serif, monospace;
 	--code-weight: 300;
 	--bg-color: #fafafa; 
-	--bg-color-alpha: #fafafa00;
-	--bg-gradient: linear-gradient(var(--bg-color) 75%, var(--bg-color-alpha));
+	--bg-gradient: linear-gradient(to bottom, #fafafa, #fafafa, #fafafa, #fafafa00);
 	--type-color: #555; 
 	--bold-type-color: #222; 
 	--italic-type-color: #444; 
@@ -35,19 +34,18 @@ img {
 @media screen and (prefers-color-scheme: dark) {
 	:root {
 		--bg-color: #363636; 
-		--bg-color-alpha: #36363600;
+		--bg-gradient:	linear-gradient(to bottom, #363636, #363636, #363636, #36363600);
 		--type-color:  #bababa;   
 		--bold-type-color:  #fafafa;  
 		--italic-type-color: #ccc; 
-		--link-color: #3b3;
-		--hover-color: #6f6;
+		--link-color: #6a6;
+		--hover-color: #3b3;
 		--underline: 1px #557d76 dotted;
 		--code-color: #85bd96;
 		--hr-border: 1px solid #ccc;
 		--rubric-border-thick: 3px #ccc  solid;
 	}
 }
-
 
 
 body {

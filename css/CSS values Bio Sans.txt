@@ -1,0 +1,49 @@
+Bio Sans Light
+-------------------------------------
+font-family: bio-sans, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Bio Sans Light Italic
+-------------------------------------
+font-family: bio-sans, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+Bio Sans Regular
+-------------------------------------
+font-family: bio-sans, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Bio Sans Italic
+-------------------------------------
+font-family: bio-sans, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Bio Sans Semibold
+-------------------------------------
+font-family: bio-sans, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+Bio Sans Semibold Italic
+-------------------------------------
+font-family: bio-sans, sans-serif;
+font-weight: 600;
+font-style: italic;
+
+Bio Sans Bold
+-------------------------------------
+font-family: bio-sans, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Bio Sans Bold Italic
+-------------------------------------
+font-family: bio-sans, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+

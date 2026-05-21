@@ -1,0 +1,31 @@
+/* CSS DOCUMENT */
+
+@import url("cpclasses-current.css");
+
+
+	html, body {
+		background: #efe;	
+	}
+
+	h1 {
+			background: #ccc;
+	}
+
+
+@media screen and (prefers-color-scheme: dark) {
+
+	html, body {
+		background: #181a1b;	
+		color: #bababa;
+	}
+	
+	
+	h1 {
+			color: #363636;		
+			background: #ccc;
+	}
+	
+
+	
+}
+
