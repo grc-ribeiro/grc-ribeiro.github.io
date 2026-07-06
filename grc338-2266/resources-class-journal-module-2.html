@@ -60,7 +60,23 @@
     <p>I really struggled with having my&nbsp;first header line up&nbsp;with my&nbsp;lists and&nbsp;other hierarchy. I&nbsp;was wondering if&nbsp;there was&nbsp;a better and&nbsp;faster&nbsp;way.</p>
 </blockquote>
 
-<p class="classjournal">Yes, there is! But it’s a secret. Only those who actually read this journal highlight will know. You probably noticed that <code>1em</code> didn’t mean the same in all elements. Because <code>em</code> is relative to type size, when you increase your type size, it increase the relative unit <code>em</code>. Let’s see… You always want to keep your paragraph type size as <code>1em</code> to respect your user’s preferences, so its type size will be the same as what we call the <strong>root em</strong> or <code>rem</code>. But when you make the type size of <code>h2</code> as <code>2em</code>, your new <code>em</code> for your <code>h2</code> is twice as big as the <code>em</code> for the paragraph. So if your margin for <code>p</code> is <code>1em</code>, you need the margin of <code>h2</code> to be <code>0.5em</code> to keep them properly aligned. That’s pretty simple math. But let’s say your margin for <code>p</code> was <code>0.75em</code>, and the type size for your <code>h2</code> was <code>1.4em</code>. In this case, if you want them to be aligned, the margin for <code>h2</code> would be <code>0.75÷1.4em</code>, which is <code>0.53571429em</code>. The math is not complicated, but you can see how it gets inelegant fast. <strong>So here is the trick:</strong> You may use <code>rem</code> for margins and paddings, to keep them always relative to the root em. In this case, my margin for <code>p</code> would be <code>0.75rem</code> and my margin for <code>h2</code> would be <code>0.75rem</code> too! Not only does it eliminate the use of math (you’re welcome), but also makes it visually clear that they are the same. I hope it helps.</p>
+<p class="classjournal">
+	Yes, there is! But it’s a secret. Only those who actually read this journal highlight will know.
+</p>
+    
+<p class="classjournal">
+	You probably noticed that <code>1em</code> didn’t mean the same in all elements. Because <code>em</code> is relative to type size, when you increase your type size, it increase the relative unit <code>em</code>.
+</p>
+    
+<p class="classjournal">
+    Let’s see… You always want to keep your paragraph type size as <code>1em</code> to respect your user’s preferences, so its type size will be the same as what we call the <strong>root em</strong> or <code>rem</code>. But when you make the type size of <code>h2</code> as <code>2em</code>, your new <code>em</code> for your <code>h2</code> is twice as big as the <code>em</code> for the paragraph. So if your margin for <code>p</code> is <code>1em</code>, you need the margin of <code>h2</code> to be <code>0.5em</code> to keep them properly aligned. That’s pretty simple math.
+</p>
+    
+<p class="classjournal"> But let’s say your margin for <code>p</code> was <code>0.75em</code>, and the type size for your <code>h2</code> was <code>1.4em</code>. In this case, if you want them to be aligned, the margin for <code>h2</code> would be <code>0.75÷1.4em</code>, which is <code>0.53571429em</code>. The math is not complicated, but you can see how it gets inelegant fast. 
+</p>
+    
+<p class="classjournal"><strong>So here is the trick:</strong> You may use <code>rem</code> for margins and paddings, to keep them always relative to the root em. In this case, my margin for <code>p</code> would be <code>0.75rem</code> and my margin for <code>h2</code> would be <code>0.75rem</code> too! Not only does it eliminate the use of math (you’re welcome), but also makes it visually clear that they are the same. I hope it helps.
+</p>
 
 <hr />
 
