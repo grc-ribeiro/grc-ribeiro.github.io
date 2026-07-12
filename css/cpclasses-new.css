@@ -9,9 +9,11 @@ img {
 
 
 :root {
+/* 	--text-font: "ff-din-paneuropean", sans-serif; */
+/* 	--text-bold: 500; */
 	--text-font: bio-sans, sans-serif;
-	--text-regular: 400;
 	--text-bold: 600;
+	--text-regular: 400;
 	--code-font: input-serif, monospace;
 	--code-weight: 300;
 	--bg-color: #fafafa; 
@@ -58,6 +60,7 @@ body {
 		margin: 0 2em;
 		padding-bottom: 10em;
 		line-height: 1.6em;
+/* 		font-family: "ff-din-paneuropean", sans-serif; */
 		font-family: var(--text-font);
 		font-weight: var(--text-regular);
 		min-height: calc(100vh - 14em);
@@ -269,7 +272,6 @@ ul.schedule li h3 {
 		text-transform: uppercase;
 		margin: 2em 0 1em 0;
 		line-height: 1.0em;
-		position: relative;
 		float: left;
 		border-top: var(--rubric-border-thick);
 		border-bottom: var(--rubric-border-thick);
