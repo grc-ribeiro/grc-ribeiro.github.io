@@ -83,7 +83,7 @@ em {
 		color: var(--italic-type-color);
 }
 
-strong, h1, h2, h3, h4 {
+strong, h1, h2, h3, h4, h5 {
 		font-weight: var(--text-bold);
 		color: var(--bold-type-color);
 }
@@ -122,11 +122,10 @@ h2 {
 
 h3 {
 		font-size: 1.1em;
-		position: sticky;
+/* 		position: sticky; */
 		top: 2.5em;
 		margin-left: -1.5em;
 		padding-left: 1.5em;
-		padding-bottom: 2em;
 		background-image: var(--bg-gradient);
 }
 
@@ -265,8 +264,8 @@ section.rubric ul li ul li strong{
 
 
  
-ul.schedule li h3 {  
-		font-size: 0.8em;
+ul.schedule li h3, ul.schedule li h4 {  
+		font-size: 1em;
 		font-weight: var(--text-regular);
 		color: var(--bold-type-color);
 		text-transform: uppercase;
@@ -278,11 +277,14 @@ ul.schedule li h3 {
 		padding: 0.2em 0;
 }
 
-ul.schedule li p {  
+ul.schedule li p, ul.schedule li h5 {  
 	clear: both;
-	margin-bottom: 1em;
+/* 	margin-bottom: 1em; */
 }
 
+ul.schedule li ul.schedule li {
+	margin-bottom: 0;
+}
 
 img.screenshot-desktop {
 		margin-left: -4.6%;
