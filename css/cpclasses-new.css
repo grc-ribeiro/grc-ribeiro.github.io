@@ -21,6 +21,7 @@ img {
 	--bg-gradient: linear-gradient(var(--bg-color) 75%, var(--bg-color-alpha));
 	--type-color: #555; 
 	--bold-type-color: #222; 
+	--note-type-color: #888; 
 	--italic-type-color: #444; 
 	--link-color: #383;
 	--hover-color: #3b3;
@@ -45,8 +46,8 @@ img {
 		--hover-color: #6f6;
 		--underline: 1px #557d76 dotted;
 		--code-color: #85bd96;
-		--hr-border: 1px solid #ccc;
-		--rubric-border-thick: 3px #ccc  solid;
+		--hr-border: 1px solid #666;
+		--rubric-border-thick: 4px #eee  solid;
 	}
 }
 
@@ -98,7 +99,7 @@ ul li {
 }
 
 
-h1, h2, h3, h4 {
+h1, h2 {
 		padding-top: 1rem;
 		padding-bottom:1em;
 }
@@ -131,6 +132,7 @@ h3 {
 
 
 
+
 hr {
 		margin-top: 3em;
 		margin-bottom: 1em;
@@ -156,6 +158,14 @@ footer {
 	bottom: 0
 }
 
+
+span.notes {
+		font-size: 0.82em;
+		text-transform: uppercase;
+		color: var(--note-type-color);
+		letter-spacing: 0.03em;
+		padding-left: 0.2em;
+}
 
 nav.classheader a, nav.breadcrumb p a {
 		font-size: 1rem;
@@ -192,7 +202,7 @@ blockquote.classjournal p, blockquote.insidejournal p, blockquote.classjournal p
 
 section.rubric {
   	box-sizing: border-box;
-	margin: 4em 0 2em;
+	margin: 0 0 2em;
 }
 
 section.rubric h3 {
@@ -200,12 +210,6 @@ section.rubric h3 {
 		background: var(--bg-color);
 }
 
-section.rubric h3 span{
-	display: block;
-	border-top: var(--rubric-border-thick);
-	border-bottom: var(--rubric-border-thick);
-	padding-bottom: 0;
-}
 
 
 section.rubric ul li {
@@ -214,20 +218,30 @@ section.rubric ul li {
 		border-bottom: var(--rubric-border-thick);
 }
 
+ 
 section.rubric ul li:nth-of-type(1) {
+		border-top: var(--rubric-border-thick);
+}
+ 
+section.rubric ul li ul li:nth-of-type(1) {
 		border-top: 0;
 }
+ 
 
 
-section.rubric ul li h4 {
-	padding: 0;
+
+section.rubric ul li h3 ,section.rubric ul li h4 {
+	padding-top: 0.3rem;
+		line-height: 1.4rem;
 }
+ */
 
 section.rubric ul li p.totalpoints {
-		padding: 0.2rem 0.5rem 0 0;
+		padding: 0rem 0.5rem 0 0;
+		margin: 0;
 		border-bottom: var(--rubric-border-thin);
 		color: #999;
-		line-height: 1.4em;
+		line-height: 1.4rem;
 		font-weight: var(--text-bold);
 }
 
@@ -316,7 +330,7 @@ img.screenshot-mobile {
 
 
 
-			section.rubric ul li h4 {
+			section.rubric ul li h3, section.rubric ul li h4 {
 					margin: 0;
 					padding: 0.5rem 0;
 					grid-column: 1/2; 
@@ -325,12 +339,12 @@ img.screenshot-mobile {
 
 
 			section.rubric ul li p {
-					padding: 0rem 1.2rem 0 0;
+					padding: 0.5rem 1.2rem 0 0;
 			}
 
 			section.rubric ul li p.totalpoints {
 					margin: 0;
-					padding: 0.5rem 0;
+					padding: 0.2rem 0;
 					grid-column: 2/3; 
 					border-bottom: var(--rubric-border-thin);
 			}
