@@ -1,0 +1,18 @@
+@import url("cpclasses-new.css");
+
+ul li h2 {
+		font-size: 1em;
+		font-weight: var(--text-regular);
+		color: var(--bold-type-color);
+		text-transform: uppercase;
+		margin: 2em 0 1em 0;
+		line-height: 1.0em;
+		float: left;
+		border-top: var(--rubric-border-thick);
+		border-bottom: var(--rubric-border-thick);
+		padding: 0.2em 0;
+}
+
+ul li p, ul li h5, ul li ul {  
+	clear: both;
+}

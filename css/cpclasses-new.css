@@ -11,7 +11,7 @@ img {
 :root {
 /* 	--text-font: "ff-din-paneuropean", sans-serif; */
 /* 	--text-bold: 500; */
-	--text-font: bio-sans, sans-serif;
+	--text-font: "Bio Sans", bio-sans, sans-serif;
 	--text-bold: 600;
 	--text-regular: 400;
 	--code-font: input-serif, monospace;
@@ -59,12 +59,10 @@ body {
 		font-size: 1.2em;
 		max-width: 36em;
 		margin: 0 2em;
-		padding-bottom: 10em;
 		line-height: 1.6em;
 /* 		font-family: "ff-din-paneuropean", sans-serif; */
 		font-family: var(--text-font);
 		font-weight: var(--text-regular);
-		min-height: calc(100vh - 14em);
 		position: relative;
 }
 
@@ -132,7 +130,6 @@ h3 {
 
 
 
-
 hr {
 		margin-top: 3em;
 		margin-bottom: 1em;
@@ -152,6 +149,13 @@ del code, strike code{
 		color: var(--strike);
 		font-style: italic;
 }
+
+
+main {
+		padding-bottom: 10em;
+		min-height: calc(100vh - 14em);
+}
+
 
 footer {
 	position: absolute;
