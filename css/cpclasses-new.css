@@ -281,7 +281,7 @@ section.rubric ul li ul li strong{
 }
 
 
- 
+
 ul.schedule li h3, ul.schedule li h4 {  
 		font-size: 1em;
 		font-weight: var(--text-regular);
@@ -293,6 +293,10 @@ ul.schedule li h3, ul.schedule li h4 {
 		border-top: var(--rubric-border-thick);
 		border-bottom: var(--rubric-border-thick);
 		padding: 0.2em 0;
+}
+
+ul.schedule li h5 {
+	margin-top: 1em;
 }
 
 ul.schedule li p, ul.schedule li h5 {  
