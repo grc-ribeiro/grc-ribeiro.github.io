@@ -1,5 +1,9 @@
 @import url("cpclasses-new.css");
 
+body {
+		font-size: 1em;
+}
+
 ul li h2 {
 		font-size: 1em;
 		font-weight: var(--text-regular);
@@ -13,6 +17,13 @@ ul li h2 {
 		padding: 0.2em 0;
 }
 
-ul li p, ul li h5, ul li ul {  
+ul li {
+	clear: both;
+}
+
+
+
+ul li p, ul li ul li {  
+	margin: 0;
 	clear: both;
 }
