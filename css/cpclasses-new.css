@@ -26,7 +26,7 @@ img {
 	--link-color: #383;
 	--hover-color: #3b3;
 	--underline: 1px #557d76 dotted;
-	--code-color: #557d76;
+	--code-color: #186d8f;
 	--hr-border: 1px solid #ccc;
 	--journal-border: 4px solid #ccc;
 	--rubric-border-thick: 4px #222  solid;
@@ -45,7 +45,7 @@ img {
 		--link-color: #3b3;
 		--hover-color: #6f6;
 		--underline: 1px #557d76 dotted;
-		--code-color: #85bd96;
+		--code-color: #69bcc2;
 		--hr-border: 1px solid #666;
 		--rubric-border-thick: 4px #eee  solid;
 	}
