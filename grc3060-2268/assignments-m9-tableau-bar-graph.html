@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+    <head>  
+       	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<link rel="stylesheet" type="text/css" href="../css/cpclasses-new.css">
+		<link rel="stylesheet" href="https://use.typekit.net/ygi6qrn.css">
+
+		<title>Bruno Ribeiro | Cal Poly | Fall 2026 | GRC 3060: Data-Driven Graphics | Assignments | Tableau: bar graph visualization</title>
+</head>
+
+
+<body>
+
+<header>
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <p><a href="index.html">GRC 3060</a>: <a href="assignments.html">Assignments</a></p>
+    </nav>
+</header>
+
+<main>
+    <h1>Tableau: bar&nbsp;graph visualization </h1>
+
+    <p>For this first lab, you will create a bar graph visualization, exactly like the one I&nbsp;showed in the lab. The instructions are listed below.</p>
+
+    <p>I suggest you don’t leave the lab before you finish it.</p>
+
+    <p>If you need any help, please let me know.</p>
+
+    <h2>Create a new document </h2>
+
+    <ol>
+        <li>
+            <p>Start by downloading the <a href="../files/grc-3060-online-campaign-data-2.zip">Online campaign data 2</a> file and save it to your Desktop.</p>
+        </li>
+        <li>
+            <p>Double-click on the .zip file to extract the CSV file from it.</p>
+        </li>
+        <li>
+            <p>Go to <a href="https://public.tableau.com/" target="_blank">Tableau Public</a></p>
+        </li>
+        <li>
+            <p>Go to Create → Web authoring</p>
+        </li>
+        <li>
+            <p>When the <em>Connect to Data</em> panel shows up, go to the tab <strong>Files</strong> and choose <strong>Upload from computer</strong></p>
+        </li>
+        <li>
+            <p>Upload the <em>Online campaign data 2.csv</em> file from your computer.</p>
+        </li>
+        <li>
+            <p>On the bottom left of your page, go to <strong>Sheet 1</strong>.</p>
+        </li>
+    </ol>
+
+    <p><em>Click on <strong>Publish</strong>.</em></p>
+
+    <h2>Format the Fields </h2>
+
+    <ol>
+        <li>
+            <p>Right-click <strong>Conversion rate</strong> → Default Properties → Number Format → Percentage.</p>
+        </li>
+        <li>
+            <p>Right-click <strong>Cost per click (CPC) 1</strong> → Default Properties → Number Format → Currency (Standard).</p>
+        </li>
+        <li>
+            <p>Right-click <strong>Cost per click (CPC) 2</strong> → Default Properties → Number Format → Currency (Standard).</p>
+        </li>
+        <li>
+            <p>Right-click <strong>Cost per click (CPC) 3</strong> → Default Properties → Number Format → Currency (Standard).</p>
+        </li>
+        <li>
+            <p>Right-click <strong>Profit before search cost</strong> → Default Properties → Number Format → Currency (Standard).</p>
+        </li>
+    </ol>
+
+    <p><em>Click on <strong>Publish</strong>.</em></p>
+
+    <h2>Create the parameters </h2>
+
+    <h3>CTR 1</h3>
+
+    <ol>
+        <li>
+            <p>In your Data pane, click on the ▼ next to the Search field in the Data pane, and choose <em>Create Parameter…</em>.</p>
+        </li>
+        <li>
+            <p>Name the parameter <strong>CTR 1</strong>.</p>
+        </li>
+        <li>
+            <p>Set <em>Data type</em> to <strong>Float</strong>, <em>Display format</em> to <strong>Percentage</strong>, and <em>Current value</em> to <strong>0.015</strong> (for 1.5%).</p>
+        </li>
+        <li>
+            <p>For <em>Allowable values</em>, choose <strong>Range</strong>. Then choose <em>Minimum</em> <strong>0</strong>, <em>Maximum</em> <strong>0.05</strong>, and <em>Step&nbsp;size</em> <strong>0.001</strong>.</p>
+        </li>
+        <li>
+            <p>Click <strong>OK</strong>.</p>
+        </li>
+    </ol>
+
+    <h3>CTR 2</h3>
+
+    <ol>
+        <li>
+            <p>Under Parameters, right-click on <strong>CTR 1</strong> and choose <strong>Duplicate</strong>.</p>
+        </li>
+        <li>
+            <p>Right-click on <strong>CTR 1 (copy)</strong> and choose <em>Edit…</em></p>
+        </li>
+        <li>
+            <p>Change the name to <strong>CTR 2</strong>.</p>
+        </li>
+        <li>
+            <p>Change the <em>Current value</em> to <strong>0.01</strong> (for 1.0%).</p>
+        </li>
+        <li>
+            <p>Click <strong>OK</strong>.</p>
+        </li>
+    </ol>
+
+    <h3>CTR 3</h3>
+
+    <ol>
+        <li>
+            <p>Under Parameters, right-click on <strong>CTR 2</strong> and choose <strong>Duplicate</strong>.</p>
+        </li>
+        <li>
+            <p>Right-click on <strong>CTR 2 (copy)</strong> and choose <em>Edit…</em></p>
+        </li>
+        <li>
+            <p>Change the name to <strong>CTR 3</strong>.</p>
+        </li>
+        <li>
+            <p>Change the <em>Current value</em> to <strong>0.005</strong> (for 0.5%).</p>
+        </li>
+        <li>
+            <p>Click <strong>OK</strong>.</p>
+        </li>
+    </ol>
+
+    <p><em>Click on <strong>Publish</strong>.</em></p>
+
+    <h2>Create the calculated fields </h2>
+
+    <h3>Profit position 1</h3>
+
+    <ol>
+        <li>
+            <p>In your Data pane, click on the ▼ next to the Search field, and choose <em>Create Calculated Field…</em>.</p>
+        </li>
+        <li>
+            <p>Name it <strong>Profit position 1</strong>.</p>
+        </li>
+        <li>
+            <p>Make the calculation: <code>[Profit before search cost] * ( [CTR 1] * [Conversion rate] * 1000 ) - ( [Cost per click (CPC) 1] * [CTR 1] * 1000 )</code></p>
+        </li>
+        <li>
+            <p>Click <strong>OK</strong>.</p>
+        </li>
+        <li>
+            <p>Right-click <strong>Profit position 1</strong> → Default Properties → Number Format → Currency (Standard).</p>
+        </li>
+    </ol>
+
+    <p><em>Click on <strong>Publish</strong>.</em></p>
+
+    <h3>Profit position 2</h3>
+
+    <ol>
+        <li>
+            <p>In your Data pane, click on the ▼ next to the Search field, and choose <em>Create Calculated Field…</em>.</p>
+        </li>
+        <li>
+            <p>Name it <strong>Profit position 2</strong>.</p>
+        </li>
+        <li>
+            <p>Make the calculation: <code>[Profit before search cost] * ( [CTR 2] * [Conversion rate] * 1000 ) - ( [Cost per click (CPC) 2] * [CTR 2] * 1000 )</code></p>
+        </li>
+        <li>
+            <p>Click <strong>OK</strong>.</p>
+        </li>
+        <li>
+            <p>Right-click <strong>Profit position 2</strong> → Default Properties → Number Format → Currency (Standard).</p>
+        </li>
+    </ol>
+
+    <p><em>Click on <strong>Publish</strong>.</em></p>
+
+    <h3>Profit position 3</h3>
+
+    <ol>
+        <li>
+            <p>In your Data pane, click on the ▼ next to the Search field, and choose <em>Create Calculated Field…</em>.</p>
+        </li>
+        <li>
+            <p>Name it <strong>Profit position 3</strong>.</p>
+        </li>
+        <li>
+            <p>Make the calculation: <code>[Profit before search cost] * ( [CTR 3] * [Conversion rate] * 1000 ) - ( [Cost per click (CPC) 3] * [CTR 3] * 1000 )</code></p>
+        </li>
+        <li>
+            <p>Click <strong>OK</strong>.</p>
+        </li>
+        <li>
+            <p>Right-click <strong>Profit position 3</strong> → Default Properties → Number Format → Currency (Standard).</p>
+        </li>
+    </ol>
+
+    <p><em>Click on <strong>Publish</strong>.</em></p>
+
+    <h2>Build the bar graph </h2>
+
+    <ol>
+        <li>
+            <p>Find the <strong>Measure Names</strong> field at the top of your Data Pane fields list. Drag it onto the Filters shelf. Check the boxes only for Profit position 1, Profit position 2, and Profit position 3. Click OK.</p>
+        </li>
+        <li>
+            <p>Find the <strong>Measure Values</strong> field at the bottom of your Data Pane fields list. Drag it to the <strong>Columns</strong> shelf.</p>
+        </li>
+        <li>
+            <p>Find the <strong>Measure Names</strong> field at the top of your Data Pane fields list. Drag it to the <strong>Rows</strong> shelf.</p>
+        </li>
+        <li>
+            <p>Drag the same <strong>Measure Names</strong> field from the top of your Data Pane fields list and drop it directly onto the <strong>Color</strong> card inside the <em>Marks</em> shelf.</p>
+        </li>
+        <li>
+            <p>Find the <strong>Measure Values</strong> field at the bottom of your Data Pane fields list. Drag it to the <strong>Label</strong> card inside the <em>Marks</em> shelf.</p>
+        </li>
+    </ol>
+
+    <p><em>Click on <strong>Publish</strong>.</em></p>
+
+    <h2>Include the controls </h2>
+
+    <ol>
+        <li>
+            <p>In the <em>Parameters</em> section, right-click on <strong>CTR&nbsp;1</strong>, and select <strong>Show Parameter</strong>.</p>
+        </li>
+        <li>
+            <p>In the <em>Parameters</em> section, right-click on <strong>CTR&nbsp;2</strong>, and select <strong>Show Parameter</strong>.</p>
+        </li>
+        <li>
+            <p>In the <em>Parameters</em> section, right-click on <strong>CTR&nbsp;3</strong>, and select <strong>Show Parameter</strong>.</p>
+        </li>
+        <li>
+            <p>At this point, three sliders should show on the right.</p>
+        </li>
+    </ol>
+
+    <p><em>Click on <strong>Publish</strong>.</em></p>
+
+    <h2>Build the dashboard </h2>
+
+    <ol>
+        <li>
+            <p>Click on the <strong>New Dashboard</strong> on the bottom&#8209;left of the page.</p>
+        </li>
+        <li>
+            <p>Once you’re in <em>Dashboard 1</em>, change its size to 1600px × 600px.</p>
+        </li>
+        <li>
+            <p>Drag <strong>Sheet 1</strong> from the sidebar to the empty canvas in the middle.</p>
+        </li>
+        <li>
+            <p>Select the <strong>CTR 1</strong> slider. Grab it by the top handle and drop it under the bar graph.</p>
+        </li>
+        <li>
+            <p>Select the <strong>CTR 3</strong> slider. Grab it by the top handle and drop it under the bar graph, to the right of the <strong>CTR 1</strong> slider.</p>
+        </li>
+        <li>
+            <p>Select the <strong>CTR 2</strong> slider. Grab it by the top handle and drop it under the bar graph, to between the <strong>CTR 1</strong> and the <strong>CTR 3</strong> sliders.</p>
+        </li>
+    </ol>
+
+    <p><em>Click on <strong>Publish</strong> one last time.</em></p>
+
+    <h2>Visualize and share your dashboard </h2>
+
+    <ol>
+        <li>
+            <p>Click on the <strong>×</strong> next to your name on the top&#8209;right of the page.</p>
+        </li>
+        <li>
+            <p>Play a little with the sliders just to have fun.</p>
+        </li>
+        <li>
+            <p>Click the <strong>Share</strong> button.</p>
+        </li>
+        <li>
+            <p>Click on the <strong>Copy Link</strong> button.</p>
+        </li>
+        <li>
+            <p>Paste the link on a new tab of your browser.</p>
+        </li>
+        <li>
+            <p>Copy the new URL from the address bar on the browser. (That’s the URL you need to submit on Canvas.)</p>
+        </li>
+    </ol>
+
+    <h2>Submission </h2>
+
+    <p>Submit the second URL to Canvas.</p>
+</main>
+
+
+<footer>
+<p class="lastupdate">Last update on 20 October 2026, at 5:29 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+<p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this semester. Students who&nbsp;find inconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
+
+</footer>
+
+</body>
+</html>
