@@ -25,67 +25,76 @@
 <main>
     <h1>Line graph </h1>
 
-    <h2>New document </h2>
+    <h2>Create a new document </h2>
 
     <ol>
         <li>
-            <p>Go to https://public.tableau.com/app/discover</p>
+            <p>Go to <a href="https://public.tableau.com/" target="_blank">Tableau Public</a></p>
         </li>
         <li>
-            <p>Create → Web authoring</p>
+            <p>Go to Create → Web authoring</p>
         </li>
         <li>
-            <p>Files → Upload from computer</p>
+            <p>When the <em>Connect to Data</em> panel shows up, go to the tab <strong>Files</strong> and choose <strong>Upload from computer</strong></p>
+        </li>
+        <li>
+            <p>Upload the <em>Online campaign demo 1.csv</em> file from your computer.</p>
         </li>
         <li>
             <p>Go to <strong>Sheet 1</strong>.</p>
         </li>
     </ol>
 
+    <p><em>Click on <strong>Publish</strong>.</em></p>
+
     <h2>Format the Fields </h2>
 
     <ol>
         <li>
-            <p>Right-click Conversion → Change Data Type → Number (decimal). </p>
+            <p>Right-click <strong>CTR</strong> → Default Properties → Number Format → Percentage.</p>
         </li>
         <li>
-            <p>Right-click it again, choose Default Properties → Number Format → Percentage.</p>
+            <p>Right-click <strong>Profit position 1</strong> → Default Properties → Number Format → Currency.</p>
         </li>
         <li>
-            <p>Right-click Position 1 → Default Properties → Number Format → Currency.</p>
+            <p>Right-click <strong>Profit position 2</strong> → Default Properties → Number Format → Currency.</p>
         </li>
         <li>
-            <p>Right-click Position 2 → Default Properties → Number Format → Currency.</p>
-        </li>
-        <li>
-            <p>Right-click Position 3 → Default Properties → Number Format → Currency.</p>
+            <p>Right-click <strong>Profit position 3</strong> → Default Properties → Number Format → Currency.</p>
         </li>
     </ol>
 
-    <h2>Build the Line Chart </h2>
+    <p><em>Click on <strong>Publish</strong>.</em></p>
+
+    <h2>Build the line chart </h2>
 
     <ol>
         <li>
-            <p>Drag <strong>Conversion</strong> to the <strong>Columns</strong> shelf</p>
+            <p>Drag <strong>CTR</strong> to the <strong>Columns</strong> shelf</p>
         </li>
         <li>
-            <p>Crucial Step: Tableau will likely default this to a discrete dimension or try to SUM it. Right-click the green Conversion pill on the Columns shelf and select <strong>Dimension</strong> and change it to <strong>Continuous</strong> if it isn't already, so it forms a smooth continuous horizontal axis from 0.0% to 5.0%.</p>
+            <p>Right-click the green <strong>CTR</strong> pill on the Columns shelf and select <strong>Dimension</strong> and change it to <strong>Continuous</strong> if it isn't already, so it forms a smooth continuous horizontal axis from 0.0% to 5.0%.</p>
         </li>
         <li>
-            <p>Find the <strong>Measure Names</strong> field at the top bottom of your Data Pane fields list. Drag it onto the Filters shelf. Check the boxes only for Position 1, Position 2, and Position 3. Click OK.</p>
+            <p>Drag <strong>Measure Values</strong> to the <strong>Columns</strong> shelf</p>
         </li>
         <li>
-            <p>Drag the same <strong>Measure Names</strong> field from the top bottom of your Data Pane fields list and drop it directly onto the Color card inside the Marks shelf.</p>
+            <p>Find the <strong>Measure Names</strong> field at the top bottom of your Data Pane fields list. Drag it onto the Filters shelf. Check the boxes only for Profit position 1, Profit position 2, and Profit position 3. Click OK.</p>
+        </li>
+        <li>
+            <p>Drag the same <strong>Measure Names</strong> field from the top of your Data Pane fields list and drop it directly onto the Color card inside the Marks shelf.</p>
         </li>
         <li>
             <p>In the Marks shelf drop-down menu, change the visualization type from Automatic to Line.</p>
         </li>
     </ol>
+
+    <p><em>Click on <strong>Publish</strong>.</em></p>
 </main>
 
 
 <footer>
-<p class="lastupdate">Last update on 20 October 2026, at 1:47 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+<p class="lastupdate">Last update on 26 October 2026, at 11:16 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
 <p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this semester. Students who&nbsp;find inconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
 
 </footer>
