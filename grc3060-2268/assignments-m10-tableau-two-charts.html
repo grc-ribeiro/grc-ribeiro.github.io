@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+    <head>  
+       	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<link rel="stylesheet" type="text/css" href="../css/cpclasses-new.css">
+		<link rel="stylesheet" href="https://use.typekit.net/ygi6qrn.css">
+
+		<title>Bruno Ribeiro | Cal Poly | Fall 2026 | GRC 3060: Data-Driven Graphics | Assignments | Tableau: dashboard with two charts</title>
+</head>
+
+
+<body>
+
+<header>
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <p><a href="index.html">GRC 3060</a>: <a href="assignments.html">Assignments</a></p>
+    </nav>
+</header>
+
+<main>
+    <h1>Tableau: dashboard with two charts </h1>
+
+    <p>For this first lab, you will create a dashboard with two charts, a vertical bar chart and a line chart, just like the one below:</p>
+
+    <p><img src="../images/grc3060-tableau-dashboard-rio-de-janeiro.png" alt="Tableau dashboard with a bar graph showing average precipitation per month in Rio de Janeiro and a line graph showing the average round trip airfare prices in 2025 from LAX to Rio de Janeiro" title="" /></p>
+
+    <p>The instructions this week are not exactly as detailed as <a href="assignments-m9-tableau-bar-graph">last week</a>.</p>
+
+    <p>I suggest you don’t leave the lab before you finish it.</p>
+
+    <p>If you need any help, please let me know.</p>
+
+    <h2>Create a new document </h2>
+
+    <ol>
+        <li>
+            <p>Start by downloading this <a href="../files/grc-3060-rio-de-janeiro.zip">zip file</a> and extracting the CSV file from it.</p>
+        </li>
+        <li>
+            <p>Create a new document in <a href="https://public.tableau.com/" target="_blank">Tableau Public</a> and upload the <code>Rio daily precipitation.csv</code> file.</p>
+        </li>
+    </ol>
+
+    <h2>First chart </h2>
+
+    <ol>
+        <li>
+            <p>Create a new <em>Calculated Field</em>. You will use the formula <code>DATEPARSE("format", value)</code>, where the format is the <code>MM-dd</code> (for <em>month</em> and <em>day</em>) and the valeu is the table <code>Month Day</code>. Name this calculated field <code>Months</code>.</p>
+        </li>
+        <li>
+            <p>Make months the x&#8209;axis and the <em>average</em> precipitation as the y&#8209;axis.</p>
+        </li>
+        <li>
+            <p>Make sure you have it as a bar chart and don’t forget to include the labels on the top of each bar. Set the labels in Tableau Bold, 10pt, blue.</p>
+        </li>
+        <li>
+            <p>You may hide the <em>Header</em> on the left of the chart.</p>
+        </li>
+    </ol>
+
+    <h2>Second chart </h2>
+
+    <ol>
+        <li>
+            <p>Add a <em>New Data Source</em> and upload the other <code>LAX Rio airfare.csv</code> file.</p>
+        </li>
+        <li>
+            <p>Create a <em>New Worksheet</em>. On this new sheet, select the LAX Rio airfare database.</p>
+        </li>
+        <li>
+            <p>Make months the x&#8209;axis and the <em>average</em> price as the y&#8209;axis.</p>
+        </li>
+        <li>
+            <p>Make sure you have it as a line chart and don’t forget to include the labels for the prices.</p>
+        </li>
+        <li>
+            <p>Change the line to red.</p>
+        </li>
+        <li>
+            <p>Set the labels in Tableau Bold, 9pt, teal.</p>
+        </li>
+        <li>
+            <p>You may hide the <em>Header</em> on the left of the chart.</p>
+        </li>
+    </ol>
+
+    <h2>Dashboard </h2>
+
+    <ol>
+        <li>
+            <p>Create a <em>New Dashboard</em> and change its size to 1400px × 800px.</p>
+        </li>
+        <li>
+            <p>Add <em>Sheet 1</em> to the top and <em>Sheet 2</em> to the bottom of the dashboard.</p>
+        </li>
+        <li>
+            <p>Tableau will add the control for years on the top right. You may delete it.</p>
+        </li>
+        <li>
+            <p>You may hide the <em>Field Labels for Columns</em> for both graphs too.</p>
+        </li>
+        <li>
+            <p>Edit the title of the first graph as <strong>Monthly average precipitation in Rio de Janeiro (mm)</strong>. Set the type to Tableau Book, 18pt.</p>
+        </li>
+        <li>
+            <p>Edit the title of the second graph as <strong>Average airfare price for economy round trip from LAX to Rio in 2025 (USD)</strong>. Set the type to Tableau Book, 18pt.</p>
+        </li>
+    </ol>
+
+    <h2>Visualize and share your dashboard </h2>
+
+    <ol>
+        <li>
+            <p>Click on the <strong>×</strong> next to your name on the top&#8209;right of the page.</p>
+        </li>
+        <li>
+            <p>Click the <strong>Share</strong> button.</p>
+        </li>
+        <li>
+            <p>Click on the <strong>Copy Link</strong> button.</p>
+        </li>
+        <li>
+            <p>Paste the link on a new tab of your browser.</p>
+        </li>
+        <li>
+            <p>Copy the new URL from the address bar on the browser. (That’s the URL you need to submit on Canvas.)</p>
+        </li>
+    </ol>
+
+    <h2>Submission </h2>
+
+    <p>Submit the second URL to Canvas.</p>
+</main>
+
+
+<footer>
+<p class="lastupdate">Last update on 28 October 2026, at 10:19 AM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+<p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this semester. Students who&nbsp;find inconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
+
+</footer>
+
+</body>
+</html>
