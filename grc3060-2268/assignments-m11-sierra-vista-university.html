@@ -31,99 +31,23 @@
 
     <p>If you need any help, please let me know.</p>
 
-    <h2>Create a new document </h2>
+    <h2>Scatter plot </h2>
 
     <ol>
         <li>
-            <p>Start by downloading this <a href="../files/grc-3060-svu.zip">zip file</a> and extracting the CSV file from it.</p>
+            <p>Create a new document in <a href="https://public.tableau.com/" target="_blank">Tableau Public</a> and upload the <code>SVU midterm.csv</code> file.</p>
         </li>
         <li>
-            <p>Create a new document in <a href="https://public.tableau.com/" target="_blank">Tableau Public</a> and upload the <code>SVU total enrollment.csv</code> file.</p>
-        </li>
-    </ol>
-
-    <h2>First chart </h2>
-
-    <ol>
-        <li>
-            <p>On <em>Sheet 1</em>, make sure you have <strong>Year</strong> as <em>Date</em>, then make it the x&#8209;axis of your graph.</p>
+            <p>On <em>Sheet 1</em>, make the <strong>Current GPA</strong> the x&#8209;axis and the<strong>Midterm Exam Grade</strong> your y&#8209;axis.</p>
         </li>
         <li>
-            <p>Your y&#8209;axis is the <strong>Total Enrollment</strong>.</p>
+            <p>You want the data visualization as <em>Circle</em>.</p>
         </li>
         <li>
-            <p>You want to visualize each <strong>College</strong> as a different color in a <em>Area Graph</em>.</p>
+            <p>Give each <strong>Academic Level</strong> its own color and make the <strong>Reported Study Hours</strong> vary by size.</p>
         </li>
         <li>
-            <p>Show the numbers for each value for each college on each each year.</p>
-        </li>
-        <li>
-            <p>We want the total sum too, so we we’ll have to create a <em>Calculated Field</em> with the formula <code>{ FIXED [Year] : SUM([Total Enrollment]) }</code>. Call that calculated field <em>University total enrollment</em>.</p>
-        </li>
-        <li>
-            <p>This new <em>Calculated Field</em> will also be on your y&#8209;axis. (This should create two graphs, don’t panic. Whatever you do, don’t panic.) </p>
-        </li>
-        <li>
-            <p>Change the <em>University total enrollment</em> on your y&#8209;axis from sum to average.</p>
-        </li>
-        <li>
-            <p>Do you see that on your <em>Marks</em> area you have the sub areas, <em>All</em>, <em>SUM(Total Enrollment)</em>, and <em>AVG(University total enrollment)</em>? Go to the <em>AVG(University total enrollment)</em> and remove colors from <strong>College</strong>. </p>
-        </li>
-        <li>
-            <p>Make the graph for <em>AVG(University total enrollment)</em> Lines, not Area.</p>
-        </li>
-        <li>
-            <p>You don’t want two graphs, so you need to specify that your y&#8209;axis values are on a <em>Dual Axis</em>. </p>
-        </li>
-        <li>
-            <p>Did you find it? Good job! You may have two different y&#8209;axis still. Go ahead and right-click on the y&#8209;axis on the right and select <em>Synchronize Axis</em>. Now you can hide that Header.</p>
-        </li>
-        <li>
-            <p>Did the labels clash? Change your <em>University total enrollment</em> to <em>Dimension</em> not <em>Measure</em>.</p>
-        </li>
-        <li>
-            <p>You want to be able to filter for <strong>College</strong>, and it needs to be visible.</p>
-        </li>
-    </ol>
-
-    <h2>Second chart </h2>
-
-    <ol>
-        <li>
-            <p>Add a <em>New Data Source</em> and upload the <code>SVU new enrollment.csv</code> file.</p>
-        </li>
-        <li>
-            <p>Create a <em>New Worksheet</em>. On this new sheet, select the <em>SVU new enrollment.csv</em></p>
-        </li>
-        <li>
-            <p>Once again, make sure you have <strong>Year</strong> as <em>Date</em>, then make it the x&#8209;axis of your graph.</p>
-        </li>
-        <li>
-            <p>Your y&#8209;axis is the <strong>Total Enrollment</strong>, but you want the graph as a bar, with different colors for each <em>*College</em>.</p>
-        </li>
-        <li>
-            <p>Show the numbers for each value for each college on each each year.</p>
-        </li>
-        <li>
-            <p>We want the total sum too, so we we’ll have to create a <em>Calculated Field</em> with the formula <code>{ FIXED [Year] : SUM([New Enrollment]) }</code>. Call that calculated field <em>University new enrollment</em>.</p>
-        </li>
-        <li>
-            <p>Remove colors from <strong>College</strong> for the <em>AVG(University total enrollment)</em> just like you did for the first graph.</p>
-        </li>
-        <li>
-            <p>You can keep the graph for <em>AVG(University total enrollment)</em> as Bars.</p>
-        </li>
-        <li>
-            <p>You don’t want two graphs, so you need to specify that your y&#8209;axis values are on a <em>Dual Axis</em>. </p>
-        </li>
-        <li>
-            <p>Go ahead and right-click on the y&#8209;axis on the right and select <em>Synchronize Axis</em>. Now you can hide that Header.</p>
-        </li>
-        <li>
-            <p>The gray graph covered your original graph? What if it had opacity 0?</p>
-        </li>
-        <li>
-            <p>Again, you want to be able to filter for <strong>College</strong>, and it needs to be visible.</p>
+            <p>Create a filter for <strong>Academic Level</strong> and make it visible.</p>
         </li>
     </ol>
 
@@ -134,20 +58,14 @@
             <p>Create a <em>New Dashboard</em> and change its size to 1400px × 800px.</p>
         </li>
         <li>
-            <p>Add <em>Sheet 1</em> to the top and <em>Sheet 2</em> to the bottom of the dashboard.</p>
+            <p>Add <em>Sheet 1</em> to the dashboard.</p>
         </li>
         <li>
-            <p>You may hide the <em>Field Labels for Columns</em> for both graphs too.</p>
-        </li>
-        <li>
-            <p>Edit the title of the first graph as <strong>SVU total enrollment</strong>. Set the type to Tableau Book, 18pt.</p>
-        </li>
-        <li>
-            <p>Edit the title of the second graph as <strong>SVU new enrollment</strong>. Set the type to Tableau Book, 18pt.</p>
+            <p>Edit the title of the graph as <strong>STAT 1100 midterm exam</strong>. Set the type to Tableau Book, 18pt.</p>
         </li>
     </ol>
 
-    <p><img src="../images/grc3060-m11-final-graph.png" alt="Tableau dashboard with a area graph showing total enrollment for the last 10 years for Sierra Vista University and a stacked bar graph with new enrollment for the last 10 years for Sierra Vista University" title="" /></p>
+    <p><img src="../images/grc3060-m11-final-graph-2.png" alt="Tableau dashboard with a scatter plot for the midterm grades" title="" /></p>
 
     <h2>Visualize and share your dashboard </h2>
 
@@ -176,7 +94,7 @@
 
 
 <footer>
-<p class="lastupdate">Last update on 4 November 2026, at 12:09 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
+<p class="lastupdate">Last update on 4 November 2026, at 12:32 PM. &copy;&nbsp;Bruno&nbsp;Ribeiro</p>
 <p class="disclaimer">We all make mistakes, and I&nbsp;appreciate if&nbsp;you&nbsp;let&nbsp;me know when you&nbsp;catch any&nbsp;of&nbsp;the&nbsp;several mistakes I’ll&nbsp;make this semester. Students who&nbsp;find inconsistent dates or&nbsp;instructions on&nbsp;any&nbsp;of&nbsp;my&nbsp;assignments will&nbsp;be&nbsp;rewarded with&nbsp;candy.</p>
 
 </footer>
