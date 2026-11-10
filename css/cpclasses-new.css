@@ -386,6 +386,25 @@ img.screenshot-mobile {
 				display: inline-block;
 			}
 
-
 }
 
+@media print {
+  h2 {
+    position: static;
+    background-image: none;
+  }
+
+  main {
+    min-height: 0;
+    padding-bottom: 2em;
+  }
+
+  footer {
+    position: static;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
