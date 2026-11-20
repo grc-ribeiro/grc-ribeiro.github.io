@@ -94,6 +94,10 @@ p, li {
 		text-wrap: pretty;
 }
 
+ul, ol {
+		margin-top:1em;
+}	
+
 ul li {
 		list-style-type: none;
 }
@@ -126,6 +130,7 @@ h3 {
 		font-size: 1.1em;
 /* 		position: sticky; */
 		margin-top: 2.5em;
+		margin-bottom: 1em;
 		/* 
 margin-left: -1.5em;
 		padding-left: 1.5em;
